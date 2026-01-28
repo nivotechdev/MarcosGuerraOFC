@@ -8,9 +8,9 @@
     },
     {
       "id": "philosophy-image",
-      "description": "Detalhe arquitetônico abstrato e limpo de uma clínica moderna.",
-      "imageUrl": "https://images.unsplash.com/photo-1764004450351-37fb72cb8e8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjBjbGluaWN8ZW58MHx8fHwxNzY5NjI3Nzc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "modern architecture clinic"
+      "description": "Interior de uma clínica odontológica moderna e limpa, servindo como fundo para o banner.",
+      "imageUrl": "https://images.unsplash.com/photo-1600170363899-f3c2e347c6a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBkZW50YWwlMjBjbGluaWN8ZW58MHx8fHwxNzcwMDY2ODg5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern dental clinic"
     },
     {
       "id": "clinic-reception",
