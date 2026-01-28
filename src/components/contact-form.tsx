@@ -17,10 +17,10 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 
 const formSchema = z.object({
-  name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
-  email: z.string().email({ message: 'Please enter a valid email.' }),
+  name: z.string().min(2, { message: 'O nome deve ter pelo menos 2 caracteres.' }),
+  email: z.string().email({ message: 'Por favor, insira um email válido.' }),
   phone: z.string().optional(),
-  message: z.string().min(10, { message: 'Message must be at least 10 characters.' }),
+  message: z.string().min(10, { message: 'A mensagem deve ter pelo menos 10 caracteres.' }),
 });
 
 export default function ContactForm() {
@@ -39,8 +39,8 @@ export default function ContactForm() {
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
     toast({
-      title: 'Message Sent!',
-      description: 'Thank you for reaching out. We will get back to you shortly.',
+      title: 'Mensagem Enviada!',
+      description: 'Obrigado por entrar em contato. Retornaremos em breve.',
     });
     form.reset();
   }
@@ -97,7 +97,7 @@ export default function ContactForm() {
               <FormLabel>Mensagem</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Tell us how we can help..."
+                  placeholder="Diga-nos como podemos ajudar..."
                   className="resize-none"
                   {...field}
                 />
@@ -106,7 +106,7 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" className="w-full" size="lg">Send Message</Button>
+        <Button type="submit" className="w-full" size="lg">Enviar Mensagem</Button>
       </form>
     </Form>
   );

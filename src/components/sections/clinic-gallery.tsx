@@ -12,9 +12,9 @@ export default function Clinic() {
     <section id="clinic" className="py-24 sm:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="font-headline text-3xl md:text-4xl font-medium">An Environment of Calm & Precision</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-medium">Um Ambiente de Calma e Precisão</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Our clinic is designed to be a tranquil space where you can feel relaxed and confident in your care.
+            Nossa clínica foi projetada para ser um espaço tranquilo onde você pode se sentir relaxado e confiante em seu cuidado.
           </p>
         </div>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">

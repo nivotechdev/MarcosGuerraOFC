@@ -4,10 +4,10 @@ import Logo from "@/components/logo";
 
 export default function Header() {
   const navItems = [
-    { href: "#specialist", label: "Specialist" },
-    { href: "#treatments", label: "Treatments" },
-    { href: "#clinic", label: "Clinic" },
-    { href: "#contact", label: "Contact" },
+    { href: "#specialist", label: "Especialista" },
+    { href: "#treatments", label: "Tratamentos" },
+    { href: "#clinic", label: "Clínica" },
+    { href: "#contact", label: "Contato" },
   ];
 
   return (
@@ -24,7 +24,7 @@ export default function Header() {
           </nav>
           <div className="flex items-center gap-4">
             <Link href="#contact" passHref>
-              <Button>Book Appointment</Button>
+              <Button>Agendar Consulta</Button>
             </Link>
           </div>
         </div>

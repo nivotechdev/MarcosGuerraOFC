@@ -12,12 +12,12 @@ const ThinSparkleIcon = (props: React.SVGProps<SVGSVGElement>) => (<svg width="2
 const ThinScanIcon = (props: React.SVGProps<SVGSVGElement>) => (<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}><path d="M4 8V6C4 4.89543 4.89543 4 6 4H8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M4 16V18C4 19.1046 4.89543 20 6 20H8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M16 4H18C19.1046 4 20 4.89543 20 6V8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M16 20H18C19.1046 20 20 19.1046 20 18V16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M2 12H22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>);
 
 const treatments = [
-  { icon: ThinImplantIcon, title: "Dental Implants", description: "A permanent, natural-looking solution to replace missing teeth and restore your smile's function." },
-  { icon: ThinVeneerIcon, title: "Porcelain Veneers", description: "Ultra-thin, custom-made shells of porcelain to transform your smile with minimal intervention." },
-  { icon: ThinBracesIcon, title: "Invisalign", description: "State-of-the-art clear aligners for a discreet and efficient path to perfectly straight teeth." },
-  { icon: ThinBotoxIcon, title: "Facial Harmonization", description: "Subtle enhancements to harmonize your features and complement your beautiful smile." },
-  { icon: ThinSparkleIcon, title: "Teeth Whitening", description: "Brighten your smile with our professional, safe, and effective teeth whitening treatments." },
-  { icon: ThinScanIcon, title: "Digital Smile Design", description: "Visualize and co-design your future smile with our advanced 3D simulation technology." },
+  { icon: ThinImplantIcon, title: "Implantes Dentários", description: "Uma solução permanente e de aparência natural para substituir dentes ausentes e restaurar a função do seu sorriso." },
+  { icon: ThinVeneerIcon, title: "Lentes de Contato de Porcelana", description: "Lâminas de porcelana ultrafinas e personalizadas para transformar seu sorriso com intervenção mínima." },
+  { icon: ThinBracesIcon, title: "Invisalign", description: "Alinhadores transparentes de última geração para um caminho discreto e eficiente para dentes perfeitamente alinhados." },
+  { icon: ThinBotoxIcon, title: "Harmonização Facial", description: "Melhorias sutis para harmonizar suas características e complementar seu belo sorriso." },
+  { icon: ThinSparkleIcon, title: "Clareamento Dental", description: "Ilumine seu sorriso com nossos tratamentos de clareamento dental profissionais, seguros e eficazes." },
+  { icon: ThinScanIcon, title: "Design Digital do Sorriso", description: "Visualize e co-desenhe seu futuro sorriso com nossa avançada tecnologia de simulação 3D." },
 ];
 
 export default function Treatments() {
@@ -25,9 +25,9 @@ export default function Treatments() {
     <section id="treatments" className="py-24 sm:py-32 bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="font-headline text-3xl md:text-4xl font-medium">Our Signature Treatments</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-medium">Nossos Tratamentos de Assinatura</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            We combine artistry and technology to deliver personalized solutions for your ideal smile.
+            Combinamos arte e tecnologia para fornecer soluções personalizadas para o seu sorriso ideal.
           </p>
         </div>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -44,7 +44,7 @@ export default function Treatments() {
               </CardContent>
               <div className="p-6 pt-0">
                   <Button variant="link" asChild className="p-0 h-auto font-semibold text-primary hover:text-primary/80">
-                      <Link href="#">Learn More <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                      <Link href="#">Saiba Mais <ArrowRight className="ml-2 h-4 w-4" /></Link>
                   </Button>
               </div>
             </Card>

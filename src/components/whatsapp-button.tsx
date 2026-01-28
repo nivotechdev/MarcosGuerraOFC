@@ -14,7 +14,7 @@ export default function WhatsappButton() {
       >
         <Button size="icon" className="w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 shadow-lg">
           <Phone className="w-7 h-7 text-white" />
-          <span className="sr-only">Contact on WhatsApp</span>
+          <span className="sr-only">Contato no WhatsApp</span>
         </Button>
       </Link>
     </div>

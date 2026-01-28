@@ -2,43 +2,43 @@
   "placeholderImages": [
     {
       "id": "hero-smile",
-      "description": "Close up of a person with a radiant, perfect smile.",
+      "description": "Close-up de uma pessoa com um sorriso radiante e perfeito.",
       "imageUrl": "https://images.unsplash.com/photo-1565343201672-7647a832100e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyYWRpYW50JTIwc21pbGV8ZW58MHx8fHwxNzY5NjI3Nzc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "radiant smile"
     },
     {
       "id": "specialist-photo",
-      "description": "Portrait of a confident and professional female dentist in a modern clinic.",
+      "description": "Retrato de uma dentista confiante e profissional em uma clínica moderna.",
       "imageUrl": "https://images.unsplash.com/photo-1758205307804-097f5437189f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcm9mZXNzaW9uYWwlMjBkZW50aXN0fGVufDB8fHx8MTc2OTYyNzc3OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional dentist"
     },
     {
       "id": "philosophy-image",
-      "description": "Abstract, clean architectural detail of a modern clinic.",
+      "description": "Detalhe arquitetônico abstrato e limpo de uma clínica moderna.",
       "imageUrl": "https://images.unsplash.com/photo-1764004450351-37fb72cb8e8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjBjbGluaWN8ZW58MHx8fHwxNzY5NjI3Nzc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "modern architecture clinic"
     },
     {
       "id": "clinic-reception",
-      "description": "Luxurious and minimalist reception area of a dental clinic.",
+      "description": "Área de recepção luxuosa e minimalista de uma clínica odontológica.",
       "imageUrl": "https://images.unsplash.com/photo-1668911128139-4db2cc34aa5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBjbGluaWMlMjByZWNlcHRpb258ZW58MHx8fHwxNzY5NjI3Nzc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "luxury clinic reception"
     },
     {
       "id": "clinic-operatory",
-      "description": "High-tech and clean dental operatory room.",
+      "description": "Sala de operação odontológica limpa e de alta tecnologia.",
       "imageUrl": "https://images.unsplash.com/photo-1758206523735-079e56f2faf7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkZW50YWwlMjBvcGVyYXRvcnklMjBoaWdoJTIwdGVjaHxlbnwwfHx8fDE3Njk2Mjc3Nzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "dental operatory high tech"
     },
     {
       "id": "clinic-detail",
-      "description": "Artistic interior design detail within the clinic.",
+      "description": "Detalhe de design de interiores artístico dentro da clínica.",
       "imageUrl": "https://images.unsplash.com/photo-1696654149042-196d07713526?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhcnRpc3RpYyUyMGludGVyaW9yJTIwZGV0YWlsfGVufDB8fHx8MTc2OTYyNzc3OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "artistic interior detail"
     },
     {
       "id": "contact-map-blue",
-      "description": "Stylized map with a blue and silver theme showing a location.",
+      "description": "Mapa estilizado com tema azul e prata mostrando uma localização.",
       "imageUrl": "https://images.unsplash.com/photo-1572271781078-caa4bfbfdbb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxibHVlJTIwY2l0eSUyMG1hcHxlbnwwfHx8fDE3Njk2Mjc3Nzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "blue city map"
     }

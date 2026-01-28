@@ -10,10 +10,10 @@ export default function OurPhilosophy() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="text-center md:text-left">
                 <blockquote className="font-headline text-3xl md:text-4xl font-medium text-foreground">
-                “We believe that a beautiful smile is a masterpiece of health and art, crafted with precision, and delivered with compassion.”
+                “Acreditamos que um belo sorriso é uma obra-prima de saúde e arte, criada com precisão e entregue com compaixão.”
                 </blockquote>
                 <p className="mt-4 text-lg text-muted-foreground font-semibold">
-                - Dr. Evelyn Reed
+                - Dra. Evelyn Reed
                 </p>
             </div>
           <div className="max-w-md mx-auto md:mx-0">

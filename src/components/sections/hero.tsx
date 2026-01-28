@@ -13,20 +13,20 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="text-center md:text-left">
             <h1 className="font-headline text-4xl sm:text-5xl md:text-7xl font-semibold tracking-tight leading-tight text-foreground">
-              Transforming Smiles, Elevating Lives.
+              Transformando Sorrisos, Elevando Vidas.
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-foreground/80 max-w-xl mx-auto md:mx-0">
-              Advanced technology and unparalleled care for your dental health and perfect aesthetics.
+              Tecnologia avançada e cuidado incomparável para a sua saúde dentária e estética perfeita.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
               <Link href="#contact" passHref>
                 <Button size="lg" className="text-lg px-10 py-7">
-                  Book Appointment
+                  Agendar Consulta
                 </Button>
               </Link>
               <Link href="#treatments" passHref>
                 <Button size="lg" variant="outline" className="text-lg px-10 py-7 border-2 border-foreground/20 hover:bg-foreground hover:text-background">
-                  Explore Our Treatments <ArrowRight className="ml-2"/>
+                  Explore Nossos Tratamentos <ArrowRight className="ml-2"/>
                 </Button>
               </Link>
             </div>

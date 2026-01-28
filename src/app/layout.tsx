@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster";
 import WhatsappButton from '@/components/whatsapp-button';
 
 export const metadata: Metadata = {
-  title: 'Sorriso Premium | Transforming Smiles, Elevating Lives',
-  description: 'Advanced technology and unparalleled care for your dental health and perfect aesthetics.',
+  title: 'Sorriso Premium | Transformando Sorrisos, Elevando Vidas',
+  description: 'Tecnologia avançada e cuidado incomparável para a sua saúde dentária e estética perfeita.',
 };
 
 export default function RootLayout({
@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="pt-BR" className="scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
