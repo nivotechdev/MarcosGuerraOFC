@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 
 export default function Footer() {
   return (
-    <footer className="bg-foreground text-background">
+    <footer className="bg-foreground text-background border-t-2 border-primary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div>
@@ -32,7 +32,7 @@ export default function Footer() {
               </div>
           </div>
         </div>
-        <div className="border-t border-background/20 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-background/70">
+        <div className="mt-8 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-background/70 border-t border-background/20">
           <div className="flex items-center gap-6">
              <Link href="#" className="hover:text-primary transition-colors">Política de Privacidade</Link>
              <Link href="#" className="hover:text-primary transition-colors">Termos de Uso</Link>

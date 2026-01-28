@@ -8,7 +8,7 @@ export default function SpecialistSection() {
   const specialistImage = PlaceHolderImages.find(img => img.id === "specialist-photo");
 
   return (
-    <section id="specialist" className="py-20 sm:py-28 bg-background">
+    <section id="specialist" className="py-20 sm:py-28 bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="max-w-md mx-auto md:mx-0 mb-5 md:mb-0">

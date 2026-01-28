@@ -22,7 +22,7 @@ const treatments = [
 
 export default function Treatments() {
   return (
-    <section id="treatments" className="py-20 px-5 sm:py-28 sm:px-6 lg:px-8 bg-background">
+    <section id="treatments" className="py-20 px-5 sm:py-28 sm:px-6 lg:px-8 bg-background border-t-2 border-primary">
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="font-headline text-3xl md:text-4xl font-medium">Nossos Tratamentos de Assinatura</h2>
