@@ -16,7 +16,7 @@
     --primary: 187 100% 41.6%; /* Vibrant Cyan Blue #00BCD4 */
     --primary-foreground: 0 0% 100%; /* White */
     
-    --secondary: 0 0% 97.3%; /* Soft Off-white #F8F8F8 */
+    --secondary: 0 0% 100%; /* Pure White */
     --secondary-foreground: 200 71.1% 14.3%;
     
     --muted: 0 0% 90%;
@@ -47,7 +47,7 @@
     --primary: 187 100% 41.6%; /* Vibrant Cyan */
     --primary-foreground: 200 71.1% 14.3%;
 
-    --secondary: 200 71% 10%; /* Darker navy */
+    --secondary: 200 71% 18%; /* Darker navy to match card */
     --secondary-foreground: 0 0% 97.3%;
 
     --muted: 200 71% 25%;

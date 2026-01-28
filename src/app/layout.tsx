@@ -2,6 +2,7 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import WhatsappButton from '@/components/whatsapp-button';
+import BackToTopButton from '@/components/back-to-top-button';
 
 export const metadata: Metadata = {
   title: 'Sorriso Premium | Transformando Sorrisos, Elevando Vidas',
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className="font-body antialiased">
         {children}
         <WhatsappButton />
+        <BackToTopButton />
         <Toaster />
       </body>
     </html>

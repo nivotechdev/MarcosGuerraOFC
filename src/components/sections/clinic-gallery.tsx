@@ -20,43 +20,19 @@ export default function Clinic() {
   ].map(item => PlaceHolderImages.find(img => img.id === item.id)).filter(Boolean);
 
   const desktopLayout = (
-    <div className="mt-16 grid grid-cols-2 grid-rows-2 gap-4 md:gap-8 h-[70vh] max-h-[600px] max-w-5xl mx-auto">
-      {galleryImages[0] && (
-        <div className="col-span-2 row-span-1 relative">
+    <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 max-w-6xl mx-auto h-[400px]">
+      {galleryImages.map((image, index) => image && (
+        <div key={index} className="relative">
           <Image
-            src={galleryImages[0].imageUrl}
-            alt={galleryImages[0].description}
+            src={image.imageUrl}
+            alt={image.description}
             fill
             className="w-full h-full object-cover rounded-lg shadow-lg"
-            sizes="80vw"
-            data-ai-hint={galleryImages[0].imageHint}
+            sizes="(max-width: 768px) 100vw, 33vw"
+            data-ai-hint={image.imageHint}
           />
         </div>
-      )}
-      {galleryImages[1] && (
-        <div className="col-span-1 row-span-1 relative">
-          <Image
-            src={galleryImages[1].imageUrl}
-            alt={galleryImages[1].description}
-            fill
-            className="w-full h-full object-cover rounded-lg shadow-lg"
-            sizes="(max-width: 768px) 100vw, 40vw"
-            data-ai-hint={galleryImages[1].imageHint}
-          />
-        </div>
-      )}
-      {galleryImages[2] && (
-        <div className="col-span-1 row-span-1 relative">
-          <Image
-            src={galleryImages[2].imageUrl}
-            alt={galleryImages[2].description}
-            fill
-            className="w-full h-full object-cover rounded-lg shadow-lg"
-            sizes="(max-width: 768px) 100vw, 40vw"
-            data-ai-hint={galleryImages[2].imageHint}
-          />
-        </div>
-      )}
+      ))}
     </div>
   );
 
@@ -68,7 +44,7 @@ export default function Clinic() {
                     item && (
                     <CarouselItem key={index}>
                         <div className="p-1">
-                        <Card className="border-none">
+                        <Card className="border-none bg-transparent shadow-none">
                             <CardContent className="flex aspect-square items-center justify-center p-0 relative">
                                 <Image
                                     src={item.imageUrl}

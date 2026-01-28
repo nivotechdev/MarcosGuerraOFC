@@ -32,7 +32,7 @@ export default function Treatments() {
         </div>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {treatments.map((treatment) => (
-            <Card key={treatment.title} className="text-left bg-secondary shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
+            <Card key={treatment.title} className="text-left bg-secondary shadow-[0_4px_20px_rgba(10,46,61,0.05)] transition-shadow duration-300 flex flex-col">
               <CardHeader>
                 <div className="bg-primary/10 p-3 rounded-md mb-4 self-start">
                     <treatment.icon className="h-8 w-8 text-primary" />
