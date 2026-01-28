@@ -26,7 +26,7 @@ export default function Header() {
   return (
     <header className={cn(
       "sticky top-0 left-0 right-0 z-[1000] bg-background/80 backdrop-blur-md",
-      !open && "border-b-2 border-primary"
+      "border-b-2 border-primary"
     )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -40,7 +40,7 @@ export default function Header() {
           </nav>
           <div className="flex items-center gap-4">
             <Link href="#contact" passHref className="hidden md:block">
-              <Button>Agendar Consulta</Button>
+              <Button>Agendar Avaliação</Button>
             </Link>
             <div className="md:hidden">
                 <Sheet open={open} onOpenChange={setOpen}>
@@ -50,7 +50,7 @@ export default function Header() {
                             <span className="sr-only">Abrir menu</span>
                         </Button>
                     </SheetTrigger>
-                    <SheetContent side="right" className="w-full bg-background/95 backdrop-blur-xl">
+                    <SheetContent side="right" className="w-full h-screen bg-background/95 backdrop-blur-xl">
                         <SheetHeader className="flex-row justify-between items-center">
                             <SheetTitle className="sr-only">Menu Principal</SheetTitle>
                              <Logo />
@@ -73,7 +73,7 @@ export default function Header() {
                                 </Link>
                             ))}
                              <Link href="#contact" passHref>
-                                <Button onClick={() => setOpen(false)} size="lg" className="mt-8 w-full max-w-xs mx-auto">Agendar Consulta</Button>
+                                <Button onClick={() => setOpen(false)} size="lg" className="mt-8 w-full max-w-xs mx-auto">Agendar Avaliação</Button>
                             </Link>
                         </nav>
                     </SheetContent>
