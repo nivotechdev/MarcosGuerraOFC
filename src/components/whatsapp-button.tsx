@@ -12,7 +12,7 @@ export default function WhatsappButton() {
         rel="noopener noreferrer"
         passHref
       >
-        <Button size="icon" className="w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 shadow-lg">
+        <Button size="icon" className="w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#1EBE57] shadow-lg animate-pulse-whatsapp">
           <Phone className="w-7 h-7 text-white" />
           <span className="sr-only">Contato no WhatsApp</span>
         </Button>

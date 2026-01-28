@@ -12,7 +12,7 @@ export default function SpecialistSection() {
   ];
 
   return (
-    <section id="specialist" className="py-16 sm:py-28 bg-secondary">
+    <section id="specialist" className="py-16 sm:py-28 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
              <h2 className="font-headline text-3xl md:text-4xl font-medium">O Especialista</h2>
@@ -30,12 +30,12 @@ export default function SpecialistSection() {
               />
             )}
           </div>
-          <div className="text-center md:text-left bg-background p-8 rounded-lg shadow-md">
+          <div className="text-center md:text-left bg-secondary p-8 rounded-lg shadow-md">
             <h3 className="font-headline text-3xl font-medium">
               Dr. Marcos Guerra, PhD
             </h3>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              Dr. Guerra combina uma abordagem científica rigorosa com um olhar artístico apurado para entregar resultados incomparáveis. Seu compromisso com a educação contínua nas mais recentes técnicas de odontologia digital garante que cada paciente receba o cuidado mais eficaz e personalizado disponível.
+              A autoridade por trás do seu novo sorriso. Dr. Guerra combina uma abordagem científica rigorosa com um olhar artístico apurado para entregar resultados incomparáveis.
             </p>
             <div className="mt-8 space-y-4">
               {achievements.map((item, index) => (

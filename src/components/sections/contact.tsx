@@ -49,7 +49,10 @@ export default function ContactSection() {
                 <ContactForm />
             </div>
         </div>
-        <div className="mt-16 h-96 rounded-lg overflow-hidden shadow-lg relative">
+        <div className="mt-16 text-center">
+            <p className="text-lg text-muted-foreground italic">"Agendamento simples, ambiente acolhedor e localização privilegiada."</p>
+        </div>
+        <div className="mt-8 h-96 rounded-lg overflow-hidden shadow-lg relative">
             {mapImage && (
                 <Image
                     src={mapImage.imageUrl}
