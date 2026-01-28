@@ -67,11 +67,7 @@ export default function ContactSection() {
           src={mapUrl}
         ></iframe>
         {!isMapActive && (
-            <div className="absolute inset-0 flex items-center justify-center bg-foreground/10 cursor-pointer transition-opacity hover:opacity-0">
-                <div className="bg-background/80 backdrop-blur-sm p-4 rounded-lg text-foreground font-semibold shadow-md">
-                    Clique para interagir com o mapa
-                </div>
-            </div>
+            <div className="absolute inset-0 flex items-center justify-center bg-foreground/10 cursor-pointer transition-opacity hover:opacity-0" />
         )}
       </div>
 
@@ -86,7 +82,7 @@ export default function ContactSection() {
                         href={`https://www.google.com/maps/search/?api=1&query=${encodeURI(mapQuery)}`} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-lg text-muted-foreground hover:text-primary transition-colors"
+                        className="text-lg text-foreground/80 hover:text-primary transition-colors"
                     >
                         {address}
                     </a>
