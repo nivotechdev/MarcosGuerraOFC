@@ -26,7 +26,8 @@ export default function Header() {
   return (
     <header className={cn(
       "sticky top-0 left-0 right-0 z-[1000] bg-background/80 backdrop-blur-md",
-      "border-b-2 border-primary"
+      "border-b-2 border-primary",
+      open && "border-b-transparent"
     )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -73,7 +74,7 @@ export default function Header() {
                                 </Link>
                             ))}
                              <Link href="#contact" passHref>
-                                <Button onClick={() => setOpen(false)} size="lg" className="mt-8 w-full max-w-xs mx-auto">Agendar Avaliação</Button>
+                                <Button onClick={() => setOpen(false)} size="lg" className="mt-8 w-full max-w-xs mx-auto h-12">Agendar Avaliação</Button>
                             </Link>
                         </nav>
                     </SheetContent>
