@@ -12,7 +12,7 @@ export default function ContactSection() {
     const [isMapActive, setIsMapActive] = React.useState(false);
 
     return (
-        <section id="contact" className="py-20 sm:py-28 bg-gradient-to-b from-secondary to-background">
+        <section id="contact" className="py-20 sm:py-28 bg-secondary">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center max-w-2xl mx-auto mb-16">
                     <h2 className="font-headline text-3xl md:text-4xl font-medium">Nossa Localização Privilegiada</h2>

@@ -70,12 +70,14 @@
 @layer base {
   html {
     scroll-padding-top: 80px; /* 80px */
+    overflow-x: hidden;
   }
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
   }
   button, [role="button"] {
     touch-action: manipulation;
