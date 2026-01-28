@@ -2,57 +2,45 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "Clean, lifestyle shot of a person smiling confidently.",
-      "imageUrl": "https://images.unsplash.com/photo-1585940084125-5dd1b82d8ba4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsaWZlc3R5bGUlMjBjbGVhbnxlbnwwfHx8fDE3Njk2MjY5MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "lifestyle clean"
+      "description": "Minimalist and bright dental clinic interior.",
+      "imageUrl": "https://images.unsplash.com/photo-1629904853716-f0bc64eea039?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtaW5pbWFsaXN0JTIwZGVudGFsJTIwY2xpbmljfGVufDB8fHx8MTc3MDA4MzA0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "minimalist dental clinic"
     },
     {
-      "id": "association-logo-1",
-      "description": "Placeholder for a dental association logo.",
-      "imageUrl": "https://images.unsplash.com/photo-1722577296159-a6191d589146?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsb2dvJTIwY3Jlc3R8ZW58MHx8fHwxNzY5NjI2OTA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "logo crest"
+      "id": "specialist-photo",
+      "description": "Portrait of a confident and professional dentist.",
+      "imageUrl": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZW50aXN0JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzcwMDgzMDQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dentist portrait"
     },
     {
-      "id": "association-logo-2",
-      "description": "Placeholder for another dental association logo.",
-      "imageUrl": "https://images.unsplash.com/photo-1625916354218-614cc4222500?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsb2dvJTIwc2VhbHxlbnwwfHx8fDE3Njk2MjY5MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "logo seal"
+      "id": "gallery-1",
+      "description": "High-end clinic waiting area with designer furniture.",
+      "imageUrl": "https://images.unsplash.com/photo-1556742512-35a00040e3d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoaWdoJTIwZW5kJTIwY2xpbmljJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzcwMDgzMDQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "clinic interior design"
     },
     {
-      "id": "association-logo-3",
-      "description": "Placeholder for a third dental association logo.",
-      "imageUrl": "https://images.unsplash.com/photo-1610340804490-e9d7b22aee1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsb2dvJTIwbWluaW1hbGlzdHxlbnwwfHx8fDE3Njk2MjY5MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "logo minimalist"
+      "id": "gallery-2",
+      "description": "Sleek and modern dental treatment room.",
+      "imageUrl": "https://images.unsplash.com/photo-1631049214732-f19b16538350?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzbGVlayUyMGRlbnRhbCUyMHJvb218ZW58MHx8fHwxNzcwMDgzMDQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dental room modern"
     },
     {
-      "id": "gallery-reception",
-      "description": "Bright and modern clinic reception area.",
-      "imageUrl": "https://images.unsplash.com/photo-1762625570087-6d98fca29531?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjbGluaWMlMjByZWNlcHRpb258ZW58MHx8fHwxNzY5NjI2NDUyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "clinic reception"
+      "id": "gallery-3",
+      "description": "Architectural detail of the clinic's hallway.",
+      "imageUrl": "https://images.unsplash.com/photo-1581351123004-a01b33efb343?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjbGluaWMlMjBjb3JyaWRvcnxlbnwwfHx8fDE3NzAwODMwNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "clinic corridor"
     },
     {
-      "id": "gallery-tech",
-      "description": "High-tech dental equipment in a clean environment.",
-      "imageUrl": "https://images.unsplash.com/photo-1598531136726-4157529f8cbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkZW50YWwlMjB0ZWNobm9sb2d5fGVufDB8fHx8MTc2OTYyNjkwOHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "dental technology"
-    },
-    {
-      "id": "gallery-sterilization",
-      "description": "State-of-the-art sterilization room.",
-      "imageUrl": "https://images.unsplash.com/photo-1758653500328-1c4474a8adfe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdGVyaWxpemF0aW9uJTIwcm9vbXxlbnwwfHx8fDE3Njk2MjY5MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "sterilization room"
-    },
-    {
-      "id": "gallery-detail",
-      "description": "Close-up of dental tools in a sterile setting.",
-      "imageUrl": "https://images.unsplash.com/photo-1626878880028-0438b1403b3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkZW50YWwlMjB0b29sc3xlbnwwfHx8fDE3Njk1ODI2MDR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "dental tools"
-    },
-    {
-      "id": "gallery-consulting",
+      "id": "gallery-4",
       "description": "A comfortable and professional consulting room.",
       "imageUrl": "https://images.unsplash.com/photo-1615983234885-918e049a2254?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb25zdWx0aW5nJTIwcm9vbXxlbnwwfHx8fDE3Njk2MjY5MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "consulting room"
+    },
+    {
+      "id": "gallery-5",
+      "description": "Close up on a detail of the clinic's decoration.",
+      "imageUrl": "https://images.unsplash.com/photo-1600210492493-4171b70a9370?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtaW5pbWFsaXN0JTIwaW50ZXJpb3IlMjBkZXRhaWx8ZW58MHx8fHwxNzcwMDgzMDQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "minimalist interior detail"
     },
     {
       "id": "contact-map",

@@ -2,32 +2,37 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Separator } from "@/components/ui/separator";
 
-export default function SocialProof() {
-  const logos = PlaceHolderImages.filter(img => img.id.startsWith("association-logo"));
+export default function Specialist() {
+  const specialistImage = PlaceHolderImages.find(img => img.id === "specialist-photo");
 
   return (
-    <section id="autoridade" className="py-24 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="max-w-3xl mx-auto">
-          <p className="text-lg text-muted-foreground">
-            Liderada pelo Dr. [Nome do Dentista], nossa clínica é referência em odontologia estética e reconstrutiva, com especializações e PhD nas mais renomadas instituições internacionais.
-          </p>
-        </div>
-        <div className="mt-12">
-          <Separator className="max-w-xs mx-auto" />
-        </div>
-        <div className="mt-12 flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
-          {logos.map((logo) => (
-            <div key={logo.id} className="relative h-12 w-36 filter grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300">
+    <section id="specialist" className="py-24 sm:py-32 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="max-w-md mx-auto md:mx-0">
+             {specialistImage && (
               <Image
-                src={logo.imageUrl}
-                alt={logo.description}
-                fill
-                className="object-contain"
-                data-ai-hint={logo.imageHint}
+                src={specialistImage.imageUrl}
+                alt={specialistImage.description}
+                width={500}
+                height={600}
+                className="rounded-lg object-cover shadow-lg"
+                data-ai-hint={specialistImage.imageHint}
               />
-            </div>
-          ))}
+            )}
+          </div>
+          <div className="text-center md:text-left">
+            <h2 className="font-headline text-3xl md:text-4xl font-medium">
+              Led by a Master of the Craft
+            </h2>
+            <Separator className="my-6 max-w-xs mx-auto md:mx-0" />
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Dr. Evelyn Reed (PhD) is a world-renowned specialist in cosmetic and restorative dentistry. With over 15 years of experience and advanced degrees from top international institutions, she combines a rigorous scientific approach with a keen artistic eye to deliver unparalleled results.
+            </p>
+            <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
+              Her commitment to continuous education and research in the latest digital dentistry techniques ensures that every patient receives the most effective and minimally invasive care available.
+            </p>
+          </div>
         </div>
       </div>
     </section>

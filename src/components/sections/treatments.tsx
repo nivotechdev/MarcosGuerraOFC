@@ -1,107 +1,82 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Smile, ScanLine } from "lucide-react";
 
-// Custom inline SVG for a Tooth icon (as it's not in lucide-react)
-const ToothIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.5"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    {...props}
-  >
-    <path d="M6.204 13.911c-1.121.326-1.577 1.62-1.12 2.682.458 1.063 1.773 1.543 2.894 1.218" />
-    <path d="M17.796 13.911c1.121.326 1.577 1.62 1.12 2.682-.458 1.063-1.773 1.543-2.894 1.218" />
-    <path d="M8.22 21c-.818-1.049-.818-2.51 0-3.558" />
-    <path d="M15.78 21c.818-1.049.818-2.51 0-3.558" />
-    <path d="M12.983 4.545c.823 1.048.823 2.507 0 3.555" />
-    <path d="M11.017 4.545c-.823 1.048-.823 2.507 0 3.555" />
-    <path d="M7.05 7.199c-1.122-.326-2.437.154-2.895 1.218C3.7 9.479 4.155 10.773 5.276 11.1" />
-    <path d="M16.95 7.199c1.122-.326 2.437.154 2.895 1.218.457 1.062.002 2.356-1.119 2.682" />
-    <path d="M12 21v-3.5" />
-    <path d="M12 8V3" />
-    <path d="M7.5 17.5a4.5 4.5 0 0 1 9 0" />
-    <path d="M5.276 11.1c.144.042.292.079.444.111" />
-    <path d="M18.28 11.1c-.144.042-.292.079-.444.111" />
-  </svg>
+const ThinVeneerIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+        <path d="M4 6C4 4.89543 4.89543 4 6 4H18C19.1046 4 20 4.89543 20 6V14C20 15.1046 19.1046 16 18 16H14L12 19L10 16H6C4.89543 16 4 15.1046 4 14V6Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
 );
 
-// Custom inline SVG for a Dental Implant icon
-const ImplantIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.5"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    {...props}
-  >
-    <path d="M22 12c-2 3-5.5 3-5.5 3s-1.5-1.5-2.5-3c-1-1.5-1.5-3.5-1-5 .5-1.5 1-2.5 1-2.5s3.5 1 5 3c1.5 2 2.5 5 2.5 5Z" />
-    <path d="m14 14-2.5 2.5" />
-    <path d="M6 18c-1.5-1.5-2-3.5-2-5.5 0-2.5.5-4 1-5.5" />
-    <path d="M10 12c-1-1-1.5-2.5-1-4" />
-    <path d="m4.5 13.5-1-1" />
-    <path d="M12 22v-3" />
-    <path d="M12 11V9" />
-    <path d="m3.5 7.5 1-1" />
-  </svg>
+const ThinImplantIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+        <path d="M12 10V20M12 20H15M12 20H9" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M17 10C17 7.23858 14.7614 5 12 5C9.23858 5 7 7.23858 7 10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M19 14H5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
 );
 
+const ThinSparkleIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+        <path d="M12 3L13.65 8.35L19 10L13.65 11.65L12 17L10.35 11.65L5 10L10.35 8.35L12 3Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M5 19L6 17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M19 19L18 17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+);
+
+const ThinScanIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+        <path d="M4 8V6C4 4.89543 4.89543 4 6 4H8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M4 16V18C4 19.1046 4.89543 20 6 20H8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M16 4H18C19.1046 4 20 4.89543 20 6V8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M16 20H18C19.1046 20 20 19.1046 20 18V16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M2 12H22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+);
 
 const treatments = [
   {
-    icon: ToothIcon,
-    title: "Lentes de Contato Dental",
-    description: "Restaure a forma e a cor do seu sorriso com facetas ultrafinas, aplicadas com precisão digital para um resultado natural e duradouro.",
+    icon: ThinVeneerIcon,
+    title: "Porcelain Veneers",
+    description: "Ultra-thin, custom-made shells of porcelain to transform your smile with minimal intervention.",
   },
   {
-    icon: ImplantIcon,
-    title: "Implantes Dentários",
-    description: "Recupere a função e a estética com implantes de titânio biocompatíveis. Uma solução definitiva, segura e com aparência natural.",
+    icon: ThinImplantIcon,
+    title: "Dental Implants",
+    description: "A permanent, natural-looking solution to replace missing teeth and restore your smile's function.",
   },
   {
-    icon: Smile,
-    title: "Harmonização Orofacial",
-    description: "Realce a beleza do seu rosto e sorriso com procedimentos minimamente invasivos que equilibram e rejuvenescem suas feições.",
+    icon: ThinSparkleIcon,
+    title: "Facial Aesthetics",
+    description: "Subtle enhancements to harmonize your features and complement your beautiful smile.",
   },
   {
-    icon: ScanLine,
-    title: "Ortodontia Digital",
-    description: "Alinhadores transparentes e planejamento 100% digital para corrigir seu sorriso de forma discreta, confortável e previsível.",
+    icon: ThinScanIcon,
+    title: "Digital Orthodontics",
+    description: "State-of-the-art clear aligners for a discreet and efficient path to perfectly straight teeth.",
   },
 ];
 
 export default function Treatments() {
   return (
-    <section id="tratamentos" className="py-24 bg-secondary">
+    <section id="treatments" className="py-24 sm:py-32 bg-secondary/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold">Tratamentos de Vanguarda</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-medium">Our Signature Treatments</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Combinamos arte e a mais alta tecnologia para oferecer soluções personalizadas para o seu sorriso.
+            We combine artistry and technology to deliver personalized solutions for your ideal smile.
           </p>
         </div>
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {treatments.map((treatment, index) => (
-            <Card key={index} className="text-center group hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
-              <CardHeader className="items-center">
-                <div className="bg-primary/10 p-4 rounded-full group-hover:bg-primary transition-colors duration-300">
-                  <treatment.icon className="h-8 w-8 text-primary group-hover:text-primary-foreground" />
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {treatments.map((treatment) => (
+            <Card key={treatment.title} className="text-left bg-transparent border shadow-sm hover:shadow-lg transition-shadow duration-300">
+              <CardHeader className="flex flex-row items-start gap-4 space-y-0">
+                 <div className="bg-primary/10 p-3 rounded-md mt-1">
+                  <treatment.icon className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="pt-4">{treatment.title}</CardTitle>
+                <div>
+                    <CardTitle className="font-semibold text-lg">{treatment.title}</CardTitle>
+                    <p className="text-muted-foreground pt-2">{treatment.description}</p>
+                </div>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">{treatment.description}</p>
-              </CardContent>
             </Card>
           ))}
         </div>

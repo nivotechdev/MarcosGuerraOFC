@@ -1,73 +1,30 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { MapPin, Phone, Clock } from "lucide-react";
+import ContactForm from "@/components/contact-form";
 
-export default function Contact() {
+export default function Location() {
   const mapImage = PlaceHolderImages.find(img => img.id === "contact-map");
 
-  const contactDetails = [
-    {
-      icon: MapPin,
-      title: "Endereço",
-      text: "Av. Principal, 123, Sala 404, Bairro Nobre, Cidade - UF, 12345-678",
-    },
-    {
-      icon: Phone,
-      title: "WhatsApp",
-      text: "(11) 98765-4321",
-      link: "https://wa.me/5511987654321",
-    },
-    {
-      icon: Clock,
-      title: "Horário de Atendimento",
-      text: "Segunda a Sexta, das 08:00 às 18:00",
-    },
-  ];
-
   return (
-    <section id="contato" className="py-24 bg-secondary">
+    <section id="location" className="py-24 sm:py-32 bg-secondary/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold">Agende Sua Avaliação</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-medium">Begin Your Transformation</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Dê o primeiro passo para o sorriso dos seus sonhos. Nossa equipe está pronta para oferecer um atendimento personalizado e exclusivo.
+            Schedule a consultation today. We are conveniently located in the heart of the city.
           </p>
         </div>
         <div className="mt-16">
-          <Card className="overflow-hidden">
+          <Card className="overflow-hidden shadow-lg">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="p-8 md:p-12 flex flex-col justify-center">
-                <h3 className="text-2xl font-semibold mb-8">Informações de Contato</h3>
-                <div className="space-y-6">
-                  {contactDetails.map((item, index) => (
-                    <div key={index} className="flex items-start gap-4">
-                      <item.icon className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                      <div>
-                        <h4 className="font-semibold">{item.title}</h4>
-                        {item.link ? (
-                          <Link href={item.link} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                            {item.text}
-                          </Link>
-                        ) : (
-                          <p className="text-muted-foreground">{item.text}</p>
-                        )}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-                <div className="mt-10">
-                   <Link href="https://wa.me/5511987654321" target="_blank" rel="noopener noreferrer" passHref>
-                    <Button size="lg" className="w-full text-lg">
-                      <Phone className="mr-2 h-5 w-5" />
-                      Falar pelo WhatsApp
-                    </Button>
-                   </Link>
-                </div>
+                <h3 className="text-2xl font-semibold mb-8">Book an Appointment</h3>
+                <ContactForm />
               </div>
-              <div className="relative min-h-[300px] lg:min-h-[500px]">
+              <div className="relative min-h-[400px] lg:min-h-full">
                 {mapImage && (
                   <Image
                     src={mapImage.imageUrl}
@@ -77,6 +34,17 @@ export default function Contact() {
                     data-ai-hint={mapImage.imageHint}
                   />
                 )}
+                 <div className="absolute bottom-8 left-8 bg-background p-6 rounded-lg shadow-xl">
+                    <h4 className="font-bold text-lg">Our Location</h4>
+                    <address className="not-italic text-muted-foreground mt-2">
+                        123 Luxury Avenue, Suite 101<br/>
+                        Metropolis, 12345
+                    </address>
+                     <div className="flex items-center gap-4 mt-4 text-muted-foreground">
+                        <Clock className="h-5 w-5 text-primary"/>
+                        <span>Mon - Fri, 9am - 6pm</span>
+                    </div>
+                </div>
               </div>
             </div>
           </Card>
