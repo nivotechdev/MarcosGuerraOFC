@@ -22,8 +22,8 @@ const treatments = [
 
 export default function Treatments() {
   return (
-    <section id="treatments" className="py-16 sm:py-28 bg-secondary">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="treatments" className="py-20 px-5 sm:py-28 sm:px-6 lg:px-8 bg-background">
+      <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="font-headline text-3xl md:text-4xl font-medium">Nossos Tratamentos de Assinatura</h2>
           <p className="mt-4 text-lg text-muted-foreground">
@@ -32,7 +32,7 @@ export default function Treatments() {
         </div>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {treatments.map((treatment) => (
-            <Card key={treatment.title} className="text-left bg-background shadow-[0_4px_20px_rgba(10,46,61,0.05)] transition-shadow duration-300 flex flex-col">
+            <Card key={treatment.title} className="text-left bg-secondary shadow-[0_4px_20px_rgba(10,46,61,0.05)] transition-shadow duration-300 flex flex-col hover:shadow-xl">
               <CardHeader>
                 <div className="bg-primary/10 p-3 rounded-md mb-4 self-start">
                     <treatment.icon className="h-8 w-8 text-primary" />
@@ -40,11 +40,11 @@ export default function Treatments() {
                 <CardTitle className="font-headline text-2xl">{treatment.title}</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
-                <p className="text-muted-foreground">{treatment.description}</p>
+                <p className="text-foreground/80">{treatment.description}</p>
               </CardContent>
               <div className="p-6 pt-0">
                   <Button variant="link" asChild className="p-0 h-auto font-semibold text-primary hover:text-primary/80">
-                      <Link href="#">Saiba Mais <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                      <Link href="#contact">Saiba Mais <ArrowRight className="ml-2 h-4 w-4" /></Link>
                   </Button>
               </div>
             </Card>

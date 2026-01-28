@@ -5,10 +5,11 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
-  const heroImage = PlaceHolderImages.find(img => img.id === "clinic-reception");
+  const heroImage = PlaceHolderImages.find(img => img.id === "clinic-detail");
 
   return (
     <section id="home" className="relative w-full min-h-screen flex items-center bg-background pt-20">
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-0"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="text-center md:text-left">

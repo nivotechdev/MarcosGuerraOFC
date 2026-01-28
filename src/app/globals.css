@@ -69,12 +69,15 @@
 
 @layer base {
   html {
-    scroll-padding-top: 5rem; /* 80px */
+    scroll-padding-top: 80px; /* 80px */
   }
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+  }
+  button, [role="button"] {
+    touch-action: manipulation;
   }
 }

@@ -12,8 +12,8 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <HeroSection />
-        <Treatments />
         <SpecialistSection />
+        <Treatments />
         <Clinic />
         <ContactSection />
       </main>

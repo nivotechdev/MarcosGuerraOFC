@@ -12,13 +12,14 @@ export default function SpecialistSection() {
   ];
 
   return (
-    <section id="specialist" className="py-16 sm:py-28 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="specialist" className="py-20 px-5 sm:py-28 sm:px-6 lg:px-8 bg-secondary">
+      <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto">
-             <h2 className="font-headline text-3xl md:text-4xl font-medium">O Especialista</h2>
+             <h2 className="font-headline text-3xl md:text-4xl font-medium">O Especialista por Trás do Sorriso</h2>
+             <p className="mt-4 text-lg text-muted-foreground">A autoridade e a arte que definem a excelência.</p>
         </div>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <div className="max-w-md mx-auto md:mx-0">
+          <div className="max-w-md mx-auto md:mx-0 md:mb-0 mb-10">
              {specialistImage && (
               <Image
                 src={specialistImage.imageUrl}
@@ -30,16 +31,16 @@ export default function SpecialistSection() {
               />
             )}
           </div>
-          <div className="text-center md:text-left bg-secondary p-8 rounded-lg shadow-md">
+          <div className="text-center md:text-left">
             <h3 className="font-headline text-3xl font-medium">
               Dr. Marcos Guerra, PhD
             </h3>
-            <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+            <p className="mt-6 text-lg text-foreground/80 leading-relaxed">
               A autoridade por trás do seu novo sorriso. Dr. Guerra combina uma abordagem científica rigorosa com um olhar artístico apurado para entregar resultados incomparáveis.
             </p>
             <div className="mt-8 space-y-4">
               {achievements.map((item, index) => (
-                <div key={index} className="flex items-center gap-4">
+                <div key={index} className="flex items-center gap-4 justify-center md:justify-start">
                   <item.icon className="h-6 w-6 text-primary" />
                   <span className="text-foreground/80">{item.text}</span>
                 </div>
