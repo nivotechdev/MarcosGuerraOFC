@@ -1,7 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Clock, Mail, Phone } from "lucide-react";
+import { Clock, Mail, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const WhatsappIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -13,15 +11,17 @@ const WhatsappIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 
 export default function ContactSection() {
-  const mapImage = PlaceHolderImages.find(img => img.id === "contact-map-blue");
+    const address = "Avenida Paulista, 1578 - Bela Vista, São Paulo - SP";
+    const mapQuery = "Marcos Guerra Odontologia, Avenida Paulista, 1578, São Paulo";
+    const mapUrl = `https://maps.google.com/maps?q=${encodeURI(mapQuery)}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
 
   return (
-    <section id="contact" className="bg-secondary">
+    <section id="contact" className="bg-background">
       <div className="container mx-auto text-center py-20 px-5 sm:py-28 sm:px-6 lg:px-8">
         <h2 className="font-headline text-3xl md:text-4xl font-medium">Comece Sua Transformação</h2>
         <p className="mt-4 text-lg text-muted-foreground italic">"Agendamento simples, ambiente acolhedor e localização privilegiada."</p>
         
-        <div className="mt-12 max-w-lg mx-auto bg-background p-8 md:p-12 rounded-lg shadow-lg">
+        <div className="mt-12 max-w-lg mx-auto bg-secondary p-8 md:p-12 rounded-lg shadow-lg">
             <h3 className="font-headline text-2xl font-semibold mb-6">Falar com Dr. Marcos no WhatsApp</h3>
             <Link href="https://wa.me/5511987654321" target="_blank" rel="noopener noreferrer" passHref>
                 <Button size="lg" className="w-full text-lg py-6">
@@ -49,17 +49,26 @@ export default function ContactSection() {
         </div>
       </div>
       
-      <div className="h-96 w-full relative">
-          {mapImage && (
-              <Image
-                  src={mapImage.imageUrl}
-                  alt={mapImage.description}
-                  fill
-                  className="object-cover"
-                  data-ai-hint={mapImage.imageHint}
-              />
-          )}
+      <div className="relative w-full h-[350px] md:h-[450px]">
+        <iframe
+          className="absolute inset-0 w-full h-full border-0"
+          style={{ filter: 'grayscale(1) contrast(1.1) opacity(0.9)' }}
+          loading="lazy"
+          allowFullScreen
+          referrerPolicy="no-referrer-when-downgrade"
+          src={mapUrl}
+        ></iframe>
+         <div className="absolute bottom-5 left-1/2 -translate-x-1/2 w-[calc(100%-2.5rem)] max-w-sm">
+            <div className="bg-background/80 backdrop-blur-md rounded-lg p-4 shadow-lg text-center">
+                <h4 className="font-semibold text-foreground flex items-center justify-center gap-2"><MapPin className="h-5 w-5 text-primary" /> Endereço</h4>
+                <p className="text-foreground/80 mt-2">{address}</p>
+                <Link href={`https://www.google.com/maps/search/?api=1&query=${encodeURI(mapQuery)}`} target="_blank" rel="noopener noreferrer" passHref>
+                    <Button variant="link" className="mt-2 text-primary font-bold">Como Chegar</Button>
+                </Link>
+            </div>
+        </div>
       </div>
+      <div className="h-[10px] w-full bg-primary"></div>
     </section>
   );
 }
