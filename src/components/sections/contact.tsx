@@ -1,6 +1,10 @@
+'use client';
+
 import Link from "next/link";
-import { Clock, Mail, Phone, MapPin } from "lucide-react";
+import { Clock, Mail, Phone, ParkingCircle, Accessibility } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import React from "react";
 
 const WhatsappIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" {...props}>
@@ -14,6 +18,7 @@ export default function ContactSection() {
     const address = "Avenida Paulista, 1578 - Bela Vista, São Paulo - SP";
     const mapQuery = "Marcos Guerra Odontologia, Avenida Paulista, 1578, São Paulo";
     const mapUrl = `https://maps.google.com/maps?q=${encodeURI(mapQuery)}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+    const [isMapActive, setIsMapActive] = React.useState(false);
 
   return (
     <section id="contact" className="bg-background">
@@ -49,22 +54,60 @@ export default function ContactSection() {
         </div>
       </div>
       
-      <div className="relative w-full h-[350px] md:h-[450px]">
+      <div className="relative w-full h-[300px] md:h-[450px]" onClick={() => setIsMapActive(true)}>
         <iframe
           className="absolute inset-0 w-full h-full border-0"
-          style={{ filter: 'grayscale(1) contrast(1.1) opacity(0.9)' }}
+          style={{ 
+              filter: 'saturate(0.5)',
+              pointerEvents: isMapActive ? 'auto' : 'none',
+            }}
           loading="lazy"
           allowFullScreen
           referrerPolicy="no-referrer-when-downgrade"
           src={mapUrl}
         ></iframe>
-         <div className="absolute bottom-5 left-1/2 -translate-x-1/2 w-[calc(100%-2.5rem)] max-w-sm">
-            <div className="bg-background/80 backdrop-blur-md rounded-lg p-4 shadow-lg text-center">
-                <h4 className="font-semibold text-foreground flex items-center justify-center gap-2"><MapPin className="h-5 w-5 text-primary" /> Endereço</h4>
-                <p className="text-foreground/80 mt-2">{address}</p>
-                <Link href={`https://www.google.com/maps/search/?api=1&query=${encodeURI(mapQuery)}`} target="_blank" rel="noopener noreferrer" passHref>
-                    <Button variant="link" className="mt-2 text-primary font-bold">Como Chegar</Button>
-                </Link>
+        {!isMapActive && (
+            <div className="absolute inset-0 flex items-center justify-center bg-foreground/10 cursor-pointer transition-opacity hover:opacity-0">
+                <div className="bg-background/80 backdrop-blur-sm p-4 rounded-lg text-foreground font-semibold shadow-md">
+                    Clique para interagir com o mapa
+                </div>
+            </div>
+        )}
+      </div>
+
+      <Separator />
+
+      <div className="bg-secondary py-16">
+        <div className="container mx-auto px-10 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 items-center text-center md:text-left">
+                <div>
+                    <h3 className="font-headline text-2xl md:text-3xl text-foreground mb-4">Nossa Localização</h3>
+                    <a 
+                        href={`https://www.google.com/maps/search/?api=1&query=${encodeURI(mapQuery)}`} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-lg text-muted-foreground hover:text-primary transition-colors"
+                    >
+                        {address}
+                    </a>
+                    <div className="mt-6 flex justify-center md:justify-start">
+                        <Link href={`https://www.google.com/maps/search/?api=1&query=${encodeURI(mapQuery)}`} target="_blank" rel="noopener noreferrer" passHref>
+                            <Button variant="outline" className="border-primary text-foreground hover:bg-primary/10">
+                                Abrir no GPS / Google Maps
+                            </Button>
+                        </Link>
+                    </div>
+                </div>
+                <div className="flex flex-col gap-6 items-center md:items-start md:pl-12">
+                    <div className="flex items-center gap-4">
+                        <ParkingCircle className="h-7 w-7 text-primary" />
+                        <span className="text-foreground/80">Estacionamento no Local</span>
+                    </div>
+                    <div className="flex items-center gap-4">
+                        <Accessibility className="h-7 w-7 text-primary" />
+                        <span className="text-foreground/80">Acessibilidade Completa</span>
+                    </div>
+                </div>
             </div>
         </div>
       </div>
