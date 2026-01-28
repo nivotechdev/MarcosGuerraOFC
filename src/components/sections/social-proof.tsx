@@ -1,25 +1,17 @@
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Award, GraduationCap, Users } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function SpecialistSection() {
   const specialistImage = PlaceHolderImages.find(img => img.id === "specialist-photo");
 
-  const achievements = [
-    { icon: Award, text: "Mais de 15 anos de experiência" },
-    { icon: GraduationCap, text: "PhD de instituições internacionais" },
-    { icon: Users, text: "Filosofia centrada no paciente" },
-  ];
-
   return (
-    <section id="specialist" className="py-20 px-5 sm:py-28 sm:px-6 lg:px-8 bg-secondary">
-      <div className="container mx-auto">
-        <div className="text-center max-w-2xl mx-auto">
-             <h2 className="font-headline text-3xl md:text-4xl font-medium">O Especialista por Trás do Sorriso</h2>
-             <p className="mt-4 text-lg text-muted-foreground">A autoridade e a arte que definem a excelência.</p>
-        </div>
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <div className="max-w-md mx-auto md:mx-0 md:mb-0 mb-10">
+    <section id="specialist" className="py-20 sm:py-28 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div className="max-w-md mx-auto md:mx-0 mb-5 md:mb-0">
              {specialistImage && (
               <Image
                 src={specialistImage.imageUrl}
@@ -32,21 +24,45 @@ export default function SpecialistSection() {
             )}
           </div>
           <div className="text-center md:text-left">
-            <h3 className="font-headline text-3xl font-medium">
-              Dr. Marcos Guerra, PhD
+            <h2 className="font-headline text-3xl md:text-4xl font-medium text-foreground">
+              O Especialista por trás do seu novo sorriso
+            </h2>
+            <h3 className="mt-2 text-xl font-semibold text-foreground/80 tracking-wider">
+              MARCOS GUERRA
             </h3>
-            <p className="mt-6 text-lg text-foreground/80 leading-relaxed">
-              A autoridade por trás do seu novo sorriso. Dr. Guerra combina uma abordagem científica rigorosa com um olhar artístico apurado para entregar resultados incomparáveis.
-            </p>
-            <div className="mt-8 space-y-4">
-              {achievements.map((item, index) => (
-                <div key={index} className="flex items-center gap-4 justify-center md:justify-start">
-                  <item.icon className="h-6 w-6 text-primary" />
-                  <span className="text-foreground/80">{item.text}</span>
+            <div className="mt-8 space-y-8">
+                <div className="flex items-start text-left gap-4 justify-center md:justify-start">
+                    <Award className="h-7 w-7 text-primary flex-shrink-0 mt-1" />
+                    <div>
+                        <h4 className="font-semibold text-lg text-foreground">Experiência</h4>
+                        <p className="text-foreground/80">20+ anos transformando sorrisos com precisão clínica.</p>
+                    </div>
                 </div>
-              ))}
+                <div className="flex items-start text-left gap-4 justify-center md:justify-start">
+                    <GraduationCap className="h-7 w-7 text-primary flex-shrink-0 mt-1" />
+                    <div>
+                        <h4 className="font-semibold text-lg text-foreground">Formação</h4>
+                        <p className="text-foreground/80">PhD em Reabilitação Oral e Odontologia Estética.</p>
+                    </div>
+                </div>
+                <div className="border-l-2 border-primary pl-4 max-w-md mx-auto md:mx-0">
+                    <div className="flex items-start text-left gap-4">
+                        <Users className="h-7 w-7 text-primary flex-shrink-0 mt-1" />
+                        <div>
+                            <h4 className="font-semibold text-lg text-foreground">Filosofia</h4>
+                            <p className="text-foreground/80">Foco absoluto no conforto do paciente e resultados naturais.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
           </div>
+        </div>
+        <div className="mt-16 text-center">
+            <Link href="https://wa.me/5511987654321" target="_blank" rel="noopener noreferrer" passHref>
+                <Button size="lg">
+                    Falar diretamente com o Dr. Marcos
+                </Button>
+            </Link>
         </div>
       </div>
     </section>
