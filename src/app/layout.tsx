@@ -1,4 +1,4 @@
-import type {Metadata} from 'next';
+import type {Metadata, Viewport} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import WhatsappButton from '@/components/whatsapp-button';
@@ -7,11 +7,12 @@ import BackToTopButton from '@/components/back-to-top-button';
 export const metadata: Metadata = {
   title: 'Sorriso Premium | Transformando Sorrisos, Elevando Vidas',
   description: 'Tecnologia avançada e cuidado incomparável para a sua saúde dentária e estética perfeita.',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    viewportFit: 'cover',
-  },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
 };
 
 export default function RootLayout({
