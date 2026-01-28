@@ -16,12 +16,11 @@ export default function Header() {
   const navItems = [
     { href: "#specialist", label: "Especialista" },
     { href: "#treatments", label: "Tratamentos" },
-    { href: "#clinic", label: "Clínica" },
     { href: "#contact", label: "Contato" },
   ];
 
   return (
-    <header className="sticky top-0 left-0 right-0 z-[1000] bg-background/80 backdrop-blur-sm">
+    <header className="sticky top-0 left-0 right-0 z-[1000] bg-background/80 backdrop-blur-md border-b-2 border-primary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Logo />
@@ -56,7 +55,7 @@ export default function Header() {
                                     {item.label}
                                 </Link>
                             ))}
-                            <Link href="#contact" passHref>
+                             <Link href="#contact" passHref>
                                 <Button onClick={() => setOpen(false)} size="lg" className="mt-8">Agendar Consulta</Button>
                             </Link>
                         </nav>

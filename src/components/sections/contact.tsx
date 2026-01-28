@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { Clock, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const WhatsappIcon = (props: React.SVGProps<SVGSVGElement>) => (
@@ -16,62 +16,49 @@ export default function ContactSection() {
   const mapImage = PlaceHolderImages.find(img => img.id === "contact-map-blue");
 
   return (
-    <section id="contact" className="py-20 px-5 sm:py-28 sm:px-6 lg:px-8 bg-background">
-      <div className="container mx-auto">
-        <div className="text-center max-w-2xl mx-auto">
-          <h2 className="font-headline text-3xl md:text-4xl font-medium">Comece Sua Transformação</h2>
-           <p className="mt-16 text-lg text-muted-foreground italic">"Agendamento simples, ambiente acolhedor e localização privilegiada."</p>
-        </div>
+    <section id="contact" className="bg-secondary">
+      <div className="container mx-auto text-center py-20 px-5 sm:py-28 sm:px-6 lg:px-8">
+        <h2 className="font-headline text-3xl md:text-4xl font-medium">Comece Sua Transformação</h2>
+        <p className="mt-4 text-lg text-muted-foreground italic">"Agendamento simples, ambiente acolhedor e localização privilegiada."</p>
         
-        <div className="mt-12 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="bg-secondary p-8 md:p-12 rounded-lg shadow-lg text-center">
-                <h3 className="font-headline text-2xl font-semibold mb-6">Agende sua Consulta via WhatsApp</h3>
-                <Link href="https://wa.me/5511987654321" target="_blank" rel="noopener noreferrer" passHref>
-                    <Button size="lg" className="w-full max-w-xs mx-auto text-lg py-6">
-                        <WhatsappIcon className="mr-3 h-6 w-6"/>
-                        Iniciar Conversa Agora
-                    </Button>
-                </Link>
-            </div>
+        <div className="mt-12 max-w-lg mx-auto bg-background p-8 md:p-12 rounded-lg shadow-lg">
+            <h3 className="font-headline text-2xl font-semibold mb-6">Falar com Dr. Marcos no WhatsApp</h3>
+            <Link href="https://wa.me/5511987654321" target="_blank" rel="noopener noreferrer" passHref>
+                <Button size="lg" className="w-full text-lg py-6">
+                    <WhatsappIcon className="mr-3 h-6 w-6"/>
+                    Iniciar Conversa Agora
+                </Button>
+            </Link>
+        </div>
 
-            <div className="space-y-6 text-foreground/80">
-                <div className="flex items-start gap-4">
-                    <MapPin className="h-6 w-6 text-primary mt-1 flex-shrink-0"/>
-                    <address className="not-italic">
-                        Avenida da Luxo, 123, Sala 101<br/>
-                        Metropolis, 12345
-                    </address>
-                </div>
-                 <div className="flex items-center gap-4">
-                    <Phone className="h-6 w-6 text-primary"/>
-                    <span>(11) 98765-4321</span>
-                </div>
-                 <div className="flex items-center gap-4">
-                    <Mail className="h-6 w-6 text-primary"/>
-                    <span>contato@marcosguerra.com</span>
-                </div>
-                <div className="flex items-start gap-4">
-                    <Clock className="h-6 w-6 text-primary mt-1 flex-shrink-0"/>
-                    <div>
-                        <p className="font-semibold text-foreground">Horário de Funcionamento</p>
-                        <p>Seg - Sex: 9h - 18h</p>
-                        <p>Sáb: 10h - 16h</p>
-                    </div>
+        <div className="mt-12 flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 text-foreground/80">
+            <div className="flex items-center gap-3">
+                <Phone className="h-5 w-5 text-primary"/>
+                <span>(11) 98765-4321</span>
+            </div>
+             <div className="flex items-center gap-3">
+                <Mail className="h-5 w-5 text-primary"/>
+                <span>contato@marcosguerra.com</span>
+            </div>
+            <div className="flex items-start gap-3">
+                <Clock className="h-5 w-5 text-primary mt-1"/>
+                <div>
+                    <p>Seg - Sex: 9h - 18h</p>
                 </div>
             </div>
         </div>
-        
-        <div className="mt-16 h-96 rounded-lg overflow-hidden shadow-lg relative">
-            {mapImage && (
-                <Image
-                    src={mapImage.imageUrl}
-                    alt={mapImage.description}
-                    fill
-                    className="object-cover"
-                    data-ai-hint={mapImage.imageHint}
-                />
-            )}
-        </div>
+      </div>
+      
+      <div className="h-96 w-full relative">
+          {mapImage && (
+              <Image
+                  src={mapImage.imageUrl}
+                  alt={mapImage.description}
+                  fill
+                  className="object-cover"
+                  data-ai-hint={mapImage.imageHint}
+              />
+          )}
       </div>
     </section>
   );

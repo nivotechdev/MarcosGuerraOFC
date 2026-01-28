@@ -2,7 +2,6 @@ import Header from "@/components/header";
 import HeroSection from "@/components/sections/hero";
 import SpecialistSection from "@/components/sections/social-proof";
 import Treatments from "@/components/sections/treatments";
-import Clinic from "@/components/sections/clinic-gallery";
 import ContactSection from "@/components/sections/contact";
 import Footer from "@/components/sections/footer";
 
@@ -14,7 +13,6 @@ export default function Home() {
         <HeroSection />
         <SpecialistSection />
         <Treatments />
-        <Clinic />
         <ContactSection />
       </main>
       <Footer />
