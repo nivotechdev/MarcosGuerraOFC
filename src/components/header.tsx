@@ -7,6 +7,8 @@ import { Menu } from "lucide-react";
 import {
   Sheet,
   SheetContent,
+  SheetHeader,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
 import React from "react";
@@ -44,7 +46,10 @@ export default function Header() {
                         </Button>
                     </SheetTrigger>
                     <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-                        <nav className="flex flex-col gap-8 pt-16">
+                        <SheetHeader>
+                            <SheetTitle className="sr-only">Menu Principal</SheetTitle>
+                        </SheetHeader>
+                        <nav className="flex flex-col gap-8 pt-8">
                             {navItems.map((item) => (
                                 <Link
                                     key={item.label}
