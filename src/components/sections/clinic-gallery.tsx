@@ -1,13 +1,11 @@
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
-export default function ClinicGallery() {
+export default function Clinic() {
   const galleryImages = [
-    { id: "gallery-1" },
-    { id: "gallery-2" },
-    { id: "gallery-3" },
-    { id: "gallery-4" },
-    { id: "gallery-5" },
+    { id: "clinic-reception" },
+    { id: "clinic-operatory" },
+    { id: "clinic-detail" },
   ].map(item => PlaceHolderImages.find(img => img.id === item.id)).filter(Boolean);
 
   return (
@@ -19,17 +17,17 @@ export default function ClinicGallery() {
             Our clinic is designed to be a tranquil space where you can feel relaxed and confident in your care.
           </p>
         </div>
-        <div className="mt-16 columns-2 md:columns-3 gap-4 space-y-4">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           {galleryImages.map((item, index) => (
             item && (
-              <div key={index} className="break-inside-avoid">
+              <div key={index} className="aspect-w-1 aspect-h-1">
                 <Image
                   src={item.imageUrl}
                   alt={item.description}
-                  width={500}
-                  height={500}
-                  className="w-full h-auto object-cover rounded-lg shadow-md"
-                  sizes="(max-width: 768px) 50vw, 33vw"
+                  width={600}
+                  height={600}
+                  className="w-full h-full object-cover rounded-lg shadow-lg"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   data-ai-hint={item.imageHint}
                 />
               </div>

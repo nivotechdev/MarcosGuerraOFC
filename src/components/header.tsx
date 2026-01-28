@@ -7,7 +7,7 @@ export default function Header() {
     { href: "#specialist", label: "Specialist" },
     { href: "#treatments", label: "Treatments" },
     { href: "#clinic", label: "Clinic" },
-    { href: "#location", label: "Location" },
+    { href: "#contact", label: "Contact" },
   ];
 
   return (
@@ -15,7 +15,7 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Logo />
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center justify-center gap-8 absolute left-1/2 -translate-x-1/2">
             {navItems.map((item) => (
               <Link key={item.label} href={item.href} className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
                 {item.label}
@@ -23,8 +23,8 @@ export default function Header() {
             ))}
           </nav>
           <div className="flex items-center gap-4">
-            <Link href="#location" passHref>
-              <Button>Book Now</Button>
+            <Link href="#contact" passHref>
+              <Button>Book Appointment</Button>
             </Link>
           </div>
         </div>

@@ -1,52 +1,46 @@
 {
   "placeholderImages": [
     {
-      "id": "hero-background",
-      "description": "Minimalist and bright dental clinic interior.",
-      "imageUrl": "https://images.unsplash.com/photo-1629904853716-f0bc64eea039?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtaW5pbWFsaXN0JTIwZGVudGFsJTIwY2xpbmljfGVufDB8fHx8MTc3MDA4MzA0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "minimalist dental clinic"
+      "id": "hero-smile",
+      "description": "Close up of a person with a radiant, perfect smile.",
+      "imageUrl": "https://images.unsplash.com/photo-1565343201672-7647a832100e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxyYWRpYW50JTIwc21pbGV8ZW58MHx8fHwxNzY5NjI3Nzc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "radiant smile"
     },
     {
       "id": "specialist-photo",
-      "description": "Portrait of a confident and professional dentist.",
-      "imageUrl": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZW50aXN0JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzcwMDgzMDQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "dentist portrait"
+      "description": "Portrait of a confident and professional female dentist in a modern clinic.",
+      "imageUrl": "https://images.unsplash.com/photo-1758205307804-097f5437189f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcm9mZXNzaW9uYWwlMjBkZW50aXN0fGVufDB8fHx8MTc2OTYyNzc3OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "professional dentist"
     },
     {
-      "id": "gallery-1",
-      "description": "High-end clinic waiting area with designer furniture.",
-      "imageUrl": "https://images.unsplash.com/photo-1556742512-35a00040e3d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoaWdoJTIwZW5kJTIwY2xpbmljJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzcwMDgzMDQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "clinic interior design"
+      "id": "philosophy-image",
+      "description": "Abstract, clean architectural detail of a modern clinic.",
+      "imageUrl": "https://images.unsplash.com/photo-1764004450351-37fb72cb8e8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjBjbGluaWN8ZW58MHx8fHwxNzY5NjI3Nzc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern architecture clinic"
     },
     {
-      "id": "gallery-2",
-      "description": "Sleek and modern dental treatment room.",
-      "imageUrl": "https://images.unsplash.com/photo-1631049214732-f19b16538350?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzbGVlayUyMGRlbnRhbCUyMHJvb218ZW58MHx8fHwxNzcwMDgzMDQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "dental room modern"
+      "id": "clinic-reception",
+      "description": "Luxurious and minimalist reception area of a dental clinic.",
+      "imageUrl": "https://images.unsplash.com/photo-1668911128139-4db2cc34aa5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBjbGluaWMlMjByZWNlcHRpb258ZW58MHx8fHwxNzY5NjI3Nzc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "luxury clinic reception"
     },
     {
-      "id": "gallery-3",
-      "description": "Architectural detail of the clinic's hallway.",
-      "imageUrl": "https://images.unsplash.com/photo-1581351123004-a01b33efb343?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjbGluaWMlMjBjb3JyaWRvcnxlbnwwfHx8fDE3NzAwODMwNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "clinic corridor"
+      "id": "clinic-operatory",
+      "description": "High-tech and clean dental operatory room.",
+      "imageUrl": "https://images.unsplash.com/photo-1758206523735-079e56f2faf7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkZW50YWwlMjBvcGVyYXRvcnklMjBoaWdoJTIwdGVjaHxlbnwwfHx8fDE3Njk2Mjc3Nzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dental operatory high tech"
     },
     {
-      "id": "gallery-4",
-      "description": "A comfortable and professional consulting room.",
-      "imageUrl": "https://images.unsplash.com/photo-1615983234885-918e049a2254?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb25zdWx0aW5nJTIwcm9vbXxlbnwwfHx8fDE3Njk2MjY5MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "consulting room"
+      "id": "clinic-detail",
+      "description": "Artistic interior design detail within the clinic.",
+      "imageUrl": "https://images.unsplash.com/photo-1696654149042-196d07713526?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhcnRpc3RpYyUyMGludGVyaW9yJTIwZGV0YWlsfGVufDB8fHx8MTc2OTYyNzc3OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "artistic interior detail"
     },
     {
-      "id": "gallery-5",
-      "description": "Close up on a detail of the clinic's decoration.",
-      "imageUrl": "https://images.unsplash.com/photo-1600210492493-4171b70a9370?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtaW5pbWFsaXN0JTIwaW50ZXJpb3IlMjBkZXRhaWx8ZW58MHx8fHwxNzcwMDgzMDQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "minimalist interior detail"
-    },
-    {
-      "id": "contact-map",
-      "description": "Grayscale map showing the clinic's location.",
-      "imageUrl": "https://images.unsplash.com/photo-1730317195705-8a265a59ed1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjaXR5JTIwbWFwfGVufDB8fHx8MTc2OTU0NjI3MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "city map"
+      "id": "contact-map-blue",
+      "description": "Stylized map with a blue and silver theme showing a location.",
+      "imageUrl": "https://images.unsplash.com/photo-1572271781078-caa4bfbfdbb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxibHVlJTIwY2l0eSUyMG1hcHxlbnwwfHx8fDE3Njk2Mjc3Nzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blue city map"
     }
   ]
 }

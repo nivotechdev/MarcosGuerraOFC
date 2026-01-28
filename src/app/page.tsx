@@ -1,9 +1,10 @@
 import Header from "@/components/header";
 import HeroSection from "@/components/sections/hero";
-import Specialist from "@/components/sections/social-proof";
+import OurPhilosophy from "@/components/sections/our-philosophy";
+import SpecialistSection from "@/components/sections/social-proof";
 import Treatments from "@/components/sections/treatments";
-import ClinicGallery from "@/components/sections/clinic-gallery";
-import Location from "@/components/sections/contact";
+import Clinic from "@/components/sections/clinic-gallery";
+import ContactSection from "@/components/sections/contact";
 import Footer from "@/components/sections/footer";
 
 export default function Home() {
@@ -12,10 +13,11 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <HeroSection />
-        <Specialist />
+        <OurPhilosophy />
+        <SpecialistSection />
         <Treatments />
-        <ClinicGallery />
-        <Location />
+        <Clinic />
+        <ContactSection />
       </main>
       <Footer />
     </div>
