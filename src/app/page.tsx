@@ -1,6 +1,5 @@
 import Header from "@/components/header";
 import HeroSection from "@/components/sections/hero";
-import OurPhilosophy from "@/components/sections/our-philosophy";
 import SpecialistSection from "@/components/sections/social-proof";
 import Treatments from "@/components/sections/treatments";
 import Clinic from "@/components/sections/clinic-gallery";
@@ -13,7 +12,6 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <HeroSection />
-        <OurPhilosophy />
         <SpecialistSection />
         <Treatments />
         <Clinic />

@@ -7,7 +7,7 @@ export default function ContactSection() {
   const mapImage = PlaceHolderImages.find(img => img.id === "contact-map-blue");
 
   return (
-    <section id="contact" className="py-24 sm:py-32 bg-secondary">
+    <section id="contact" className="py-16 sm:py-28 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="font-headline text-3xl md:text-4xl font-medium">Comece Sua Transformação</h2>
@@ -44,7 +44,7 @@ export default function ContactSection() {
                     </div>
                 </div>
             </div>
-            <div className="lg:col-span-3 bg-background p-8 md:p-12 rounded-lg shadow-lg">
+            <div className="lg:col-span-3 bg-secondary p-8 md:p-12 rounded-lg shadow-lg">
                 <h3 className="font-headline text-2xl font-semibold mb-8">Agende uma Consulta</h3>
                 <ContactForm />
             </div>

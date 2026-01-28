@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <Logo className="text-background hover:text-primary" />
             <p className="mt-4 text-sm text-background/70 max-w-xs mx-auto md:mx-0">
-                Transformando Sorrisos, Elevando Vidas.
+                Odontologia de alta performance por Dr. Marcos Guerra.
             </p>
           </div>
           <div>
@@ -38,7 +38,7 @@ export default function Footer() {
              <Link href="#" className="hover:text-primary transition-colors">Termos de Uso</Link>
           </div>
           <p className="mt-4 md:mt-0">
-            © {new Date().getFullYear()} Sorriso Premium. Todos os direitos reservados.
+            © {new Date().getFullYear()} Marcos Guerra. Todos os direitos reservados.
           </p>
         </div>
       </div>

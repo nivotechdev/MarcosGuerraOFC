@@ -1,8 +1,18 @@
+'use client';
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Logo from "@/components/logo";
+import { Menu } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+import React from "react";
 
 export default function Header() {
+  const [open, setOpen] = React.useState(false);
   const navItems = [
     { href: "#specialist", label: "Especialista" },
     { href: "#treatments", label: "Tratamentos" },
@@ -23,9 +33,36 @@ export default function Header() {
             ))}
           </nav>
           <div className="flex items-center gap-4">
-            <Link href="#contact" passHref>
+            <Link href="#contact" passHref className="hidden md:block">
               <Button>Agendar Consulta</Button>
             </Link>
+            <div className="md:hidden">
+                <Sheet open={open} onOpenChange={setOpen}>
+                    <SheetTrigger asChild>
+                        <Button variant="ghost" size="icon">
+                            <Menu className="h-6 w-6" />
+                            <span className="sr-only">Abrir menu</span>
+                        </Button>
+                    </SheetTrigger>
+                    <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                        <nav className="flex flex-col gap-8 pt-16">
+                            {navItems.map((item) => (
+                                <Link
+                                    key={item.label}
+                                    href={item.href}
+                                    onClick={() => setOpen(false)}
+                                    className="text-2xl font-medium text-foreground hover:text-primary transition-colors"
+                                >
+                                    {item.label}
+                                </Link>
+                            ))}
+                            <Link href="#contact" passHref>
+                                <Button onClick={() => setOpen(false)} size="lg" className="mt-8">Agendar Consulta</Button>
+                            </Link>
+                        </nav>
+                    </SheetContent>
+                </Sheet>
+            </div>
           </div>
         </div>
       </div>

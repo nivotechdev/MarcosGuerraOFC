@@ -22,7 +22,7 @@ const treatments = [
 
 export default function Treatments() {
   return (
-    <section id="treatments" className="py-24 sm:py-32 bg-secondary">
+    <section id="treatments" className="py-16 sm:py-28 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="font-headline text-3xl md:text-4xl font-medium">Nossos Tratamentos de Assinatura</h2>
@@ -32,7 +32,7 @@ export default function Treatments() {
         </div>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {treatments.map((treatment) => (
-            <Card key={treatment.title} className="text-left bg-background shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
+            <Card key={treatment.title} className="text-left bg-secondary shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
               <CardHeader>
                 <div className="bg-primary/10 p-3 rounded-md mb-4 self-start">
                     <treatment.icon className="h-8 w-8 text-primary" />

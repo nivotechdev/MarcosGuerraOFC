@@ -5,18 +5,18 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
-  const heroImage = PlaceHolderImages.find(img => img.id === "hero-smile");
+  const heroImage = PlaceHolderImages.find(img => img.id === "specialist-photo");
 
   return (
     <section id="home" className="relative w-full min-h-screen flex items-center bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="text-center md:text-left">
-            <h1 className="font-headline text-4xl sm:text-5xl md:text-7xl font-semibold tracking-tight leading-tight text-foreground">
-              Transformando Sorrisos, Elevando Vidas.
+            <h1 className="font-headline text-5xl sm:text-7xl md:text-8xl font-semibold tracking-tight leading-tight text-foreground">
+              MARCOS GUERRA
             </h1>
             <p className="mt-6 text-lg sm:text-xl text-foreground/80 max-w-xl mx-auto md:mx-0">
-              Tecnologia avançada e cuidado incomparável para a sua saúde dentária e estética perfeita.
+              Odontologia de Alta Performance e Estética de Precisão.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
               <Link href="#contact" passHref>
@@ -31,7 +31,7 @@ export default function HeroSection() {
               </Link>
             </div>
           </div>
-          <div className="relative h-96 md:h-full min-h-[50vh]">
+          <div className="relative h-96 md:h-full min-h-[60vh]">
             {heroImage && (
               <Image
                 src={heroImage.imageUrl}
