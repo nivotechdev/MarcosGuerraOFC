@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Logo from "@/components/logo";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Instagram, Facebook, Linkedin } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -68,9 +68,11 @@ export default function Header() {
                             <span className="sr-only">Abrir menu</span>
                         </Button>
                     </SheetTrigger>
-                    <SheetContent side="right" className="w-full h-full bg-background/95 backdrop-blur-xl p-0">
+                    <SheetContent side="right" className="w-full h-full bg-background/95 backdrop-blur-xl p-0 flex flex-col">
                         <SheetHeader className="flex-row justify-between items-center p-4 border-b">
-                             <SheetTitle className="sr-only">Menu Principal</SheetTitle>
+                             <SheetTitle>
+                               <span className="sr-only">Menu Principal</span>
+                             </SheetTitle>
                              <SheetDescription className="sr-only">Navegue pelas seções do site.</SheetDescription>
                              <Logo />
                              <SheetClose asChild>
@@ -80,7 +82,7 @@ export default function Header() {
                                 </Button>
                             </SheetClose>
                         </SheetHeader>
-                        <nav className="flex flex-col items-center justify-center gap-4 pt-12 text-center h-full">
+                        <nav className="flex flex-col items-center justify-center gap-4 pt-12 text-center flex-grow">
                             {navItems.map((item) => (
                                 <Link
                                     key={item.label}
@@ -97,6 +99,13 @@ export default function Header() {
                                 </Button>
                             </Link>
                         </nav>
+                        <div className="p-6 border-t border-border/20">
+                          <div className="flex justify-center gap-4">
+                              <Link href="#" passHref><Button size="icon" variant="ghost" className="hover:bg-primary/20 hover:text-primary text-foreground/70"><Instagram /></Button></Link>
+                              <Link href="#" passHref><Button size="icon" variant="ghost" className="hover:bg-primary/20 hover:text-primary text-foreground/70"><Facebook /></Button></Link>
+                              <Link href="#" passHref><Button size="icon" variant="ghost" className="hover:bg-primary/20 hover:text-primary text-foreground/70"><Linkedin /></Button></Link>
+                          </div>
+                        </div>
                     </SheetContent>
                 </Sheet>
               )}
