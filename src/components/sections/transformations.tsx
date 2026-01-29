@@ -83,12 +83,12 @@ export default function Transformations() {
             <CarouselContent className="-ml-4">
               {transformationCases.map((t, index) => (
                 t.before && t.after && (
-                  <CarouselItem key={index} className="pl-4 basis-full lg:basis-4/5">
+                  <CarouselItem key={index} className="pl-4 basis-full sm:basis-4/5 md:basis-3/4 lg:basis-2/3">
                     <div className="p-1 h-full">
-                      <Card className="rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-[60vh] md:h-full flex flex-col">
+                      <Card className="rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-[70vh] flex flex-col">
                         <CardContent className="p-2 md:p-4 space-y-2 flex-grow flex flex-col">
                           <h3 className="text-center font-sans font-bold text-foreground text-base md:text-lg shrink-0">{t.title}</h3>
-                          <div className="flex flex-col gap-2 flex-grow items-stretch">
+                          <div className="flex flex-col gap-px flex-grow items-stretch">
                             <div className="relative flex-1">
                               <Image
                                 src={t.before.imageUrl}
@@ -97,7 +97,7 @@ export default function Transformations() {
                                 className="object-cover rounded-xl"
                                 loading="lazy"
                                 data-ai-hint={t.before.imageHint}
-                                sizes="(max-width: 768px) 90vw, (max-width: 1200px) 50vw, 33vw"
+                                sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 75vw, 66vw"
                               />
                               <Badge className="absolute top-2 left-2 bg-primary text-primary-foreground border-none">Antes</Badge>
                             </div>
@@ -110,7 +110,7 @@ export default function Transformations() {
                                 className="object-cover rounded-xl"
                                 loading="lazy"
                                 data-ai-hint={t.after.imageHint}
-                                sizes="(max-width: 768px) 90vw, (max-width: 1200px) 50vw, 33vw"
+                                sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 75vw, 66vw"
                               />
                               <Badge className="absolute top-2 left-2 bg-primary text-primary-foreground border-none">Depois</Badge>
                             </div>
