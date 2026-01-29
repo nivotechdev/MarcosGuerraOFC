@@ -30,7 +30,7 @@ export default function Specialist() {
               alt="Dr. Marcos Guerra"
               width={500}
               height={600}
-              className="rounded-[24px] object-cover shadow-lg aspect-[5/6]"
+              className="object-cover shadow-lg aspect-[5/6]"
               data-ai-hint="professional dentist portrait"
             />
           </div>
