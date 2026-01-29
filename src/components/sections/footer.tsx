@@ -24,7 +24,7 @@ export default function Footer() {
               <ul className="mt-4 space-y-3 text-background/70">
                   <li><Link href="#why-us" className="hover:text-primary transition-colors">A Clínica</Link></li>
                   <li><Link href="#treatments" className="hover:text-primary transition-colors">Tratamentos</Link></li>
-                  <li><Link href="#social-proof" className="hover:text-primary transition-colors">Resultados</Link></li>
+                  <li><Link href="#location" className="hover:text-primary transition-colors">Localização</Link></li>
                   <li><Link href="#faq" className="hover:text-primary transition-colors">FAQ</Link></li>
               </ul>
           </div>

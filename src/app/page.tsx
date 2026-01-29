@@ -2,7 +2,7 @@ import Header from "@/components/header";
 import Hero from "@/components/sections/hero";
 import Benefits from "@/components/sections/benefits";
 import Process from "@/components/sections/process";
-import SocialProof from "@/components/sections/social-proof";
+import Location from "@/components/sections/location";
 import Faq from "@/components/sections/faq";
 import Cta from "@/components/sections/cta";
 import Footer from "@/components/sections/footer";
@@ -17,7 +17,7 @@ export default function Home() {
         <WhyUs />
         <Benefits />
         <Process />
-        <SocialProof />
+        <Location />
         <Faq />
         <Cta />
       </main>

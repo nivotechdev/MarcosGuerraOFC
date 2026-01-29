@@ -41,6 +41,12 @@
       "description": "Retrato de uma jovem profissional sorrindo.",
       "imageUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx5b3VuZyUyMHByb2Zlc3Npb25hbCUyMHdvbWFufGVufDB8fHx8MTc3MDA2Njk2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "young professional woman"
+    },
+    {
+      "id": "clinic-map",
+      "description": "Mapa mostrando a localização da clínica em São Paulo.",
+      "imageUrl": "https://images.unsplash.com/photo-1586449480537-3a22cf98b04c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjbGluaWMlMjBsb2NhdGlvbiUyMG1hcHxlbnwwfHx8fDE3Njk2NDYyNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "clinic location map"
     }
   ]
 }

@@ -34,7 +34,7 @@ export default function Header() {
   const navItems = [
     { href: "#why-us", label: "A Clínica" },
     { href: "#treatments", label: "Tratamentos" },
-    { href: "#social-proof", label: "Resultados" },
+    { href: "#location", label: "Localização" },
     { href: "#contact", label: "Contato" },
   ];
 
