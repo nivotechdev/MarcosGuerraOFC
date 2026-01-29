@@ -29,7 +29,7 @@ const transformationCases = [
   {
     title: "Clareamento Avançado",
     before: PlaceHolderImages.find(img => img.id === "before-smile"),
-    after: PlaceHolderImages.find(img => img.id === "after-smile"),
+    after: PlaceHolderImages.find(img => img.id === "after-whitening"),
   },
    {
     title: "Reabilitação Oral Completa",
