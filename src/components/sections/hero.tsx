@@ -21,12 +21,12 @@ export default function Hero() {
             <div 
               className="absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-out"
               style={{
-                  backgroundImage: `url('https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/logos/Whisk_f361a85444cc92d9af5402f3663c2926dr.jpeg')`,
+                  backgroundImage: `url('https://images.unsplash.com/photo-1629904791834-4a4f2b918542?w=1080&q=80&auto=format&fit=crop')`,
                   transform: 'scale(1.1)',
                   opacity: 0,
                   animation: 'parallax-zoom-in 10s ease-out forwards, parallax-scroll 40s linear infinite alternate',
               }}
-              data-ai-hint="luxury dental clinic"
+              data-ai-hint="dental clinic"
             >
               <div className="absolute inset-0 bg-background/50"></div>
             </div>

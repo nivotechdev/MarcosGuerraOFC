@@ -3,8 +3,8 @@
     {
       "id": "hero-background",
       "description": "Interior de uma clínica odontológica moderna, limpa e luxuosa, com uma cadeira de tratamento e equipamentos de alta tecnologia.",
-      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/logos/Whisk_f361a85444cc92d9af5402f3663c2926dr.jpeg",
-      "imageHint": "luxury dental clinic"
+      "imageUrl": "https://images.unsplash.com/photo-1629904791834-4a4f2b918542?w=1080&q=80&auto=format&fit=crop",
+      "imageHint": "dental clinic"
     },
     {
       "id": "clinic-environment",
