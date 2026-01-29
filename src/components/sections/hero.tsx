@@ -1,34 +1,44 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import Image from "next/image";
 
-export default function HeroSection() {
-  const heroImage = PlaceHolderImages.find(img => img.id === "philosophy-image");
+export default function Hero() {
+  const heroImage = PlaceHolderImages.find(img => img.id === "hero-background");
 
   return (
     <section 
       id="home" 
-      className="relative w-full min-h-[90vh] flex items-center justify-center text-center text-foreground"
-      style={{
-        backgroundImage: heroImage ? `url(${heroImage.imageUrl})` : 'none',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
+      className="relative w-full h-[90vh] min-h-[600px] flex items-center"
     >
-      <div className="absolute inset-0 bg-white/30 backdrop-blur-sm z-0"></div>
+       {heroImage && (
+        <Image
+          src={heroImage.imageUrl}
+          alt={heroImage.description}
+          fill
+          className="object-cover"
+          priority
+          data-ai-hint={heroImage.imageHint}
+        />
+      )}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/20 to-transparent"></div>
+      
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto">
-          <h1 className="font-headline text-4xl leading-snug md:text-6xl font-semibold tracking-tight" style={{textShadow: '0 1px 4px hsla(var(--background) / 0.3)'}}>
-            MARCOS GUERRA
+        <div className="max-w-3xl text-left">
+          <h1 className="font-serif text-4xl leading-tight md:text-6xl font-medium tracking-tight text-white" style={{textShadow: '0 2px 10px rgba(0,0,0,0.3)'}}>
+            O Sorriso que Você Merece, a Experiência que Você Exige.
           </h1>
-          <p className="mt-4 text-md sm:text-lg text-foreground/90 max-w-2xl mx-auto leading-relaxed">
-            Odontologia de Alta Performance.
+          <p className="mt-6 text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed">
+            Odontologia digital avançada para tratamentos rápidos, precisos e com o máximo de conforto.
           </p>
-          <div className="mt-8 flex items-center justify-center">
+          <div className="mt-10 flex flex-col sm:flex-row items-start gap-4">
             <Link href="#contact" passHref>
-              <Button>
-                Agendar Consulta
-              </Button>
+              <Button size="lg" className="h-14 px-8 text-lg">Agendar Avaliação Premium</Button>
+            </Link>
+            <Link href="#treatments" passHref>
+                <Button size="lg" variant="ghost" className="h-14 px-8 text-lg text-white hover:bg-white/10 hover:text-white">
+                  Conhecer Tratamentos
+                </Button>
             </Link>
           </div>
         </div>

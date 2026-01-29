@@ -1,70 +1,108 @@
+'use client';
 import Image from "next/image";
+import BeforeAfterSlider from "@/components/before-after-slider";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Award, GraduationCap, Users } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Star } from "lucide-react";
 
-export default function SpecialistSection() {
-  const specialistImage = PlaceHolderImages.find(img => img.id === "specialist-photo");
 
-  return (
-    <section id="specialist" className="py-20 sm:py-28 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
-          <div className="max-w-md mx-auto md:mx-0">
-             {specialistImage && (
-              <Image
-                src={specialistImage.imageUrl}
-                alt={specialistImage.description}
-                width={500}
-                height={600}
-                className="object-cover shadow-lg"
-                data-ai-hint={specialistImage.imageHint}
-              />
-            )}
-          </div>
-          <div className="text-center md:text-left">
-            <h2 className="font-headline text-3xl md:text-4xl font-medium text-foreground">
-              O Especialista por trás do seu novo sorriso
-            </h2>
-            <h3 className="mt-2 text-xl font-semibold text-foreground/80 tracking-wider">
-              MARCOS GUERRA
-            </h3>
-            <div className="mt-8 space-y-6">
-                <div className="flex items-start text-left gap-4">
-                    <Award className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                        <h4 className="font-semibold text-lg text-foreground">Experiência</h4>
-                        <p className="text-foreground/80">20+ anos transformando sorrisos com precisão clínica.</p>
-                    </div>
+const testimonials = [
+    {
+        name: "Juliana Paes",
+        title: "Paciente de Lentes de Contato",
+        quote: "Nunca imaginei que poderia sorrir com tanta confiança. A equipe do Dr. Marcos não só transformou meu sorriso, mas minha autoestima. O processo foi incrivelmente confortável.",
+        avatar: PlaceHolderImages.find(img => img.id === "testimonial-avatar-1")
+    },
+    {
+        name: "Ricardo Alves",
+        title: "Paciente de Implantes",
+        quote: "O medo de dentista era real para mim, mas a tecnologia e o cuidado que recebi aqui foram excepcionais. Recuperei a função e a estética, sem dor. Recomendo de olhos fechados.",
+        avatar: PlaceHolderImages.find(img => img.id === "testimonial-avatar-2")
+    },
+     {
+        name: "Carla Martins",
+        title: "Paciente de Invisalign",
+        quote: "O tratamento com Invisalign foi super discreto e os resultados superaram minhas expectativas. A clínica é um verdadeiro refúgio de tranquilidade e profissionalismo.",
+        avatar: PlaceHolderImages.find(img => img.id === "testimonial-avatar-3")
+    }
+];
+
+export default function SocialProof() {
+    const beforeImage = PlaceHolderImages.find(img => img.id === "before-smile");
+    const afterImage = PlaceHolderImages.find(img => img.id === "after-smile");
+
+    return (
+        <section id="social-proof" className="py-20 sm:py-32 bg-secondary">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center max-w-3xl mx-auto">
+                    <h2 className="text-3xl md:text-4xl font-serif text-foreground">Resultados que falam por si</h2>
+                    <p className="mt-4 text-lg text-muted-foreground">
+                        A satisfação de nossos pacientes é a nossa maior conquista. Veja a transformação e ouça o que eles têm a dizer.
+                    </p>
                 </div>
-                <div className="flex items-start text-left gap-4">
-                    <GraduationCap className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                        <h4 className="font-semibold text-lg text-foreground">Formação</h4>
-                        <p className="text-foreground/80">PhD em Reabilitação Oral e Odontologia Estética.</p>
-                    </div>
+                
+                <div className="mt-16">
+                    {beforeImage && afterImage && (
+                        <BeforeAfterSlider 
+                            beforeImage={{ src: beforeImage.imageUrl, alt: beforeImage.description, hint: beforeImage.imageHint }}
+                            afterImage={{ src: afterImage.imageUrl, alt: afterImage.description, hint: afterImage.imageHint }}
+                        />
+                    )}
                 </div>
-                <div className="border-l-2 border-primary pl-4">
-                    <div className="flex items-start text-left gap-4">
-                        <Users className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
-                        <div>
-                            <h4 className="font-semibold text-lg text-foreground">Filosofia</h4>
-                            <p className="text-foreground/80">Foco absoluto no conforto do paciente e resultados naturais.</p>
-                        </div>
-                    </div>
+
+                <div className="mt-20">
+                     <Carousel 
+                        className="w-full max-w-4xl mx-auto"
+                        opts={{
+                            align: "start",
+                            loop: true,
+                        }}
+                     >
+                        <CarouselContent>
+                            {testimonials.map((testimonial, index) => (
+                                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
+                                    <div className="p-4 h-full">
+                                        <Card className="h-full flex flex-col justify-between shadow-sm">
+                                            <CardContent className="p-6">
+                                                <div className="flex mb-4">
+                                                    {[...Array(5)].map((_, i) => (
+                                                        <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                                                    ))}
+                                                </div>
+                                                <blockquote className="text-foreground/80 italic">
+                                                    "{testimonial.quote}"
+                                                </blockquote>
+                                            </CardContent>
+                                            <div className="flex items-center gap-4 p-6 bg-muted/50">
+                                                {testimonial.avatar && (
+                                                    <Avatar>
+                                                        <AvatarImage src={testimonial.avatar.imageUrl} alt={testimonial.name} data-ai-hint={testimonial.avatar.imageHint} />
+                                                        <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                                                    </Avatar>
+                                                )}
+                                                <div>
+                                                    <p className="font-semibold text-foreground">{testimonial.name}</p>
+                                                    <p className="text-sm text-muted-foreground">{testimonial.title}</p>
+                                                </div>
+                                            </div>
+                                        </Card>
+                                    </div>
+                                </CarouselItem>
+                            ))}
+                        </CarouselContent>
+                        <CarouselPrevious className="-left-4 md:-left-12" />
+                        <CarouselNext className="-right-4 md:-right-12" />
+                    </Carousel>
                 </div>
             </div>
-             <div className="mt-10">
-                <Link href="https://wa.me/5511987654321" target="_blank" rel="noopener noreferrer" passHref>
-                    <Button size="lg" className="w-full md:w-auto">
-                        Falar diretamente com o Dr. Marcos
-                    </Button>
-                </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 }

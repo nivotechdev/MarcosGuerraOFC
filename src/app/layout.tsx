@@ -1,18 +1,21 @@
-import type {Metadata, Viewport} from 'next';
-import { Inter } from 'next/font/google';
+import type { Metadata, Viewport } from 'next';
+import { Inter, Playfair_Display } from 'next/font/google';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
-import WhatsappButton from '@/components/whatsapp-button';
-import BackToTopButton from '@/components/back-to-top-button';
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
 });
 
+const playfairDisplay = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair-display',
+});
+
 export const metadata: Metadata = {
-  title: 'Sorriso Premium | Transformando Sorrisos, Elevando Vidas',
-  description: 'Tecnologia avançada e cuidado incomparável para a sua saúde dentária e estética perfeita.',
+  title: 'Marcos Guerra | Odontologia de Alta Performance',
+  description: 'O Sorriso que Você Merece, Com a Experiência que Você Exige. Odontologia digital avançada para tratamentos rápidos, precisos e sem dor.',
 };
 
 export const viewport: Viewport = {
@@ -27,11 +30,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${inter.variable} scroll-smooth`}>
-      <body className="font-body antialiased">
+    <html lang="pt-BR" className={`${inter.variable} ${playfairDisplay.variable} scroll-smooth`}>
+      <body className="font-sans antialiased">
         {children}
-        <WhatsappButton />
-        <BackToTopButton />
         <Toaster />
       </body>
     </html>

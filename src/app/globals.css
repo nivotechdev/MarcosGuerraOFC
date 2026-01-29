@@ -4,64 +4,65 @@
 
 @layer base {
   :root {
-    --background: 195 64% 92.4%; /* Serene Light Blue #E0F2F7 */
-    --foreground: 200 71.1% 14.3%; /* Deep Navy Blue #0A2E3D */
+    --background: 0 0% 100%; /* White */
+    --foreground: 220 13% 20%; /* Charcoal Gray */
     
     --card: 0 0% 100%;
-    --card-foreground: 200 71.1% 14.3%;
+    --card-foreground: 220 13% 20%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 200 71.1% 14.3%;
+    --popover-foreground: 220 13% 20%;
     
-    --primary: 187 100% 41.6%; /* Vibrant Cyan Blue #00BCD4 */
+    --primary: 198 93% 45%; /* Professional Light Blue */
     --primary-foreground: 0 0% 100%; /* White */
     
-    --secondary: 0 0% 100%; /* Pure White */
-    --secondary-foreground: 200 71.1% 14.3%;
+    --secondary: 220 14% 96%; /* Light Gray/Off-white */
+    --secondary-foreground: 220 13% 20%;
     
-    --muted: 0 0% 90%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 220 14% 90%;
+    --muted-foreground: 220 9% 45%;
     
-    --accent: 187 100% 41.6%;
+    --accent: 198 93% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     
-    --border: 0 0% 88%;
-    --input: 0 0% 88%;
-    --ring: 187 100% 41.6%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 198 93% 45%;
     
     --radius: 0.5rem;
   }
+
   .dark {
-    --background: 200 71.1% 14.3%; /* Deep Navy Blue */
-    --foreground: 0 0% 97.3%; /* Soft Off-white */
+    --background: 220 13% 10%;
+    --foreground: 0 0% 98%;
 
-    --card: 200 71% 18%;
-    --card-foreground: 0 0% 97.3%;
+    --card: 220 13% 10%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 200 71% 18%;
-    --popover-foreground: 0 0% 97.3%;
+    --popover: 220 13% 10%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 187 100% 41.6%; /* Vibrant Cyan */
-    --primary-foreground: 200 71.1% 14.3%;
+    --primary: 198 93% 45%;
+    --primary-foreground: 220 13% 10%;
 
-    --secondary: 200 71% 18%; /* Darker navy to match card */
-    --secondary-foreground: 0 0% 97.3%;
+    --secondary: 220 13% 18%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 200 71% 25%;
+    --muted: 220 13% 28%;
     --muted-foreground: 0 0% 63.9%;
     
-    --accent: 187 100% 41.6%;
-    --accent-foreground: 200 71.1% 14.3%;
+    --accent: 198 93% 45%;
+    --accent-foreground: 220 13% 10%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     
-    --border: 200 71% 22%;
-    --input: 200 71% 22%;
-    --ring: 187 100% 41.6%;
+    --border: 220 13% 22%;
+    --input: 220 13% 22%;
+    --ring: 198 93% 45%;
 
     --radius: 0.5rem;
   }
@@ -69,7 +70,7 @@
 
 @layer base {
   html {
-    scroll-padding-top: 80px; /* 80px */
+    scroll-padding-top: 80px;
     overflow-x: hidden;
   }
   * {

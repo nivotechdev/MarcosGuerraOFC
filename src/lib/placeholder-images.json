@@ -1,40 +1,46 @@
 {
   "placeholderImages": [
     {
-      "id": "specialist-photo",
-      "description": "Retrato do Dr. Marcos Guerra, um dentista confiante e profissional em sua clínica moderna.",
-      "imageUrl": "https://images.unsplash.com/photo-1667133295308-9ef24f71952e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8ZGVudGlzdGF8ZW58MHx8fHwxNzY5NjMzMjg4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "professional male dentist"
+      "id": "hero-background",
+      "description": "Interior de uma clínica odontológica moderna, limpa e luxuosa, com uma cadeira de tratamento e equipamentos de alta tecnologia.",
+      "imageUrl": "https://images.unsplash.com/photo-1629425733761-caae3b5f2e50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBkZW50YWwlMjBjbGluaWN8ZW58MHx8fHwxNzcwMDY2NTc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "luxury dental clinic"
     },
     {
-      "id": "philosophy-image",
-      "description": "Ilustração de um tratamento odontológico, mostrando precisão e cuidado.",
-      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/logos/Whisk_f361a85444cc92d9af5402f3663c2926dr.jpeg",
-      "imageHint": "dental treatment illustration"
+      "id": "clinic-environment",
+      "description": "Um dentista profissional e amigável conversando com um paciente em um ambiente de clínica calmo e acolhedor.",
+      "imageUrl": "https://images.unsplash.com/photo-1588776518167-35905c86c99c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkZW50aXN0JTIwY29uc3VsdGluZyUyMHBhdGllbnR8ZW58MHx8fHwxNzcwMDY2NTc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dentist consulting patient"
     },
     {
-      "id": "clinic-reception",
-      "description": "Área de recepção luxuosa e minimalista de uma clínica odontológica.",
-      "imageUrl": "https://images.unsplash.com/photo-1668911128139-4db2cc34aa5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBjbGluaWMlMjByZWNlcHRpb258ZW58MHx8fHwxNzY5NjI3Nzc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "luxury clinic reception"
+      "id": "before-smile",
+      "description": "Close-up de um sorriso com dentes desalinhados e manchados antes de um tratamento odontológico estético.",
+      "imageUrl": "https://images.unsplash.com/photo-1606967703816-c11df4213038?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx1bmV2ZW4lMjB5ZWxsb3clMjB0ZWV0aHxlbnwwfHx8fDE3NzAwNjY4NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "uneven yellow teeth"
     },
     {
-      "id": "clinic-operatory",
-      "description": "Sala de operação odontológica limpa e de alta tecnologia.",
-      "imageUrl": "https://images.unsplash.com/photo-1758206523735-079e56f2faf7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkZW50YWwlMjBvcGVyYXRvcnklMjBoaWdoJTIwdGVjaHxlbnwwfHx8fDE3Njk2Mjc3Nzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "dental operatory high tech"
+      "id": "after-smile",
+      "description": "Close-up de um sorriso perfeitamente alinhado, branco e de aparência natural após um tratamento odontológico cosmético.",
+      "imageUrl": "https://images.unsplash.com/photo-1599305445701-3c893c551380?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJmZWN0JTIwd2hpdGUlMjBzbWlsZXxlbnwwfHx8fDE3NzAwNjY4NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "perfect white smile"
     },
     {
-      "id": "clinic-detail",
-      "description": "Detalhe de design de interiores artístico dentro da clínica.",
-      "imageUrl": "https://images.unsplash.com/photo-1696654149042-196d07713526?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhcnRpc3RpYyUyMGludGVyaW9yJTIwZGV0YWlsfGVufDB8fHx8MTc2OTYyNzc3OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "artistic interior detail"
+      "id": "testimonial-avatar-1",
+      "description": "Retrato de uma mulher sorrindo, com aparência feliz e confiante.",
+      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMG9mJTIwYSUyMHNtaWxpbmclMjB3b21hbnxlbnwwfHx8fDE3NzAwNjY5Njd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smiling woman portrait"
     },
     {
-      "id": "contact-map-blue",
-      "description": "Mapa estilizado com tema azul e prata mostrando uma localização.",
-      "imageUrl": "https://images.unsplash.com/photo-15722781078-caa4bfbfdbb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxibHVlJTIwY2l0eSUyMG1hcHxlbnwwfHx8fDE3Njk2Mjc3Nzl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "blue city map"
+      "id": "testimonial-avatar-2",
+      "description": "Retrato de um homem de meia-idade sorrindo, parecendo profissional e satisfeito.",
+      "imageUrl": "https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtaWRkbGUlMjBhZ2VkJTIwbWFufGVufDB8fHx8MTc3MDA2Njk2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "middle aged man"
+    },
+    {
+      "id": "testimonial-avatar-3",
+      "description": "Retrato de uma jovem profissional sorrindo.",
+      "imageUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx5b3VuZyUyMHByb2Zlc3Npb25hbCUyMHdvbWFufGVufDB8fHx8MTc3MDA2Njk2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "young professional woman"
     }
   ]
 }
