@@ -17,7 +17,7 @@ import { cn } from "@/lib/utils";
 
 const transformationCases = [
   {
-    title: "Lentes de Contato Dental",
+    title: "Tratamento Ortodôntico",
     before: PlaceHolderImages.find(img => img.id === "before-smile"),
     after: PlaceHolderImages.find(img => img.id === "after-smile"),
   },
@@ -77,6 +77,7 @@ export default function Transformations() {
             opts={{
               align: "center",
               loop: true,
+              slidesPerView: 1,
             }}
             className="w-full max-w-5xl mx-auto"
           >
@@ -85,7 +86,7 @@ export default function Transformations() {
                 t.before && t.after && (
                   <CarouselItem key={index} className="pl-4 basis-full sm:basis-4/5 md:basis-3/4 lg:basis-2/3">
                     <div className="p-1 h-full">
-                      <Card className="rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-[70vh] flex flex-col">
+                      <Card className="rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-[70vh] sm:h-[60vh] flex flex-col">
                         <CardContent className="p-2 md:p-4 space-y-2 flex-grow flex flex-col">
                           <h3 className="text-center font-sans font-bold text-foreground text-base md:text-lg shrink-0">{t.title}</h3>
                           <div className="flex flex-col gap-px flex-grow items-stretch">
@@ -97,7 +98,7 @@ export default function Transformations() {
                                 className="object-cover rounded-xl"
                                 loading="lazy"
                                 data-ai-hint={t.before.imageHint}
-                                sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 75vw, 66vw"
+                                sizes="(max-width: 640px) 90vw, (max-width: 1024px) 75vw, 66vw"
                               />
                               <Badge className="absolute top-2 left-2 bg-primary text-primary-foreground border-none">Antes</Badge>
                             </div>
@@ -110,7 +111,7 @@ export default function Transformations() {
                                 className="object-cover rounded-xl"
                                 loading="lazy"
                                 data-ai-hint={t.after.imageHint}
-                                sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, (max-width: 1024px) 75vw, 66vw"
+                                sizes="(max-width: 640px) 90vw, (max-width: 1024px) 75vw, 66vw"
                               />
                               <Badge className="absolute top-2 left-2 bg-primary text-primary-foreground border-none">Depois</Badge>
                             </div>
@@ -122,8 +123,8 @@ export default function Transformations() {
                 )
               ))}
             </CarouselContent>
-            <CarouselPrevious className="h-11 w-11 bg-white/50 text-primary border-none hover:bg-white/75 backdrop-blur-sm left-4 z-10 disabled:opacity-0" />
-            <CarouselNext className="h-11 w-11 bg-white/50 text-primary border-none hover:bg-white/75 backdrop-blur-sm right-4 z-10 disabled:opacity-0" />
+            <CarouselPrevious className="h-11 w-11 bg-white/50 text-primary border-none hover:bg-white/75 backdrop-blur-sm -left-2 sm:left-4 z-10 disabled:opacity-0" />
+            <CarouselNext className="h-11 w-11 bg-white/50 text-primary border-none hover:bg-white/75 backdrop-blur-sm -right-2 sm:right-4 z-10 disabled:opacity-0" />
           </Carousel>
            <div className="flex justify-center gap-2 mt-8">
             {Array.from({ length: count }).map((_, i) => (
