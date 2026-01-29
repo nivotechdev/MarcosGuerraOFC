@@ -26,7 +26,7 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="relative w-full flex items-center bg-background py-24 sm:py-32"
+      className="relative w-full flex items-center bg-white py-24 sm:py-32"
     >
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
