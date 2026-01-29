@@ -1,41 +1,65 @@
 import Image from "next/image";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { CheckCircle } from "lucide-react";
 
-export default function WhyUs() {
-  const whyUsImage = PlaceHolderImages.find(img => img.id === "clinic-environment");
+const qualifications = [
+    {
+        title: "Especialista em Implantodontia e Prótese Dentária",
+    },
+    {
+        title: "PhD em Reabilitação Oral de Alta Complexidade",
+    },
+    {
+        title: "Pioneiro em Fluxo Digital e Lentes de Contato Cerâmicas",
+    }
+];
+
+// This component was 'WhyUs' and is now transformed into the Specialist's bio section.
+export default function Specialist() {
+  const imageUrl = "https://images.unsplash.com/photo-1606811856475-5e6fcdc6e509?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGRlbnRpc3RhfGVufDB8fDB8fHww";
 
   return (
-    <section id="why-us" className="py-20 sm:py-32 bg-secondary">
+    <section id="specialist" className="py-20 sm:py-32 bg-white text-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center max-w-7xl mx-auto">
-          <div className="max-w-md mx-auto md:mx-0">
-             {whyUsImage && (
-              <Image
-                src="https://images.unsplash.com/photo-1606811856475-5e6fcdc6e509?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGRlbnRpc3RhfGVufDB8fDB8fHww"
-                alt={whyUsImage.description}
-                width={500}
-                height={600}
-                className="rounded-lg object-cover shadow-lg"
-                data-ai-hint={whyUsImage.imageHint}
-              />
-            )}
+          
+          {/* Image Column */}
+          <div className="w-full max-w-md mx-auto md:mx-0">
+            <Image
+              src={imageUrl}
+              alt="Dr. Marcos Guerra"
+              width={500}
+              height={600}
+              className="rounded-[24px] object-cover shadow-lg aspect-[5/6]"
+              data-ai-hint="professional dentist portrait"
+            />
           </div>
-          <div className="text-center md:text-left">
-            <h2 className="text-3xl md:text-4xl font-serif text-foreground">
-              Um Santuário de Tecnologia e Acolhimento
+
+          {/* Text Column */}
+          <div className="relative text-left">
+             <div className="absolute top-0 bottom-0 -left-10 w-px bg-primary hidden md:block" />
+
+            <h3 className="font-serif text-xl text-foreground/90">A Ciência e o Cuidado por trás do seu Sorriso</h3>
+            <h2 className="mt-2 text-2xl font-bold uppercase tracking-wider text-foreground">
+              DR. MARCOS GUERRA
             </h2>
-            <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              Entendemos que a verdadeira excelência odontológica nasce da fusão entre a mais avançada tecnologia e um cuidado profundamente humano. Em nossa clínica, a insegurança de esconder o sorriso e o medo de tratamentos dão lugar à confiança e ao bem-estar.
+            <p className="mt-6 text-base text-muted-foreground leading-relaxed">
+              Com mais de 15 anos de atuação, o Dr. Marcos Guerra une a precisão da tecnologia avançada ao acolhimento de um atendimento humanizado. Sua filosofia de trabalho foca na reabilitação oral estética, devolvendo não apenas sorrisos, mas a autoestima e a qualidade de vida de seus pacientes.
             </p>
-            <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-              Criamos um ambiente onde você não é apenas um paciente, mas o arquiteto do seu próprio sorriso, amparado por especialistas dedicados a transformar sua vida.
-            </p>
+            
+            <ul className="mt-8 space-y-3">
+              {qualifications.map((item) => (
+                <li key={item.title} className="flex items-center gap-3">
+                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
+                  <span className="text-muted-foreground">{item.title}</span>
+                </li>
+              ))}
+            </ul>
+
             <div className="mt-10">
-                <Link href="#contact" passHref>
-                    <Button size="lg">Converse com um especialista</Button>
-                </Link>
+                <Button size="lg" variant="outline">
+                    CRO-SP 12345
+                </Button>
             </div>
           </div>
         </div>

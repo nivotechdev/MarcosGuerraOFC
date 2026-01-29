@@ -6,7 +6,7 @@ import Location from "@/components/sections/location";
 import Faq from "@/components/sections/faq";
 import Cta from "@/components/sections/cta";
 import Footer from "@/components/sections/footer";
-import WhyUs from "@/components/sections/why-us";
+import Specialist from "@/components/sections/why-us";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <WhyUs />
+        <Specialist />
         <div className="w-full border-t-2 border-primary" />
         <Benefits />
         <div className="w-full border-t-2 border-primary" />
