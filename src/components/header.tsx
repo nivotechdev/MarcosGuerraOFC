@@ -43,7 +43,7 @@ export default function Header() {
   return (
     <header className={cn(
       "sticky top-0 left-0 right-0 z-50 transition-all duration-300 border-b-2",
-      isScrolled ? "bg-background shadow-sm border-primary" : "bg-transparent border-transparent"
+      isScrolled ? "bg-background/80 backdrop-blur-sm shadow-sm border-primary" : "bg-transparent border-transparent"
     )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -68,9 +68,9 @@ export default function Header() {
                             <span className="sr-only">Abrir menu</span>
                         </Button>
                     </SheetTrigger>
-                    <SheetContent side="right" className="w-full h-full bg-secondary/95 backdrop-blur-xl p-0 flex flex-col">
+                    <SheetContent side="right" className="w-full h-full bg-background/95 backdrop-blur-xl p-0 flex flex-col">
                         <SheetHeader className="flex-row justify-between items-center p-4 border-b">
-                             <SheetTitle>
+                             <SheetTitle className="sr-only">
                                Menu Principal
                              </SheetTitle>
                              <SheetDescription className="sr-only">Navegue pelas seções do site.</SheetDescription>
