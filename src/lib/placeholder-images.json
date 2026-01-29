@@ -47,6 +47,12 @@
       "description": "Sorriso branco e brilhante após tratamento de clareamento avançado.",
       "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/logos/Whisk_d04850e34d470aaa798444fadadd56c4dr.jpeg",
       "imageHint": "whitened smile"
+    },
+    {
+      "id": "before-whitening",
+      "description": "Sorriso amarelado antes do tratamento de clareamento.",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/logos/Whisk_bd85a0a96da286f91c0483f8080b47e3dr.jpeg",
+      "imageHint": "yellowed smile"
     }
   ]
 }

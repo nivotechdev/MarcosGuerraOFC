@@ -28,7 +28,7 @@ const transformationCases = [
   },
   {
     title: "Clareamento Avançado",
-    before: PlaceHolderImages.find(img => img.id === "before-smile"),
+    before: PlaceHolderImages.find(img => img.id === "before-whitening"),
     after: PlaceHolderImages.find(img => img.id === "after-whitening"),
   },
    {
@@ -83,7 +83,7 @@ export default function Transformations() {
             <CarouselContent className="-ml-4">
               {transformationCases.map((t, index) => (
                 t.before && t.after && (
-                  <CarouselItem key={index} className="pl-4 basis-9/10 lg:basis-4/5">
+                  <CarouselItem key={index} className="pl-4 basis-full lg:basis-4/5">
                     <div className="p-1 h-full">
                       <Card className="rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-[60vh] md:h-full flex flex-col">
                         <CardContent className="p-2 md:p-4 space-y-2 flex-grow flex flex-col">
