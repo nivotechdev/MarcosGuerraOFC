@@ -83,33 +83,34 @@ export default function Transformations() {
             <CarouselContent className="-ml-4">
               {transformationCases.map((t, index) => (
                 t.before && t.after && (
-                  <CarouselItem key={index} className="pl-4 basis-5/6 md:basis-1/2 lg:basis-1/3">
+                  <CarouselItem key={index} className="pl-4 basis-9/10 md:basis-1/2 lg:basis-1/3">
                     <div className="p-1 h-full">
-                      <Card className="rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-full flex flex-col">
-                        <CardContent className="p-2 md:p-4 space-y-2 md:space-y-4 flex-grow flex flex-col">
-                          <h3 className="text-center font-sans font-bold text-foreground text-base md:text-lg">{t.title}</h3>
-                          <div className="flex md:flex-col gap-2 md:gap-0 md:space-y-4 flex-grow items-stretch justify-between">
-                            <div className="relative">
+                      <Card className="rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-[60vh] md:h-full flex flex-col">
+                        <CardContent className="p-2 md:p-4 space-y-2 flex-grow flex flex-col">
+                          <h3 className="text-center font-sans font-bold text-foreground text-base md:text-lg shrink-0">{t.title}</h3>
+                          <div className="flex flex-col gap-2 flex-grow items-stretch">
+                            <div className="relative flex-1">
                               <Image
                                 src={t.before.imageUrl}
                                 alt={`Antes - ${t.title}`}
-                                width={400}
-                                height={300}
-                                className="object-cover w-full aspect-[4/3] rounded-xl"
+                                fill
+                                className="object-cover rounded-xl"
                                 loading="lazy"
                                 data-ai-hint={t.before.imageHint}
+                                sizes="(max-width: 768px) 90vw, (max-width: 1200px) 50vw, 33vw"
                               />
                               <Badge className="absolute top-2 left-2 bg-primary text-primary-foreground border-none">Antes</Badge>
                             </div>
-                            <div className="relative">
+                            <div className="shrink-0 h-px w-full bg-primary" />
+                            <div className="relative flex-1">
                               <Image
                                 src={t.after.imageUrl}
                                 alt={`Depois - ${t.title}`}
-                                width={400}
-                                height={300}
-                                className="object-cover w-full aspect-[4/3] rounded-xl"
+                                fill
+                                className="object-cover rounded-xl"
                                 loading="lazy"
                                 data-ai-hint={t.after.imageHint}
+                                sizes="(max-width: 768px) 90vw, (max-width: 1200px) 50vw, 33vw"
                               />
                               <Badge className="absolute top-2 left-2 bg-primary text-primary-foreground border-none">Depois</Badge>
                             </div>
@@ -121,8 +122,8 @@ export default function Transformations() {
                 )
               ))}
             </CarouselContent>
-            <CarouselPrevious className="h-11 w-11 bg-white/50 text-primary border-none hover:bg-white/75 backdrop-blur-sm left-[-10px] md:left-4 disabled:opacity-0" />
-            <CarouselNext className="h-11 w-11 bg-white/50 text-primary border-none hover:bg-white/75 backdrop-blur-sm right-[-10px] md:right-4 disabled:opacity-0" />
+            <CarouselPrevious className="h-11 w-11 bg-white/50 text-primary border-none hover:bg-white/75 backdrop-blur-sm left-4 z-10 disabled:opacity-0" />
+            <CarouselNext className="h-11 w-11 bg-white/50 text-primary border-none hover:bg-white/75 backdrop-blur-sm right-4 z-10 disabled:opacity-0" />
           </Carousel>
            <div className="flex justify-center gap-2 mt-8">
             {Array.from({ length: count }).map((_, i) => (
