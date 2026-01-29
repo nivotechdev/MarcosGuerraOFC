@@ -10,6 +10,8 @@ import {
   SheetHeader,
   SheetTrigger,
   SheetClose,
+  SheetTitle,
+  SheetDescription,
 } from "@/components/ui/sheet"
 import React from "react";
 import { cn } from "@/lib/utils";
@@ -68,6 +70,8 @@ export default function Header() {
                     </SheetTrigger>
                     <SheetContent side="right" className="w-full h-full bg-background/95 backdrop-blur-xl p-0">
                         <SheetHeader className="flex-row justify-between items-center p-4 border-b">
+                             <SheetTitle className="sr-only">Menu Principal</SheetTitle>
+                             <SheetDescription className="sr-only">Navegue pelas seções do site.</SheetDescription>
                              <Logo />
                              <SheetClose asChild>
                                 <Button variant="ghost" size="icon">
