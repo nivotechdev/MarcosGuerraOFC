@@ -1,8 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { MapPin, Clock, Phone } from 'lucide-react';
 
 const contactDetails = [
@@ -27,8 +25,6 @@ const contactDetails = [
 ]
 
 export default function Location() {
-  const mapImage = PlaceHolderImages.find(img => img.id === "clinic-map");
-
   return (
     <section id="location" className="py-20 sm:py-32 bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -73,16 +69,16 @@ export default function Location() {
                 </div>
 
                 <div className="relative w-full min-h-[300px] lg:min-h-0">
-                    {mapImage && (
-                        <Image
-                            src={mapImage.imageUrl}
-                            alt={mapImage.description}
-                            fill
-                            className="object-cover"
-                            sizes="(max-width: 1023px) 100vw, 50vw"
-                            data-ai-hint={mapImage.imageHint}
-                        />
-                    )}
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.145834839031!2d-46.65653458440596!3d-23.56309946754097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0x2da4106f3e36e73f!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1672778546555!5m2!1spt-BR!2sbr"
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        allowFullScreen={true}
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className="absolute inset-0 w-full h-full"
+                    ></iframe>
                 </div>
             </div>
         </Card>
