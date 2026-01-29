@@ -16,7 +16,7 @@ const qualifications = [
 
 // This component was 'WhyUs' and is now transformed into the Specialist's bio section.
 export default function Specialist() {
-  const imageUrl = "https://images.unsplash.com/photo-1606811856475-5e6fcdc6e509?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGRlbnRpc3RhfGVufDB8fDB8fHww";
+  const imageUrl = "https://images.unsplash.com/photo-1645066928295-2506defde470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkb3V0b3J8ZW58MHx8fHwxNzY5NjUyMjU1fDA&ixlib=rb-4.1.0&q=80&w=1080";
 
   return (
     <section id="specialist" className="py-20 sm:py-32 bg-white text-foreground">
