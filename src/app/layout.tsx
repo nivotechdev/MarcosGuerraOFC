@@ -14,7 +14,7 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Marcos Guerra | Odontologia de Alta Performance',
+  title: 'Dr. Marcos Guerra | Odontologia de Alta Performance',
   description: 'O Sorriso que Você Merece, Com a Experiência que Você Exige. Odontologia digital avançada para tratamentos rápidos, precisos e sem dor.',
 };
 

@@ -39,7 +39,7 @@ export default function Footer() {
         </div>
         <div className="mt-12 pt-8 flex flex-col-reverse md:flex-row items-center justify-between text-sm text-muted-foreground border-t border-border/20">
            <p className="mt-4 md:mt-0">
-            © {new Date().getFullYear()} Marcos Guerra Odontologia. Todos os direitos reservados.
+            © {new Date().getFullYear()} Dr. Marcos Guerra Odontologia. Todos os direitos reservados.
           </p>
           <div className="flex items-center gap-6">
              <Link href="#" className="hover:text-primary transition-colors">Política de Privacidade</Link>
