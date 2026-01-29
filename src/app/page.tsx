@@ -20,8 +20,8 @@ export default function Home() {
         <div className="w-full border-t-2 border-primary" />
         <Benefits />
         <Location />
-        <Faq />
         <Cta />
+        <Faq />
       </main>
       <Footer />
     </div>
