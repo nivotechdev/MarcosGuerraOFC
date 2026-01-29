@@ -1,12 +1,12 @@
 import Header from "@/components/header";
 import Hero from "@/components/sections/hero";
 import Benefits from "@/components/sections/benefits";
-import Process from "@/components/sections/process";
 import Location from "@/components/sections/location";
 import Faq from "@/components/sections/faq";
 import Cta from "@/components/sections/cta";
 import Footer from "@/components/sections/footer";
 import Specialist from "@/components/sections/why-us";
+import Transformations from "@/components/sections/transformations";
 
 export default function Home() {
   return (
@@ -16,9 +16,9 @@ export default function Home() {
         <Hero />
         <Specialist />
         <div className="w-full border-t-2 border-primary" />
-        <Benefits />
+        <Transformations />
         <div className="w-full border-t-2 border-primary" />
-        <Process />
+        <Benefits />
         <Location />
         <Faq />
         <Cta />
