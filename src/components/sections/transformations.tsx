@@ -75,7 +75,7 @@ export default function Transformations() {
           <Carousel
             setApi={setApi}
             opts={{
-              align: "start",
+              align: "center",
               loop: true,
             }}
             className="w-full max-w-5xl mx-auto"
@@ -83,7 +83,7 @@ export default function Transformations() {
             <CarouselContent className="-ml-4">
               {transformationCases.map((t, index) => (
                 t.before && t.after && (
-                  <CarouselItem key={index} className="pl-4 basis-9/10 md:basis-1/2 lg:basis-1/3">
+                  <CarouselItem key={index} className="pl-4 basis-9/10 lg:basis-4/5">
                     <div className="p-1 h-full">
                       <Card className="rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-[60vh] md:h-full flex flex-col">
                         <CardContent className="p-2 md:p-4 space-y-2 flex-grow flex flex-col">
