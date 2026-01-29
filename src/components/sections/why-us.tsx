@@ -19,7 +19,7 @@ export default function Specialist() {
   const imageUrl = "https://images.unsplash.com/photo-1667133295308-9ef24f71952e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8ZGVudGlzdGF8ZW58MHx8fHwxNzY5NjMzMjg4fDA&ixlib=rb-4.1.0&q=80&w=1080";
 
   return (
-    <section id="specialist" className="py-20 sm:py-32 bg-background text-foreground">
+    <section id="specialist" className="py-20 sm:py-32 bg-white text-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center max-w-7xl mx-auto">
           
@@ -39,8 +39,7 @@ export default function Specialist() {
           <div className="relative text-left">
              <div className="absolute top-0 bottom-0 -left-10 w-px bg-primary hidden md:block" />
 
-            <h3 className="font-serif text-xl text-foreground/90">A Ciência e o Cuidado por trás do seu Sorriso</h3>
-            <h2 className="mt-2 text-2xl font-bold uppercase tracking-wider text-foreground">
+            <h2 className="text-2xl font-bold uppercase tracking-wider text-foreground">
               DR. MARCOS GUERRA
             </h2>
             <p className="mt-6 text-base text-muted-foreground leading-relaxed">
