@@ -33,7 +33,7 @@ export default function Header() {
 
   return (
     <header className={cn(
-      "sticky top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm shadow-sm border-b-2 border-primary"
+      "sticky top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur shadow-sm border-b-2 border-primary"
     )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -85,7 +85,7 @@ export default function Header() {
                             ))}
                              <Link href="#contact" passHref>
                                 <Button onClick={() => setOpen(false)} size="lg" className="mt-8 w-full max-w-xs mx-auto h-12 text-lg">
-                                  Agendar Avaliação
+                                  Agendar Avaliação Premium
                                 </Button>
                             </Link>
                         </nav>
