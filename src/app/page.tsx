@@ -10,12 +10,14 @@ import WhyUs from "@/components/sections/why-us";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-background">
+    <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-1">
         <Hero />
         <WhyUs />
+        <div className="w-full border-t-2 border-primary" />
         <Benefits />
+        <div className="w-full border-t-2 border-primary" />
         <Process />
         <Location />
         <Faq />

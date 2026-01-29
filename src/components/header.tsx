@@ -42,15 +42,15 @@ export default function Header() {
 
   return (
     <header className={cn(
-      "sticky top-0 left-0 right-0 z-50 transition-all duration-300",
-      isScrolled ? "bg-background/80 backdrop-blur-md shadow-sm" : "bg-transparent"
+      "sticky top-0 left-0 right-0 z-50 transition-all duration-300 border-b-2",
+      isScrolled ? "bg-background shadow-sm border-primary" : "bg-transparent border-transparent"
     )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Logo />
           <nav className="hidden md:flex items-center justify-center gap-8">
             {navItems.map((item) => (
-              <Link key={item.label} href={item.href} className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
+              <Link key={item.label} href={item.href} className="text-sm font-medium text-foreground hover:text-primary transition-colors">
                 {item.label}
               </Link>
             ))}
@@ -68,10 +68,10 @@ export default function Header() {
                             <span className="sr-only">Abrir menu</span>
                         </Button>
                     </SheetTrigger>
-                    <SheetContent side="right" className="w-full h-full bg-background/95 backdrop-blur-xl p-0 flex flex-col">
+                    <SheetContent side="right" className="w-full h-full bg-secondary/95 backdrop-blur-xl p-0 flex flex-col">
                         <SheetHeader className="flex-row justify-between items-center p-4 border-b">
                              <SheetTitle>
-                               <span className="sr-only">Menu Principal</span>
+                               Menu Principal
                              </SheetTitle>
                              <SheetDescription className="sr-only">Navegue pelas seções do site.</SheetDescription>
                              <Logo />

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Cta() {
   return (
-    <section id="contact" className="py-20 sm:py-32 bg-background">
+    <section id="contact" className="py-20 sm:py-32 bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-serif text-foreground">
           Pronto para transformar seu sorriso?
