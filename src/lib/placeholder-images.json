@@ -3,14 +3,14 @@
     {
       "id": "hero-background",
       "description": "Interior de uma clínica odontológica moderna, limpa e luxuosa, com uma cadeira de tratamento e equipamentos de alta tecnologia.",
-      "imageUrl": "https://images.unsplash.com/photo-1629425733761-caae3b5f2e50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBkZW50YWwlMjBjbGluaWN8ZW58MHx8fHwxNzcwMDY2NTc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/logos/Whisk_f361a85444cc92d9af5402f3663c2926dr.jpeg",
       "imageHint": "luxury dental clinic"
     },
     {
       "id": "clinic-environment",
-      "description": "Um dentista profissional e amigável conversando com um paciente em um ambiente de clínica calmo e acolhedor.",
-      "imageUrl": "https://images.unsplash.com/photo-1588776518167-35905c86c99c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkZW50aXN0JTIwY29uc3VsdGluZyUyMHBhdGllbnR8ZW58MHx8fHwxNzcwMDY2NTc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "dentist consulting patient"
+      "description": "Retrato de um dentista amigável em seu consultório.",
+      "imageUrl": "https://images.unsplash.com/photo-1598256986800-fe5f95da9787?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGVudGlzdGF8ZW58MHx8MHx8fDA%3D",
+      "imageHint": "friendly dentist"
     },
     {
       "id": "before-smile",
