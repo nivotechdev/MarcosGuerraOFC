@@ -27,7 +27,7 @@ const processSteps = [
 
 export default function Process() {
     return (
-        <section id="process" className="py-20 sm:py-32 bg-background">
+        <section id="process" className="py-20 sm:py-32 bg-secondary">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center max-w-3xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-serif text-foreground">
@@ -46,8 +46,8 @@ export default function Process() {
                                 {index < processSteps.length - 1 && (
                                     <div className="absolute left-8 top-8 h-full w-px bg-border -translate-x-1/2" aria-hidden="true" />
                                 )}
-                                <div className="flex-shrink-0 relative z-10 bg-background">
-                                    <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center border-4 border-background">
+                                <div className="flex-shrink-0 relative z-10 bg-secondary">
+                                    <div className="w-16 h-16 rounded-full bg-background flex items-center justify-center border-4 border-secondary">
                                         <step.icon className="h-8 w-8 text-primary" />
                                     </div>
                                 </div>
@@ -73,7 +73,7 @@ export default function Process() {
                                     </div>
                                 </div>
                                 <div className="relative z-10">
-                                    <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center border-4 border-background">
+                                    <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center border-4 border-secondary">
                                         <step.icon className="h-8 w-8 text-primary" />
                                     </div>
                                 </div>

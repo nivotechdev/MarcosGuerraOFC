@@ -7,13 +7,13 @@ export default function WhyUs() {
   const whyUsImage = PlaceHolderImages.find(img => img.id === "clinic-environment");
 
   return (
-    <section id="why-us" className="py-20 sm:py-32 bg-background">
+    <section id="why-us" className="py-20 sm:py-32 bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center max-w-7xl mx-auto">
           <div className="max-w-md mx-auto md:mx-0">
              {whyUsImage && (
               <Image
-                src={whyUsImage.imageUrl}
+                src="https://images.unsplash.com/photo-1606811856475-5e6fcdc6e509?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGRlbnRpc3RhfGVufDB8fDB8fHww"
                 alt={whyUsImage.description}
                 width={500}
                 height={600}

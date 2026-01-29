@@ -26,7 +26,7 @@ const benefits = [
 
 export default function Benefits() {
   return (
-    <section id="treatments" className="py-20 sm:py-32 bg-secondary">
+    <section id="treatments" className="py-20 sm:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-serif text-foreground">Excelência em cada detalhe</h2>
@@ -36,7 +36,7 @@ export default function Benefits() {
         </div>
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {benefits.map((benefit) => (
-            <Card key={benefit.title} className="text-center bg-card shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-2 flex flex-col">
+            <Card key={benefit.title} className="text-center bg-card shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-2 flex flex-col border border-primary/20">
               <CardHeader className="items-center">
                 <div className="bg-primary/10 p-3 rounded-full mb-4">
                     <benefit.icon className="h-8 w-8 text-primary" />

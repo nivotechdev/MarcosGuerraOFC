@@ -18,19 +18,10 @@ import { cn } from "@/lib/utils";
 
 export default function Header() {
   const [open, setOpen] = React.useState(false);
-  const [isScrolled, setIsScrolled] = React.useState(false);
   const [isClient, setIsClient] = React.useState(false);
 
   React.useEffect(() => {
     setIsClient(true);
-  }, []);
-
-  React.useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navItems = [
@@ -42,8 +33,7 @@ export default function Header() {
 
   return (
     <header className={cn(
-      "sticky top-0 left-0 right-0 z-50 transition-all duration-300 border-b-2",
-      isScrolled ? "bg-background/80 backdrop-blur-sm shadow-sm border-primary" : "bg-transparent border-transparent"
+      "sticky top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm shadow-sm border-b-2 border-primary"
     )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -101,9 +91,9 @@ export default function Header() {
                         </nav>
                         <div className="p-6 border-t border-border/20">
                           <div className="flex justify-center gap-4">
-                              <Link href="#" passHref><Button size="icon" variant="ghost" className="hover:bg-primary/20 hover:text-primary text-foreground/70"><Instagram /></Button></Link>
-                              <Link href="#" passHref><Button size="icon" variant="ghost" className="hover:bg-primary/20 hover:text-primary text-foreground/70"><Facebook /></Button></Link>
-                              <Link href="#" passHref><Button size="icon" variant="ghost" className="hover:bg-primary/20 hover:text-primary text-foreground/70"><Linkedin /></Button></Link>
+                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-foreground hover:bg-primary/20 hover:text-primary"><Instagram /></Button></Link>
+                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-foreground hover:bg-primary/20 hover:text-primary"><Facebook /></Button></Link>
+                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-foreground hover:bg-primary/20 hover:text-primary"><Linkedin /></Button></Link>
                           </div>
                         </div>
                     </SheetContent>
