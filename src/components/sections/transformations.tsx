@@ -83,12 +83,12 @@ export default function Transformations() {
             <CarouselContent className="-ml-4">
               {transformationCases.map((t, index) => (
                 t.before && t.after && (
-                  <CarouselItem key={index} className="pl-4 basis-11/12 md:basis-1/2 lg:basis-1/3">
+                  <CarouselItem key={index} className="pl-4 basis-5/6 md:basis-1/2 lg:basis-1/3">
                     <div className="p-1 h-full">
                       <Card className="rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-full flex flex-col">
-                        <CardContent className="p-4 space-y-4 flex-grow flex flex-col">
-                          <h3 className="text-center font-sans font-bold text-foreground text-lg">{t.title}</h3>
-                          <div className="space-y-4 flex-grow flex flex-col justify-between">
+                        <CardContent className="p-2 md:p-4 space-y-2 md:space-y-4 flex-grow flex flex-col">
+                          <h3 className="text-center font-sans font-bold text-foreground text-base md:text-lg">{t.title}</h3>
+                          <div className="flex md:flex-col gap-2 md:gap-0 md:space-y-4 flex-grow items-stretch justify-between">
                             <div className="relative">
                               <Image
                                 src={t.before.imageUrl}
