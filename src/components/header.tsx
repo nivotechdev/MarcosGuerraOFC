@@ -17,6 +17,11 @@ import { cn } from "@/lib/utils";
 export default function Header() {
   const [open, setOpen] = React.useState(false);
   const [isScrolled, setIsScrolled] = React.useState(false);
+  const [isClient, setIsClient] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -53,6 +58,7 @@ export default function Header() {
               <Button>Agendar Avaliação</Button>
             </Link>
             <div className="md:hidden">
+              {isClient && (
                 <Sheet open={open} onOpenChange={setOpen}>
                     <SheetTrigger asChild>
                         <Button variant="ghost" size="icon">
@@ -89,6 +95,7 @@ export default function Header() {
                         </nav>
                     </SheetContent>
                 </Sheet>
+              )}
             </div>
           </div>
         </div>
