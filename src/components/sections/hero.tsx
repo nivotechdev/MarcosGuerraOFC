@@ -7,23 +7,37 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import React from 'react';
 
 export default function Hero() {
-  const heroImage = PlaceHolderImages.find(img => img.id === "hero-background");
+  const heroImageDesktop = PlaceHolderImages.find(img => img.id === "hero-background");
+  const heroImageMobile = PlaceHolderImages.find(img => img.id === "hero-background-mobile");
 
   return (
     <section 
       id="home" 
-      className="relative w-full h-[90vh] flex items-center justify-center md:justify-start text-center md:text-left text-white"
+      className="relative w-full h-[90vh] flex items-center justify-center text-center text-white md:justify-start md:text-left"
     >
-      {heroImage && (
+      {/* Mobile Image */}
+      {heroImageMobile && (
         <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
+          src={heroImageMobile.imageUrl}
+          alt={heroImageMobile.description}
           fill
-          className="object-cover"
-          data-ai-hint={heroImage.imageHint}
+          className="object-cover object-center md:hidden"
+          data-ai-hint={heroImageMobile.imageHint}
           priority
         />
       )}
+      {/* Desktop Image */}
+      {heroImageDesktop && (
+        <Image
+          src={heroImageDesktop.imageUrl}
+          alt={heroImageDesktop.description}
+          fill
+          className="object-cover object-center hidden md:block"
+          data-ai-hint={heroImageDesktop.imageHint}
+          priority
+        />
+      )}
+
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/10" />
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">

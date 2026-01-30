@@ -7,6 +7,12 @@
       "imageHint": "perfect smile"
     },
     {
+      "id": "hero-background-mobile",
+      "description": "Mulher sorrindo em um ambiente de consultório odontológico para banner mobile.",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/logos/Whisk_da7a105a3fbb44690bc4556994659954dr.jpeg",
+      "imageHint": "woman smile dentist"
+    },
+    {
       "id": "clinic-environment",
       "description": "Retrato de um dentista sorrindo em seu consultório moderno.",
       "imageUrl": "https://images.unsplash.com/photo-1606811856475-5e6fcdc6e509?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGRlbnRpc3RhfGVufDB8fDB8fHww",
