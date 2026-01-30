@@ -57,7 +57,7 @@ export default function Hero() {
                 </Button>
               </Link>
               <Link href="#treatments" passHref>
-                  <Button size="lg" variant="outline" className="h-14 px-8 text-base font-bold text-white border-white hover:bg-white/10 transition-transform hover:scale-105">
+                  <Button size="lg" variant="outline" className="h-14 px-8 text-base font-bold text-primary border-primary hover:bg-primary/10 transition-transform hover:scale-105">
                     Conhecer Tratamentos
                   </Button>
               </Link>
