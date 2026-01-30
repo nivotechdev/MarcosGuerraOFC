@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "Banner de uma mulher com um sorriso perfeito.",
-      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/logos/Whisk_6b146b8dd75a09cafbe4142a0c8f687cdr.jpeg",
-      "imageHint": "perfect smile"
+      "description": "Consultório odontológico moderno e bem iluminado.",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/logos/Whisk_4efe6767e8e9400b51e4a7542e4dc026dr.jpeg",
+      "imageHint": "dental office"
     },
     {
       "id": "hero-background-mobile",
