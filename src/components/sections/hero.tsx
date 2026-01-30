@@ -42,7 +42,7 @@ export default function Hero() {
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
             <h1 className="font-serif text-4xl leading-tight md:text-6xl font-extrabold tracking-wide text-white [text-shadow:2px_2px_8px_rgba(0,0,0,0.8)]">
-              <span className="text-primary">O Sorriso que Você Merece,</span> a Experiência que Você Exige.
+              A Experiência que Você Exige, <span className="text-primary">O Sorriso que Você Merece.</span>
             </h1>
             <p className="mt-6 text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed tracking-wide [text-shadow:2px_2px_8px_rgba(0,0,0,0.8)]">
               Odontologia digital avançada para tratamentos rápidos, precisos e com o máximo de conforto.
