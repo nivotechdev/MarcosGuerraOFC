@@ -42,7 +42,7 @@ export default function Specialist() {
           <div className="relative text-left">
              <div className="absolute top-0 bottom-0 -left-10 w-px bg-accent hidden md:block" />
 
-            <h2 className="font-heading text-2xl font-bold uppercase tracking-wider text-primary">
+            <h2 className="font-heading text-2xl font-bold uppercase tracking-tight text-primary">
               DR. MARCOS GUERRA
             </h2>
             <p className="mt-6 text-base text-muted-foreground leading-relaxed">

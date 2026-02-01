@@ -19,7 +19,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['var(--font-inter)', ...fontFamily.sans],
-        heading: ['var(--font-heading)', ...fontFamily.serif],
+        heading: ['var(--font-heading)', ...fontFamily.sans],
       },
       colors: {
         background: 'hsl(var(--background))',

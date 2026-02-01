@@ -34,7 +34,7 @@ export default function Location() {
     <section id="location" className="py-20 sm:py-32 bg-muted">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-primary">
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-primary tracking-tight">
             Onde estamos e quando atender você
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">

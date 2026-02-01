@@ -35,7 +35,7 @@ export default function Benefits() {
     <section id="treatments" className="py-20 sm:py-32 bg-muted">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-primary">Nossos Tratamentos</h2>
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-primary tracking-tight">Nossos Tratamentos</h2>
           <p className="mt-4 text-lg text-muted-foreground">
             Conheça algumas de nossas especialidades, projetadas para oferecer o melhor cuidado para o seu sorriso.
           </p>

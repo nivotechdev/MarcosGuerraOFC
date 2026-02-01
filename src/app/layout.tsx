@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter, Playfair_Display } from 'next/font/google';
+import { Inter, Montserrat } from 'next/font/google';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import WhatsAppFab from '@/components/whatsapp-fab';
@@ -10,10 +10,10 @@ const inter = Inter({
   weight: ['400', '500', '600', '700'],
 });
 
-const playfair = Playfair_Display({
+const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-heading',
-  weight: ['700'],
+  weight: ['700', '800'],
 });
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${inter.variable} ${playfair.variable} scroll-smooth`}>
+    <html lang="pt-BR" className={`${inter.variable} ${montserrat.variable} scroll-smooth`}>
       <body className="font-sans antialiased">
         {children}
         <Toaster />

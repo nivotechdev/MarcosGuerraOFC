@@ -5,13 +5,13 @@
 @layer base {
   :root {
     --background: 0 0% 100%; /* #FFFFFF - Branco Absoluto */
-    --foreground: 215 14% 34%; /* #475569 - Slate Gray */
+    --foreground: 210 29% 27%; /* #334155 - Cinza Chumbo Suave */
     
     --card: 0 0% 100%;
-    --card-foreground: 215 14% 34%;
+    --card-foreground: 210 29% 27%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 215 14% 34%;
+    --popover-foreground: 210 29% 27%;
     
     --primary: 215 55% 23%; /* #1B365D - Azul Autoridade */
     --primary-foreground: 0 0% 100%;

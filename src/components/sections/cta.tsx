@@ -9,7 +9,7 @@ export default function Cta() {
     <section id="contact" className="py-20 sm:py-32 bg-background overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center py-10">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary tracking-tight">
             Sua jornada para um novo sorriso começa aqui.
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">

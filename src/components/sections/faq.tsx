@@ -29,7 +29,7 @@ export default function Faq() {
     <section className="py-20 sm:py-32 bg-muted">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
         <div className="text-center mb-12">
-          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-primary">
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-primary tracking-tight">
             Dúvidas Frequentes
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
