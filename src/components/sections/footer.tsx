@@ -46,7 +46,7 @@ export default function Footer() {
                   </a>
                 </li>
                 <li><a href="mailto:ortodontia.mguerra@gmail.com" className="hover:text-primary transition-colors">ortodontia.mguerra@gmail.com</a></li>
-                <li className="text-wrap">Av. Brasil, 1234, São Paulo - SP</li>
+                <li className="text-wrap">Avenida Júlio de Castilhos, 2773 – Sala 302-B<br />Bairro São Pelegrino – Caxias do Sul – RS</li>
               </ul>
           </div>
         </div>

@@ -4,13 +4,16 @@ import { Card } from "@/components/ui/card";
 import { MapPin, Clock, Phone } from 'lucide-react';
 
 const whatsappUrl = "https://wa.me/555432234237?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
+const mapQuery = "Avenida Júlio de Castilhos, 2773, São Pelegrino, Caxias do Sul, RS";
+const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapQuery)}`;
+const embedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.952934271168!2d-51.18249652579998!3d-29.16335999026215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951c3b53c5555555%3A0x7c739b6140498b31!2sAv.%20J%C3%BAlio%20de%20Castilhos%2C%202773%20-%20S%C3%A3o%20Pelegrino%2C%20Caxias%20do%20Sul%20-%20RS%2C%2095010-005!5e0!3m2!1spt-BR!2sbr!4v1719941196417!5m2!1spt-BR!2sbr";
 
 const contactDetails = [
     {
         icon: MapPin,
         title: "Endereço",
-        value: "Av. Brasil, 1234, São Paulo - SP",
-        href: "https://www.google.com/maps/search/?api=1&query=Av.+Brasil,+1234,+São+Paulo+-+SP"
+        value: "Avenida Júlio de Castilhos, 2773 – Sala 302-B\nBairro São Pelegrino – Caxias do Sul – RS",
+        href: mapUrl
     },
     {
         icon: Clock,
@@ -51,7 +54,7 @@ export default function Location() {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-foreground">{detail.title}</h4>
-                                    <p className="text-muted-foreground">
+                                    <p className="text-muted-foreground whitespace-pre-line">
                                         <a href={detail.href} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                                             {detail.value}
                                         </a>
@@ -64,7 +67,7 @@ export default function Location() {
                         <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                             <Button size="lg">Agendar Avaliação</Button>
                         </a>
-                        <a href="https://www.google.com/maps/search/?api=1&query=Av.+Brasil,+1234,+São+Paulo+-+SP" target="_blank" rel="noopener noreferrer">
+                        <a href={mapUrl} target="_blank" rel="noopener noreferrer">
                            <Button size="lg" variant="outline">Como Chegar</Button>
                         </a>
                     </div>
@@ -72,7 +75,7 @@ export default function Location() {
 
                 <div className="relative w-full min-h-[300px] lg:min-h-0">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.145834839031!2d-46.65653458440596!3d-23.56309946754097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0x2da4106f3e36e73f!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1672778546555!5m2!1spt-BR!2sbr"
+                        src={embedUrl}
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}
