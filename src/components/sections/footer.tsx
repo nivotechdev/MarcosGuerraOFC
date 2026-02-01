@@ -34,7 +34,7 @@ export default function Footer() {
               <h4 className="font-semibold font-sans text-lg text-foreground">Contato</h4>
               <ul className="mt-4 space-y-3 text-muted-foreground">
                 <li><a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">(54) 3223-4237</a></li>
-                <li><a href="mailto:contato@marcosguerra.com" className="hover:text-primary transition-colors">contato@marcosguerra.com</a></li>
+                <li><a href="mailto:ortodontia.mguerra@gmail.com" className="hover:text-primary transition-colors">ortodontia.mguerra@gmail.com</a></li>
                 <li className="text-wrap">Av. Brasil, 1234, São Paulo - SP</li>
               </ul>
           </div>
