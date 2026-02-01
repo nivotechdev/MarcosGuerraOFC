@@ -22,7 +22,7 @@ export default function Hero() {
           src={heroImageMobile.imageUrl}
           alt={heroImageMobile.description}
           fill
-          className="object-cover object-center md:hidden scale-110"
+          className="object-cover object-center md:hidden scale-125"
           data-ai-hint={heroImageMobile.imageHint}
           priority
         />
@@ -33,7 +33,7 @@ export default function Hero() {
           src={heroImageDesktop.imageUrl}
           alt={heroImageDesktop.description}
           fill
-          className="object-cover object-center hidden md:block scale-110"
+          className="object-cover object-center hidden md:block scale-125"
           data-ai-hint={heroImageDesktop.imageHint}
           priority
         />
@@ -41,11 +41,11 @@ export default function Hero() {
 
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-20">
-          <div className="max-w-2xl mx-auto">
-            <h1 className="font-heading text-4xl leading-[1.2] md:text-6xl font-bold tracking-tight text-white [text-shadow:0_2px_4px_rgba(0,0,0,0.5)]">
+          <div className="max-w-3xl mx-auto">
+            <h1 className="font-heading text-5xl leading-tight md:text-7xl font-bold tracking-tight text-white [text-shadow:0_2px_4px_rgba(0,0,0,0.5)]">
               A Experiência que Você Exige, <span className="text-white">O Sorriso que Você Merece.</span>
             </h1>
-            <p className="mt-6 text-lg md:text-xl text-white max-w-2xl mx-auto leading-relaxed tracking-wide [text-shadow:0_2px_4px_rgba(0,0,0,0.5)]">
+            <p className="mt-6 text-xl md:text-2xl text-white max-w-2xl mx-auto leading-relaxed tracking-wide [text-shadow:0_2px_4px_rgba(0,0,0,0.5)]">
               Odontologia digital avançada para tratamentos rápidos, precisos e com o máximo de conforto.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
