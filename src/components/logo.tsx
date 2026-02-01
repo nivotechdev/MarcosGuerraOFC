@@ -4,14 +4,14 @@ import { cn } from "@/lib/utils";
 
 export default function Logo({ className, variant = 'default' }: { className?: string, variant?: 'default' | 'inverted' }) {
   return (
-    <Link href="/" className={cn("relative block w-60 h-16", className)}>
+    <Link href="/" className={cn("relative block w-72 h-20", className)}>
       <Image
         src="https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/cert.png"
         alt="Dr. Marcos Guerra Logo"
         fill
         className="object-contain"
         style={variant === 'inverted' ? { filter: 'brightness(0) invert(1)' } : {}}
-        sizes="240px"
+        sizes="288px"
         priority
       />
     </Link>
