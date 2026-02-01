@@ -41,7 +41,7 @@ export default function Benefits() {
             Conheça algumas de nossas especialidades, projetadas para oferecer o melhor cuidado para o seu sorriso.
           </p>
         </div>
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 md:auto-rows-fr gap-8 max-w-5xl mx-auto">
           {benefits.map((benefit) => {
             const isMainService = benefit.title === "Clareamentos";
             return (
