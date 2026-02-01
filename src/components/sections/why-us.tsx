@@ -20,7 +20,7 @@ export default function Specialist() {
   const specialistImage = PlaceHolderImages.find(img => img.id === "specialist-portrait");
 
   return (
-    <section id="specialist" className="py-20 sm:py-32 bg-background text-foreground">
+    <section id="specialist" className="py-20 sm:py-32 bg-white text-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center max-w-7xl mx-auto">
           

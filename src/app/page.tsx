@@ -15,9 +15,7 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <Specialist />
-        <div className="w-full border-t-2 border-primary" />
         <Benefits />
-        <div className="w-full border-t-2 border-primary" />
         <Transformations />
         <Location />
         <Cta />

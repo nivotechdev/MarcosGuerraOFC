@@ -32,7 +32,7 @@ const benefits = [
 
 export default function Benefits() {
   return (
-    <section id="treatments" className="py-20 sm:py-32 bg-background">
+    <section id="treatments" className="py-20 sm:py-32 bg-secondary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-semibold text-foreground">Nossos Tratamentos</h2>
@@ -40,16 +40,11 @@ export default function Benefits() {
             Conheça algumas de nossas especialidades, projetadas para oferecer o melhor cuidado para o seu sorriso.
           </p>
         </div>
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-6 gap-8 max-w-7xl mx-auto auto-rows-fr">
-          {benefits.map((benefit, index) => (
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {benefits.slice(0, 3).map((benefit) => (
             <Card
               key={benefit.title}
-              className={cn(
-                "text-center shadow-sm transition-all duration-300 flex flex-col group h-full bg-card border border-primary/20 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary",
-                "sm:col-span-2",
-                index === 4 && "sm:col-start-2",
-                index < 2 ? "lg:col-span-3" : "lg:col-span-2"
-              )}
+              className="text-center shadow-sm transition-all duration-300 flex flex-col group h-full bg-card border border-primary/20 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary"
             >
               <CardHeader className="items-center">
                 <div className="bg-primary/10 p-3 rounded-full mb-4 transition-transform duration-300 group-hover:scale-110">
@@ -66,6 +61,28 @@ export default function Benefits() {
               </CardContent>
             </Card>
           ))}
+        </div>
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {benefits.slice(3).map((benefit) => (
+                <Card
+                key={benefit.title}
+                className="text-center shadow-sm transition-all duration-300 flex flex-col group h-full bg-card border border-primary/20 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary"
+                >
+                <CardHeader className="items-center">
+                    <div className="bg-primary/10 p-3 rounded-full mb-4 transition-transform duration-300 group-hover:scale-110">
+                    <benefit.icon className="h-8 w-8 text-primary" />
+                    </div>
+                    <CardTitle className="font-sans text-xl font-semibold">
+                    {benefit.title}
+                    </CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                    <p className="text-muted-foreground">
+                    {benefit.description}
+                    </p>
+                </CardContent>
+                </Card>
+            ))}
         </div>
       </div>
     </section>

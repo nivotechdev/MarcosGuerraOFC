@@ -8,7 +8,7 @@ export default function Footer() {
   const whatsappUrl = "https://wa.me/555432234237?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
 
   return (
-    <footer className="bg-background text-foreground border-t-2 border-primary">
+    <footer className="bg-secondary text-foreground border-t border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
           <div className="md:col-span-2">
