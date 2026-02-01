@@ -35,7 +35,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full border-b z-50 bg-muted">
+    <header className="fixed top-0 left-0 right-0 w-full border-b z-50 bg-muted/90 backdrop-blur-sm">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Logo variant="default" />
