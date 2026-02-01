@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="relative w-full h-[90vh] flex items-center justify-center text-center text-white md:justify-start md:text-left"
+      className="relative w-full h-screen flex items-center justify-center text-center text-white md:justify-start md:text-left"
     >
       {/* Mobile Image */}
       {heroImageMobile && (

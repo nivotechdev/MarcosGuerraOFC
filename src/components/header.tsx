@@ -47,17 +47,17 @@ export default function Header() {
 
   return (
     <header className={cn(
-      "fixed top-0 left-0 right-0 w-full transition-all duration-300 border-b-2 border-primary z-[99999]",
+      "fixed top-0 left-0 right-0 w-full transition-all duration-300 border-b-2 z-40",
       scrolled 
-        ? "bg-background/95 backdrop-blur-md shadow-[0_2px_10px_rgba(0,188,212,0.1)]" 
-        : "bg-background"
+        ? "bg-background/95 backdrop-blur-md shadow-[0_2px_10px_rgba(0,188,212,0.1)] border-primary" 
+        : "bg-transparent border-transparent"
     )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Logo />
+          <Logo className={cn(scrolled ? "text-foreground" : "text-white")} />
           <nav className="hidden md:flex items-center justify-center gap-8">
             {navItems.map((item) => (
-              <Link key={item.label} href={item.href} className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+              <Link key={item.label} href={item.href} className={cn("text-sm font-medium hover:text-primary transition-colors", scrolled ? "text-foreground" : "text-white")}>
                 {item.label}
               </Link>
             ))}
@@ -70,7 +70,7 @@ export default function Header() {
               {isClient && (
                 <Sheet open={open} onOpenChange={setOpen}>
                     <SheetTrigger asChild>
-                        <Button variant="ghost" size="icon">
+                        <Button variant="ghost" size="icon" className={cn(scrolled ? "text-foreground" : "text-white hover:bg-white/10 hover:text-white")}>
                             <Menu className="h-6 w-6" />
                             <span className="sr-only">Abrir menu</span>
                         </Button>
