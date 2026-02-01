@@ -29,7 +29,7 @@ export default function Faq() {
     <section className="py-20 sm:py-32 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-serif text-foreground">
+          <h2 className="text-3xl md:text-4xl font-semibold text-foreground">
             Dúvidas Frequentes
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">

@@ -5,25 +5,25 @@
 @layer base {
   :root {
     --background: 210 40% 98%; /* Cinza Gelo */
-    --foreground: 222 47% 11%; /* Cinza Grafite Escuro */
+    --foreground: 222 22% 26%; /* Cinza Grafite Escuro */
     
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 222 22% 26%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 222 22% 26%;
     
     --primary: 217 91% 60%; /* Azul Sereno */
     --primary-foreground: 0 0% 100%; /* White */
     
     --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary-foreground: 222 22% 26%;
     
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
     
     --accent: 169 75% 44%; /* Verde Água */
-    --accent-foreground: 222 47% 11%;
+    --accent-foreground: 222 22% 26%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -77,7 +77,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground leading-relaxed;
     overflow-x: hidden;
   }
   button, [role="button"] {

@@ -65,7 +65,7 @@ export default function Transformations() {
     <section id="transformations" className="py-20 sm:py-32 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif text-foreground">Sua Transformação Começa Aqui.</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold text-foreground">Sua Transformação Começa Aqui.</h2>
           <p className="mt-4 text-lg text-muted-foreground">
             Veja o poder da excelência em odontologia através dos resultados dos nossos pacientes.
           </p>
