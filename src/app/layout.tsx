@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { Inter, Playfair_Display } from 'next/font/google';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
+import WhatsAppFab from '@/components/whatsapp-fab';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -15,7 +16,7 @@ const playfairDisplay = Playfair_Display({
 
 export const metadata: Metadata = {
   title: 'Dr. Marcos Guerra | Odontologia de Alta Performance',
-  description: 'O Sorriso que Você Merece, Com a Experiência que Você Exige. Odontologia digital avançada para tratamentos rápidos, precisos e sem dor.',
+  description: 'A Experiência que Você Exige, O Sorriso que Você Merece. Odontologia digital avançada para tratamentos rápidos, precisos e sem dor.',
 };
 
 export const viewport: Viewport = {
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         {children}
         <Toaster />
+        <WhatsAppFab />
       </body>
     </html>
   );

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Logo from "@/components/logo";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import { Button } from "../ui/button";
+import WhatsappIcon from "../icons/whatsapp-icon";
 
 export default function Footer() {
   const whatsappUrl = "https://wa.me/555432234237?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
@@ -16,6 +17,11 @@ export default function Footer() {
               Transformando sorrisos com tecnologia, arte e um cuidado genuinamente humano.
             </p>
              <div className="flex justify-center md:justify-start gap-2 mt-6">
+                  <Link href={whatsappUrl} target="_blank" rel="noopener noreferrer" passHref>
+                    <Button size="icon" variant="ghost" className="text-green-600 hover:text-green-700 hover:bg-green-600/10">
+                        <WhatsappIcon className="h-5 w-5" />
+                    </Button>
+                  </Link>
                   <Link href="#" passHref><Button size="icon" variant="ghost" className="text-foreground hover:bg-primary/20 hover:text-primary"><Instagram /></Button></Link>
                   <Link href="#" passHref><Button size="icon" variant="ghost" className="text-foreground hover:bg-primary/20 hover:text-primary"><Facebook /></Button></Link>
                   <Link href="#" passHref><Button size="icon" variant="ghost" className="text-foreground hover:bg-primary/20 hover:text-primary"><Linkedin /></Button></Link>
@@ -33,7 +39,12 @@ export default function Footer() {
            <div>
               <h4 className="font-semibold font-sans text-lg text-foreground">Contato</h4>
               <ul className="mt-4 space-y-3 text-muted-foreground">
-                <li><a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">(54) 3223-4237</a></li>
+                <li>
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center md:justify-start gap-2 hover:text-primary transition-colors">
+                    <WhatsappIcon className="h-4 w-4 text-green-600"/>
+                    <span>(54) 3223-4237</span>
+                  </a>
+                </li>
                 <li><a href="mailto:ortodontia.mguerra@gmail.com" className="hover:text-primary transition-colors">ortodontia.mguerra@gmail.com</a></li>
                 <li className="text-wrap">Av. Brasil, 1234, São Paulo - SP</li>
               </ul>
