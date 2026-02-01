@@ -6,7 +6,7 @@ export default function Logo({ className, variant = 'default' }: { className?: s
   return (
     <Link href="/" className={cn("relative block w-60 h-16", className)}>
       <Image
-        src="https://images-ext-1.discordapp.net/external/BvJ6rhBe4CWFEECdk53cYJS9PLmXSc-d7xy1Z68o18E/https/fcukvizlaiabepwsjfjo.supabase.co/storage/v1/object/public/Clicina%2520dentista/Imagens/Clinica%2520ortodontia%2520%281%29.png?format=webp&quality=lossless"
+        src="https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/cert.png"
         alt="Dr. Marcos Guerra Logo"
         fill
         className="object-contain"
