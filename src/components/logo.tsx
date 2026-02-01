@@ -6,7 +6,7 @@ export default function Logo({ className, variant = 'default' }: { className?: s
   return (
     <Link href="/" className={cn("relative block w-56 md:w-72 h-20", className)}>
       <Image
-        src="https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/Design%20sem%20nome%20(3).png"
+        src="https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/Design_sem_nome__3_-removebg-preview.png"
         alt="Dr. Marcos Guerra Logo"
         fill
         className="object-contain"
