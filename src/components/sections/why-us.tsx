@@ -20,7 +20,7 @@ export default function Specialist() {
   const specialistImage = PlaceHolderImages.find(img => img.id === "specialist-portrait");
 
   return (
-    <section id="specialist" className="py-20 sm:py-32 bg-white text-foreground">
+    <section id="specialist" className="py-20 sm:py-32 bg-background text-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center max-w-7xl mx-auto">
           
@@ -40,9 +40,9 @@ export default function Specialist() {
 
           {/* Text Column */}
           <div className="relative text-left">
-             <div className="absolute top-0 bottom-0 -left-10 w-px bg-primary hidden md:block" />
+             <div className="absolute top-0 bottom-0 -left-10 w-px bg-accent hidden md:block" />
 
-            <h2 className="text-2xl font-bold uppercase tracking-wider text-foreground">
+            <h2 className="text-2xl font-bold uppercase tracking-wider text-accent">
               DR. MARCOS GUERRA
             </h2>
             <p className="mt-6 text-base text-muted-foreground leading-relaxed">
@@ -52,7 +52,7 @@ export default function Specialist() {
             <ul className="mt-8 space-y-3">
               {qualifications.map((item) => (
                 <li key={item.title} className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
                   <span className="text-muted-foreground">{item.title}</span>
                 </li>
               ))}

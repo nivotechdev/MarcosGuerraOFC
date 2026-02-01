@@ -31,10 +31,10 @@ const contactDetails = [
 
 export default function Location() {
   return (
-    <section id="location" className="py-20 sm:py-32 bg-background">
+    <section id="location" className="py-20 sm:py-32 bg-muted">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-semibold text-foreground">
+          <h2 className="text-3xl md:text-4xl font-semibold text-accent">
             Onde estamos e quando atender você
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
@@ -49,8 +49,8 @@ export default function Location() {
                     <ul className="space-y-6">
                         {contactDetails.map((detail) => (
                            <li key={detail.title} className="flex items-start gap-4">
-                                <div className="bg-primary/10 p-3 rounded-full mt-1">
-                                    <detail.icon className="h-6 w-6 text-primary" />
+                                <div className="bg-accent/10 p-3 rounded-full mt-1">
+                                    <detail.icon className="h-6 w-6 text-accent" />
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-foreground">{detail.title}</h4>

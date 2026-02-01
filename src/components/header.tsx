@@ -35,10 +35,10 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full border-b z-50 bg-secondary shadow-lg shadow-primary/10 border-white/10">
+    <header className="fixed top-0 left-0 right-0 w-full border-b z-50 bg-secondary shadow-lg shadow-accent/5">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Logo className="brightness-0 invert" />
+          <Logo />
           <nav className="hidden md:flex items-center justify-center gap-8">
             {navItems.map((item) => (
               <Link key={item.label} href={item.href} className="text-sm font-medium hover:text-primary transition-colors text-secondary-foreground">
@@ -60,12 +60,12 @@ export default function Header() {
                         </Button>
                     </SheetTrigger>
                     <SheetContent side="right" className="w-full h-full bg-secondary/95 backdrop-blur-xl p-0 flex flex-col">
-                        <SheetHeader className="flex-row justify-between items-center p-4 border-b border-white/10">
+                        <SheetHeader className="flex-row justify-between items-center p-4 border-b">
                              <SheetTitle className="sr-only">
                                Menu Principal
                              </SheetTitle>
                              <SheetDescription className="sr-only">Navegue pelas seções do site.</SheetDescription>
-                             <Logo className="brightness-0 invert" />
+                             <Logo />
                              <SheetClose asChild>
                                 <Button variant="ghost" size="icon" className="text-secondary-foreground">
                                     <X className="h-6 w-6" />
@@ -90,7 +90,7 @@ export default function Header() {
                                 </Button>
                             </Link>
                         </nav>
-                        <div className="p-6 border-t border-white/10">
+                        <div className="p-6 border-t">
                           <div className="flex justify-center gap-4">
                               <Link href={whatsappUrl} target="_blank" rel="noopener noreferrer" passHref>
                                 <Button size="icon" variant="ghost" className="text-green-600 hover:text-green-700 hover:bg-green-600/10">

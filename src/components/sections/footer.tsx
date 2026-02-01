@@ -8,11 +8,11 @@ export default function Footer() {
   const whatsappUrl = "https://wa.me/555432234237?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
 
   return (
-    <footer className="bg-secondary text-secondary-foreground border-t border-white/10">
+    <footer className="bg-secondary text-secondary-foreground border-t">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
           <div className="md:col-span-2">
-            <Logo className="mx-auto md:mx-0 brightness-0 invert" />
+            <Logo className="mx-auto md:mx-0" />
             <p className="mt-4 text-sm text-secondary-foreground/70 max-w-sm mx-auto md:mx-0">
               Transformando sorrisos com tecnologia, arte e um cuidado genuinamente humano.
             </p>
@@ -50,7 +50,7 @@ export default function Footer() {
               </ul>
           </div>
         </div>
-        <div className="mt-12 pt-8 flex flex-col-reverse md:flex-row items-center justify-between text-sm text-secondary-foreground/70 border-t border-white/10">
+        <div className="mt-12 pt-8 flex flex-col-reverse md:flex-row items-center justify-between text-sm text-secondary-foreground/70 border-t">
            <p className="mt-4 md:mt-0">
             © {new Date().getFullYear()} Dr. Marcos Guerra Odontologia. Todos os direitos reservados.
           </p>

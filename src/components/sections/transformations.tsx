@@ -72,10 +72,10 @@ export default function Transformations() {
 
 
   return (
-    <section id="transformations" className="py-20 sm:py-32 bg-white">
+    <section id="transformations" className="py-20 sm:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-semibold text-foreground">Sua Transformação Começa Aqui.</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold text-accent">Sua Transformação Começa Aqui.</h2>
           <p className="mt-4 text-lg text-muted-foreground">
             Veja o poder da excelência em odontologia através dos resultados dos nossos pacientes.
           </p>
@@ -95,7 +95,7 @@ export default function Transformations() {
                 t.before && t.after && (
                   <CarouselItem key={index} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                     <div className="p-1 h-full">
-                      <Card className="rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 h-[380px] flex flex-col bg-secondary/50">
+                      <Card className="rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 h-[380px] flex flex-col bg-card">
                         <CardContent className="p-2 md:p-3 space-y-2 flex-grow flex flex-col">
                           <h3 className="text-center font-sans font-bold text-foreground text-base shrink-0">{t.title}</h3>
                           <div className="flex flex-col gap-px flex-grow items-stretch">
@@ -111,7 +111,7 @@ export default function Transformations() {
                               />
                               <Badge className="absolute top-2 left-2 bg-primary text-primary-foreground border-none text-xs px-2 py-0.5">Antes</Badge>
                             </div>
-                            <div className="shrink-0 h-px w-full bg-primary" />
+                            <div className="shrink-0 h-px w-full bg-accent" />
                             <div className="relative flex-1">
                               <Image
                                 src={t.after.imageUrl}
