@@ -69,7 +69,7 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
     {
       "id": "specialist-portrait",
       "description": "Retrato do Dr. Marcos Guerra",
-      "imageUrl": "https://picsum.photos/seed/specialist-portrait/500/600",
+      "imageUrl": "https://images.unsplash.com/photo-1618088129969-bcb0c051985e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8aG9tZW18ZW58MHx8fHwxNzY5OTgzNzY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "dentist portrait"
     }
   ];
