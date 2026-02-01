@@ -70,7 +70,7 @@ export default function SocialProof() {
                             {testimonials.map((testimonial, index) => (
                                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
                                     <div className="p-4 h-full">
-                                        <Card className="h-full flex flex-col justify-between shadow-sm">
+                                        <Card className="h-full flex flex-col justify-between shadow-sm bg-card border border-primary/20 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary">
                                             <CardContent className="p-6">
                                                 <div className="flex mb-4">
                                                     {[...Array(5)].map((_, i) => (
@@ -81,7 +81,7 @@ export default function SocialProof() {
                                                     "{testimonial.quote}"
                                                 </blockquote>
                                             </CardContent>
-                                            <div className="flex items-center gap-4 p-6 bg-muted/50">
+                                            <div className="flex items-center gap-4 p-6 border-t border-primary/20">
                                                 {testimonial.avatar && (
                                                     <Avatar>
                                                         <AvatarImage src={testimonial.avatar.imageUrl} alt={testimonial.name} data-ai-hint={testimonial.avatar.imageHint} />

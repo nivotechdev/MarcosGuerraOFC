@@ -48,10 +48,8 @@ export default function Benefits() {
               <Card
                 key={benefit.title}
                 className={cn(
-                  "relative text-center shadow-sm transition-all duration-300 flex flex-col group",
-                  isMainService
-                    ? "bg-primary text-primary-foreground shadow-2xl md:scale-105 z-10 md:col-span-2"
-                    : "bg-card border border-primary/20 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary"
+                  "relative text-center shadow-sm transition-all duration-300 flex flex-col group h-full bg-card border border-primary/20 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary",
+                  isMainService && "md:col-span-2"
                 )}
               >
                 {isMainService && (
@@ -61,18 +59,16 @@ export default function Benefits() {
                 )}
                 <CardHeader className="items-center">
                   <div className={cn(
-                      "bg-primary/10 p-3 rounded-full mb-4 transition-transform duration-300",
-                      isMainService && "bg-white/20",
-                      !isMainService && "group-hover:scale-110"
+                      "bg-primary/10 p-3 rounded-full mb-4 transition-transform duration-300 group-hover:scale-110"
                   )}>
-                    <benefit.icon className={cn("h-8 w-8 text-primary", isMainService && "text-white")} />
+                    <benefit.icon className={cn("h-8 w-8 text-primary")} />
                   </div>
                   <CardTitle className="font-sans text-xl font-semibold">
                     {benefit.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  <p className={cn(isMainService ? "text-primary-foreground/90" : "text-muted-foreground")}>
+                  <p className={cn("text-muted-foreground")}>
                     {benefit.description}
                   </p>
                 </CardContent>
