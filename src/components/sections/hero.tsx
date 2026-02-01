@@ -9,6 +9,7 @@ import React from 'react';
 export default function Hero() {
   const heroImageDesktop = PlaceHolderImages.find(img => img.id === "hero-background");
   const heroImageMobile = PlaceHolderImages.find(img => img.id === "hero-background-mobile");
+  const whatsappUrl = "https://wa.me/555432234237?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
 
   return (
     <section 
@@ -48,7 +49,7 @@ export default function Hero() {
               Odontologia digital avançada para tratamentos rápidos, precisos e com o máximo de conforto.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
-              <Link href="#contact" passHref>
+              <Link href={whatsappUrl} passHref target="_blank" rel="noopener noreferrer">
                 <Button 
                   size="lg" 
                   className="h-14 px-8 text-base font-bold bg-white text-primary hover:bg-white/90 transition-transform hover:scale-105 shadow-[0_0_15px_rgba(0,188,212,0.5)] hover:shadow-[0_0_25px_rgba(0,188,212,0.7)]"

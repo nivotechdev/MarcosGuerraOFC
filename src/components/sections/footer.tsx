@@ -4,6 +4,8 @@ import { Facebook, Instagram, Linkedin } from "lucide-react";
 import { Button } from "../ui/button";
 
 export default function Footer() {
+  const whatsappUrl = "https://wa.me/555432234237?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
+
   return (
     <footer className="bg-background text-foreground border-t-2 border-primary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -31,7 +33,7 @@ export default function Footer() {
            <div>
               <h4 className="font-semibold font-sans text-lg text-foreground">Contato</h4>
               <ul className="mt-4 space-y-3 text-muted-foreground">
-                <li><a href="tel:+5511999998888" className="hover:text-primary transition-colors">(11) 99999-8888</a></li>
+                <li><a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">(54) 3223-4237</a></li>
                 <li><a href="mailto:contato@marcosguerra.com" className="hover:text-primary transition-colors">contato@marcosguerra.com</a></li>
                 <li className="text-wrap">Av. Brasil, 1234, São Paulo - SP</li>
               </ul>

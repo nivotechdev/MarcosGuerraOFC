@@ -36,8 +36,10 @@ export default function Header() {
     };
   }, []);
 
+  const whatsappUrl = "https://wa.me/555432234237?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
+
   const navItems = [
-    { href: "#why-us", label: "A Clínica" },
+    { href: "#specialist", label: "A Clínica" },
     { href: "#treatments", label: "Tratamentos" },
     { href: "#location", label: "Localização" },
     { href: "#contact", label: "Contato" },
@@ -61,7 +63,7 @@ export default function Header() {
             ))}
           </nav>
           <div className="flex items-center gap-4">
-            <Link href="#contact" passHref className="hidden md:block">
+            <Link href={whatsappUrl} passHref target="_blank" rel="noopener noreferrer" className="hidden md:block">
               <Button>Agendar Avaliação</Button>
             </Link>
             <div className="md:hidden">
@@ -98,7 +100,7 @@ export default function Header() {
                                     {item.label}
                                 </Link>
                             ))}
-                             <Link href="#contact" passHref>
+                             <Link href={whatsappUrl} passHref target="_blank" rel="noopener noreferrer">
                                 <Button onClick={() => setOpen(false)} size="lg" className="mt-8 w-full max-w-xs mx-auto h-12 text-lg">
                                   Agendar Avaliação Premium
                                 </Button>

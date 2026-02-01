@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { MapPin, Clock, Phone } from 'lucide-react';
 
+const whatsappUrl = "https://wa.me/555432234237?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
+
 const contactDetails = [
     {
         icon: MapPin,
@@ -19,8 +21,8 @@ const contactDetails = [
     {
         icon: Phone,
         title: "Contato",
-        value: "(11) 99999-8888",
-        href: "tel:+5511999998888"
+        value: "(54) 3223-4237",
+        href: whatsappUrl
     }
 ]
 
@@ -59,9 +61,9 @@ export default function Location() {
                         ))}
                     </ul>
                      <div className="mt-10 flex flex-col sm:flex-row gap-4">
-                        <Link href="#contact" passHref>
+                        <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
                             <Button size="lg">Agendar Avaliação</Button>
-                        </Link>
+                        </a>
                         <a href="https://www.google.com/maps/search/?api=1&query=Av.+Brasil,+1234,+São+Paulo+-+SP" target="_blank" rel="noopener noreferrer">
                            <Button size="lg" variant="outline">Como Chegar</Button>
                         </a>
