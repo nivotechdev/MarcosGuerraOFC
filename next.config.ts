@@ -34,6 +34,18 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'images-ext-1.discordapp.net',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'fcukvizlaiabepwsjfjo.supabase.co',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
