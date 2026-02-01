@@ -54,7 +54,7 @@ export default function Header() {
     )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Logo className={cn(scrolled ? "text-foreground" : "text-white")} />
+          <Logo />
           <nav className="hidden md:flex items-center justify-center gap-8">
             {navItems.map((item) => (
               <Link key={item.label} href={item.href} className={cn("text-sm font-medium hover:text-primary transition-colors", scrolled ? "text-foreground" : "text-white")}>
