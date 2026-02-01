@@ -1,27 +1,32 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, Shield, Smile, Cpu } from "lucide-react";
+import { Award, Gem, Moon, ShieldCheck, Sparkles } from "lucide-react";
 
 const benefits = [
     {
-        icon: Cpu,
-        title: "Diagnóstico Preciso e Instantâneo",
-        description: "Utilizamos scanners 3D e inteligência artificial para um plano de tratamento perfeito, com menos tempo na cadeira e mais certeza no resultado."
+        icon: Award,
+        title: "Ortodontia – Aparelhos autoligados",
+        description: "Alinhe seu sorriso com aparelhos autoligados modernos, que oferecem um tratamento mais rápido, confortável e discreto."
     },
     {
-        icon: Smile,
-        title: "Tratamento sem Ansiedade",
-        description: "Com sedação consciente e um ambiente projetado para o seu conforto, transformamos o medo de dentista em uma experiência tranquila e relaxante."
+        icon: Sparkles,
+        title: "Clareamentos",
+        description: "Obtenha um sorriso mais branco e radiante com nossas técnicas de clareamento dental, seguras e com resultados surpreendentes."
     },
     {
-        icon: CheckCircle,
-        title: "Dentes Fixos em até 48 Horas",
-        description: "Nosso protocolo de carga imediata permite a instalação de implantes e próteses fixas em tempo recorde, devolvendo seu sorriso rapidamente."
+        icon: ShieldCheck,
+        title: "Profilaxia dentária",
+        description: "A prevenção é o melhor cuidado. Mantenha seu sorriso saudável com nossa limpeza dental profissional, removendo placa e tártaro."
     },
     {
-        icon: Shield,
-        title: "Resultados Naturais e Duradouros",
-        description: "Cada detalhe é esculpido para harmonizar com seu rosto, utilizando materiais biocompatíveis de última geração para um sorriso belo e perene."
+        icon: Moon,
+        title: "Placas de bruxismo",
+        description: "Proteja seus dentes contra o desgaste do bruxismo. Confeccionamos placas personalizadas para seu conforto e segurança noturna."
     },
+    {
+        icon: Gem,
+        title: "Restaurações e facetas de resina",
+        description: "Recupere a estética e função dos dentes com restaurações e facetas de resina, que mimetizam a aparência natural do seu sorriso."
+    }
   ];
 
 export default function Benefits() {
@@ -29,12 +34,12 @@ export default function Benefits() {
     <section id="treatments" className="py-20 sm:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif text-foreground">Excelência em cada detalhe</h2>
+          <h2 className="text-3xl md:text-4xl font-serif text-foreground">Nossos Tratamentos</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Não oferecemos apenas tratamentos. Entregamos resultados que transformam vidas através de quatro pilares fundamentais.
+            Conheça algumas de nossas especialidades, projetadas para oferecer o melhor cuidado para o seu sorriso.
           </p>
         </div>
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {benefits.map((benefit) => (
             <Card key={benefit.title} className="text-center bg-card shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-2 flex flex-col border border-primary/20">
               <CardHeader className="items-center">
