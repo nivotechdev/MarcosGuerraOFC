@@ -9,13 +9,13 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
     {
       "id": "hero-background",
       "description": "Mulher com um sorriso perfeito.",
-      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/img22.jpeg",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/Whisk_754efb5d4cf2f1fa29740f0cb103e095dr.jpeg",
       "imageHint": "woman smiling"
     },
     {
       "id": "hero-background-mobile",
       "description": "Mulher com um sorriso perfeito.",
-      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/img22.jpeg",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/Whisk_754efb5d4cf2f1fa29740f0cb103e095dr.jpeg",
       "imageHint": "woman smiling"
     },
     {
