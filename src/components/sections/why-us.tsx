@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const qualifications = [
     {
@@ -16,7 +17,7 @@ const qualifications = [
 
 // This component was 'WhyUs' and is now transformed into the Specialist's bio section.
 export default function Specialist() {
-  const imageUrl = "https://images.unsplash.com/photo-1667133295308-9ef24f71952e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8ZGVudGlzdGF8ZW58MHx8fHwxNzY5NjMzMjg4fDA&ixlib=rb-4.1.0&q=80&w=1080";
+  const specialistImage = PlaceHolderImages.find(img => img.id === "specialist-portrait");
 
   return (
     <section id="specialist" className="py-20 sm:py-32 bg-background text-foreground">
@@ -25,14 +26,16 @@ export default function Specialist() {
           
           {/* Image Column */}
           <div className="w-full max-w-md mx-auto md:mx-0">
-            <Image
-              src={imageUrl}
-              alt="Dr. Marcos Guerra"
-              width={500}
-              height={600}
-              className="object-cover shadow-lg"
-              data-ai-hint="dentist portrait"
-            />
+            {specialistImage && (
+              <Image
+                src={specialistImage.imageUrl}
+                alt={specialistImage.description}
+                width={500}
+                height={600}
+                className="object-cover shadow-lg"
+                data-ai-hint={specialistImage.imageHint}
+              />
+            )}
           </div>
 
           {/* Text Column */}

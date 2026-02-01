@@ -21,37 +21,37 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
     {
       "id": "clinic-environment",
       "description": "Retrato de um dentista sorrindo em seu consultório moderno.",
-      "imageUrl": "https://images.unsplash.com/photo-1606811856475-5e6fcdc6e509?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGRlbnRpc3RhfGVufDB8fDB8fHww",
+      "imageUrl": "https://picsum.photos/seed/clinic-environment/500/600",
       "imageHint": "smiling dentist office"
     },
     {
       "id": "before-smile",
       "description": "Close-up de um sorriso com dentes desalinhados e manchados antes de um tratamento odontológico estético.",
-      "imageUrl": "https://images.unsplash.com/photo-1606967703816-c11df4213038?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx1bmV2ZW4lMjB5ZWxsb3clMjB0ZWV0aHxlbnwwfHx8fDE3NzAwNjY4NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/before-smile/1080/1080",
       "imageHint": "uneven yellow teeth"
     },
     {
       "id": "after-smile",
       "description": "Close-up de um sorriso perfeitamente alinhado, branco e de aparência natural após um tratamento odontológico cosmético.",
-      "imageUrl": "https://images.unsplash.com/photo-1599305445701-3c893c551380?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJmZWN0JTIwd2hpdGUlMjBzbWlsZXxlbnwwfHx8fDE3NzAwNjY4NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/after-smile/1080/1080",
       "imageHint": "perfect white smile"
     },
     {
       "id": "testimonial-avatar-1",
       "description": "Retrato de uma mulher sorrindo, com aparência feliz e confiante.",
-      "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMG9mJTIwYSUyMHNtaWxpbmclMjB3b21hbnxlbnwwfHx8fDE3NzAwNjY5Njd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/avatar-1/200/200",
       "imageHint": "smiling woman portrait"
     },
     {
       "id": "testimonial-avatar-2",
       "description": "Retrato de um homem de meia-idade sorrindo, parecendo profissional e satisfeito.",
-      "imageUrl": "https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtaWRkbGUlMjBhZ2VkJTIwbWFufGVufDB8fHx8MTc3MDA2Njk2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/avatar-2/200/200",
       "imageHint": "middle aged man"
     },
     {
       "id": "testimonial-avatar-3",
       "description": "Retrato de uma jovem profissional sorrindo.",
-      "imageUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx5b3VuZyUyMHByb2Zlc3Npb25hbCUyMHdvbWFufGVufDB8fHx8MTc3MDA2Njk2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://picsum.photos/seed/avatar-3/200/200",
       "imageHint": "young professional woman"
     },
     {
@@ -65,5 +65,11 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
       "description": "Sorriso amarelado antes do tratamento de clareamento.",
       "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/logos/Whisk_bd85a0a96da286f91c0483f8080b47e3dr.jpeg",
       "imageHint": "yellowed smile"
+    },
+    {
+      "id": "specialist-portrait",
+      "description": "Retrato do Dr. Marcos Guerra",
+      "imageUrl": "https://picsum.photos/seed/specialist-portrait/500/600",
+      "imageHint": "dentist portrait"
     }
   ];
