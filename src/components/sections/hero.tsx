@@ -42,17 +42,17 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-20">
           <div className="max-w-2xl">
-            <h1 className="font-heading text-4xl leading-tight md:text-6xl font-bold tracking-tight text-white [text-shadow:0px_2px_10px_rgba(0,0,0,0.3)]">
+            <h1 className="font-heading text-4xl leading-[1.2] md:text-6xl font-bold tracking-tight text-white [text-shadow:0_2px_4px_rgba(0,0,0,0.5)]">
               A Experiência que Você Exige, <span className="text-white">O Sorriso que Você Merece.</span>
             </h1>
-            <p className="mt-6 text-lg md:text-xl text-white max-w-2xl leading-relaxed tracking-wide [text-shadow:0px_2px_10px_rgba(0,0,0,0.3)]">
+            <p className="mt-6 text-lg md:text-xl text-white max-w-2xl leading-relaxed tracking-wide [text-shadow:0_2px_4px_rgba(0,0,0,0.5)]">
               Odontologia digital avançada para tratamentos rápidos, precisos e com o máximo de conforto.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
-              <Link href={whatsappUrl} passHref target="_blank" rel="noopener noreferrer">
+              <Link href={whatsappUrl} passHref target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                 <Button 
                   size="lg" 
-                  className="h-14 px-8 text-base font-bold transition-transform hover:scale-105"
+                  className="h-14 px-8 text-base font-bold transition-transform hover:scale-105 w-full"
                 >
                   Agendar Avaliação Premium
                 </Button>
