@@ -16,10 +16,10 @@
     --primary: 215 55% 23%; /* #1B365D - Azul Autoridade */
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 210 40% 98%; /* Mapped to Muted/Branco Gelo */
-    --secondary-foreground: 215 55% 23%; /* Mapped to Primary */
+    --secondary: 210 25% 96%; /* #F1F4F6 - Cinza Gelo */
+    --secondary-foreground: 215 55% 23%;
     
-    --muted: 210 40% 98%; /* #F8FAFC - Branco Gelo */
+    --muted: 210 25% 96%; /* #F1F4F6 - Cinza Gelo */
     --muted-foreground: 215 14% 54%;
     
     --accent: 44 52% 56%; /* #C5A059 - Ouro Nobre */
