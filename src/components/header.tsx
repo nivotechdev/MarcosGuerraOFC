@@ -20,21 +20,9 @@ import WhatsappIcon from "@/components/icons/whatsapp-icon";
 export default function Header() {
   const [open, setOpen] = React.useState(false);
   const [isClient, setIsClient] = React.useState(false);
-  const [scrolled, setScrolled] = React.useState(false);
 
   React.useEffect(() => {
     setIsClient(true);
-    
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
-    
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
   }, []);
 
   const whatsappUrl = "https://wa.me/555432234237?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
@@ -47,18 +35,13 @@ export default function Header() {
   ];
 
   return (
-    <header className={cn(
-      "fixed top-0 left-0 right-0 w-full transition-all duration-300 border-b-2 z-40",
-      scrolled 
-        ? "bg-background/95 backdrop-blur-md shadow-[0_2px_10px_rgba(0,188,212,0.1)] border-primary" 
-        : "bg-transparent border-transparent"
-    )}>
+    <header className="fixed top-0 left-0 right-0 w-full border-b-2 z-50 bg-background/95 backdrop-blur-md shadow-[0_2px_10px_rgba(0,188,212,0.1)] border-primary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Logo />
           <nav className="hidden md:flex items-center justify-center gap-8">
             {navItems.map((item) => (
-              <Link key={item.label} href={item.href} className={cn("text-sm font-medium hover:text-primary transition-colors", scrolled ? "text-foreground" : "text-white")}>
+              <Link key={item.label} href={item.href} className="text-sm font-medium hover:text-primary transition-colors text-foreground">
                 {item.label}
               </Link>
             ))}
@@ -71,7 +54,7 @@ export default function Header() {
               {isClient && (
                 <Sheet open={open} onOpenChange={setOpen}>
                     <SheetTrigger asChild>
-                        <Button variant="ghost" size="icon" className={cn(scrolled ? "text-foreground" : "text-white hover:bg-white/10 hover:text-white")}>
+                        <Button variant="ghost" size="icon" className="text-foreground hover:bg-accent hover:text-accent-foreground">
                             <Menu className="h-6 w-6" />
                             <span className="sr-only">Abrir menu</span>
                         </Button>
