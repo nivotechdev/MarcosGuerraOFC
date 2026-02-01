@@ -39,13 +39,13 @@ export default function Hero() {
         />
       )}
 
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+      <div className="absolute inset-0 bg-secondary/60 backdrop-blur-sm" />
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-20">
           <div className="max-w-2xl">
-            <h1 className="text-4xl leading-tight md:text-6xl font-bold tracking-wide text-white [text-shadow:2px_2px_8px_rgba(0,0,0,0.8)]">
+            <h1 className="text-4xl leading-tight md:text-6xl font-bold tracking-wide text-secondary-foreground [text-shadow:2px_2px_8px_rgba(0,0,0,0.8)]">
               A Experiência que Você Exige, <span className="text-primary">O Sorriso que Você Merece.</span>
             </h1>
-            <p className="mt-6 text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed tracking-wide [text-shadow:2px_2px_8px_rgba(0,0,0,0.8)]">
+            <p className="mt-6 text-lg md:text-xl text-secondary-foreground/90 max-w-2xl leading-relaxed tracking-wide [text-shadow:2px_2px_8px_rgba(0,0,0,0.8)]">
               Odontologia digital avançada para tratamentos rápidos, precisos e com o máximo de conforto.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
