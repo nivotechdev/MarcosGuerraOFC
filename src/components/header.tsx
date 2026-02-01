@@ -35,7 +35,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full border-b border-muted z-50 bg-background shadow-lg shadow-gray-200/50">
+    <header className="fixed top-0 left-0 right-0 w-full border-b z-50 bg-muted">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Logo variant="default" />
@@ -59,7 +59,7 @@ export default function Header() {
                             <span className="sr-only">Abrir menu</span>
                         </Button>
                     </SheetTrigger>
-                    <SheetContent side="right" className="w-full h-full bg-background/95 backdrop-blur-xl p-0 flex flex-col">
+                    <SheetContent side="right" className="w-full h-full bg-muted p-0 flex flex-col">
                         <SheetHeader className="flex-row justify-between items-center p-4 border-b">
                              <SheetTitle className="sr-only">
                                Menu Principal
