@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="relative w-full h-screen flex items-center justify-center pt-20 text-center text-white md:justify-start md:text-left"
+      className="relative w-full h-screen flex items-center justify-center text-center text-white md:justify-start md:text-left"
     >
       {/* Mobile Image */}
       {heroImageMobile && (
@@ -39,8 +39,8 @@ export default function Hero() {
         />
       )}
 
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.7)_0%,rgba(0,0,0,0)_60%)]" />
-      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 pt-20">
           <div className="max-w-2xl">
             <h1 className="font-serif text-4xl leading-tight md:text-6xl font-extrabold tracking-wide text-white [text-shadow:2px_2px_8px_rgba(0,0,0,0.8)]">
               A Experiência que Você Exige, <span className="text-primary">O Sorriso que Você Merece.</span>
