@@ -35,13 +35,13 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full border-b z-50 bg-secondary shadow-lg shadow-accent/5">
+    <header className="fixed top-0 left-0 right-0 w-full border-b border-muted z-50 bg-background shadow-lg shadow-gray-200/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Logo variant="inverted" />
+          <Logo variant="default" />
           <nav className="hidden md:flex items-center justify-center gap-8">
             {navItems.map((item) => (
-              <Link key={item.label} href={item.href} className="text-sm font-medium hover:text-primary transition-colors text-secondary-foreground">
+              <Link key={item.label} href={item.href} className="text-sm font-medium hover:text-primary transition-colors text-accent">
                 {item.label}
               </Link>
             ))}
@@ -54,20 +54,20 @@ export default function Header() {
               {isClient && (
                 <Sheet open={open} onOpenChange={setOpen}>
                     <SheetTrigger asChild>
-                        <Button variant="ghost" size="icon" className="text-secondary-foreground hover:bg-accent hover:text-accent-foreground">
+                        <Button variant="ghost" size="icon" className="text-accent hover:bg-accent/10">
                             <Menu className="h-6 w-6" />
                             <span className="sr-only">Abrir menu</span>
                         </Button>
                     </SheetTrigger>
-                    <SheetContent side="right" className="w-full h-full bg-secondary/95 backdrop-blur-xl p-0 flex flex-col">
+                    <SheetContent side="right" className="w-full h-full bg-background/95 backdrop-blur-xl p-0 flex flex-col">
                         <SheetHeader className="flex-row justify-between items-center p-4 border-b">
                              <SheetTitle className="sr-only">
                                Menu Principal
                              </SheetTitle>
                              <SheetDescription className="sr-only">Navegue pelas seções do site.</SheetDescription>
-                             <Logo variant="inverted" />
+                             <Logo variant="default" />
                              <SheetClose asChild>
-                                <Button variant="ghost" size="icon" className="text-secondary-foreground">
+                                <Button variant="ghost" size="icon" className="text-accent">
                                     <X className="h-6 w-6" />
                                     <span className="sr-only">Fechar menu</span>
                                 </Button>
@@ -79,7 +79,7 @@ export default function Header() {
                                     key={item.label}
                                     href={item.href}
                                     onClick={() => setOpen(false)}
-                                    className="text-2xl font-medium text-secondary-foreground hover:text-primary transition-colors py-3 px-4 rounded-md"
+                                    className="text-2xl font-medium text-foreground hover:text-primary transition-colors py-3 px-4 rounded-md"
                                 >
                                     {item.label}
                                 </Link>
@@ -97,9 +97,9 @@ export default function Header() {
                                     <WhatsappIcon className="h-5 w-5" />
                                 </Button>
                               </Link>
-                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-secondary-foreground hover:bg-primary/20 hover:text-primary"><Instagram /></Button></Link>
-                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-secondary-foreground hover:bg-primary/20 hover:text-primary"><Facebook /></Button></Link>
-                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-secondary-foreground hover:bg-primary/20 hover:text-primary"><Linkedin /></Button></Link>
+                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-accent hover:bg-primary/20 hover:text-primary"><Instagram /></Button></Link>
+                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-accent hover:bg-primary/20 hover:text-primary"><Facebook /></Button></Link>
+                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-accent hover:bg-primary/20 hover:text-primary"><Linkedin /></Button></Link>
                           </div>
                         </div>
                     </SheetContent>
