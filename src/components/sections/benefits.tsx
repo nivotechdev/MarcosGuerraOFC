@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Award, Gem, Moon, ShieldCheck, Sparkles } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const benefits = [
     {
@@ -39,11 +40,16 @@ export default function Benefits() {
             Conheça algumas de nossas especialidades, projetadas para oferecer o melhor cuidado para o seu sorriso.
           </p>
         </div>
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto auto-rows-fr">
-          {benefits.map((benefit) => (
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-6 gap-8 max-w-7xl mx-auto auto-rows-fr">
+          {benefits.map((benefit, index) => (
             <Card
               key={benefit.title}
-              className="text-center shadow-sm transition-all duration-300 flex flex-col group h-full bg-card border border-primary/20 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary"
+              className={cn(
+                "text-center shadow-sm transition-all duration-300 flex flex-col group h-full bg-card border border-primary/20 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary",
+                "sm:col-span-2",
+                index === 4 && "sm:col-start-2",
+                index < 2 ? "lg:col-span-3" : "lg:col-span-2"
+              )}
             >
               <CardHeader className="items-center">
                 <div className="bg-primary/10 p-3 rounded-full mb-4 transition-transform duration-300 group-hover:scale-110">
