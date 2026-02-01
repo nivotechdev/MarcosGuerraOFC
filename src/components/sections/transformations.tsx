@@ -35,7 +35,17 @@ const transformationCases = [
     title: "Reabilitação Oral Completa",
     before: PlaceHolderImages.find(img => img.id === "before-smile"),
     after: PlaceHolderImages.find(img => img.id === "after-smile"),
-  }
+  },
+  {
+    title: "Lentes de Contato",
+    before: PlaceHolderImages.find(img => img.id === "before-whitening"),
+    after: PlaceHolderImages.find(img => img.id === "after-whitening"),
+  },
+  {
+    title: "Facetas em Resina",
+    before: PlaceHolderImages.find(img => img.id === "before-smile"),
+    after: PlaceHolderImages.find(img => img.id === "after-smile"),
+  },
 ];
 
 export default function Transformations() {
@@ -75,20 +85,19 @@ export default function Transformations() {
           <Carousel
             setApi={setApi}
             opts={{
-              align: "center",
+              align: "start",
               loop: true,
-              slidesPerView: 1,
             }}
-            className="w-full max-w-5xl mx-auto"
+            className="w-full max-w-7xl mx-auto"
           >
             <CarouselContent className="-ml-4">
               {transformationCases.map((t, index) => (
                 t.before && t.after && (
-                  <CarouselItem key={index} className="pl-4 basis-full sm:basis-4/5 md:basis-3/4 lg:basis-2/3">
+                  <CarouselItem key={index} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                     <div className="p-1 h-full">
-                      <Card className="rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 h-[70vh] sm:h-[60vh] flex flex-col">
-                        <CardContent className="p-2 md:p-4 space-y-2 flex-grow flex flex-col">
-                          <h3 className="text-center font-sans font-bold text-foreground text-base md:text-lg shrink-0">{t.title}</h3>
+                      <Card className="rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 h-[450px] flex flex-col">
+                        <CardContent className="p-2 md:p-3 space-y-2 flex-grow flex flex-col">
+                          <h3 className="text-center font-sans font-bold text-foreground text-base shrink-0">{t.title}</h3>
                           <div className="flex flex-col gap-px flex-grow items-stretch">
                             <div className="relative flex-1">
                               <Image
@@ -98,9 +107,9 @@ export default function Transformations() {
                                 className="object-cover rounded-xl"
                                 loading="lazy"
                                 data-ai-hint={t.before.imageHint}
-                                sizes="(max-width: 640px) 90vw, (max-width: 1024px) 75vw, 66vw"
+                                sizes="(max-width: 768px) 90vw, (max-width: 1280px) 45vw, 33vw"
                               />
-                              <Badge className="absolute top-2 left-2 bg-primary text-primary-foreground border-none">Antes</Badge>
+                              <Badge className="absolute top-2 left-2 bg-primary text-primary-foreground border-none text-xs px-2 py-0.5">Antes</Badge>
                             </div>
                             <div className="shrink-0 h-px w-full bg-primary" />
                             <div className="relative flex-1">
@@ -111,9 +120,9 @@ export default function Transformations() {
                                 className="object-cover rounded-xl"
                                 loading="lazy"
                                 data-ai-hint={t.after.imageHint}
-                                sizes="(max-width: 640px) 90vw, (max-width: 1024px) 75vw, 66vw"
+                                sizes="(max-width: 768px) 90vw, (max-width: 1280px) 45vw, 33vw"
                               />
-                              <Badge className="absolute top-2 left-2 bg-primary text-primary-foreground border-none">Depois</Badge>
+                              <Badge className="absolute top-2 left-2 bg-primary text-primary-foreground border-none text-xs px-2 py-0.5">Depois</Badge>
                             </div>
                           </div>
                         </CardContent>
@@ -123,8 +132,8 @@ export default function Transformations() {
                 )
               ))}
             </CarouselContent>
-            <CarouselPrevious className="h-11 w-11 bg-white/50 text-primary border-none hover:bg-white/75 backdrop-blur-sm -left-2 sm:left-4 z-10 disabled:opacity-0" />
-            <CarouselNext className="h-11 w-11 bg-white/50 text-primary border-none hover:bg-white/75 backdrop-blur-sm -right-2 sm:right-4 z-10 disabled:opacity-0" />
+            <CarouselPrevious className="h-11 w-11 bg-white/50 text-primary border-none hover:bg-white/75 backdrop-blur-sm -left-4 sm:-left-8 z-10 disabled:opacity-0" />
+            <CarouselNext className="h-11 w-11 bg-white/50 text-primary border-none hover:bg-white/75 backdrop-blur-sm -right-4 sm:-right-8 z-10 disabled:opacity-0" />
           </Carousel>
            <div className="flex justify-center gap-2 mt-8">
             {Array.from({ length: count }).map((_, i) => (
