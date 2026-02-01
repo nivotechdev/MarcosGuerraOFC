@@ -9,13 +9,13 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
     {
       "id": "hero-background",
       "description": "Mulher com um sorriso perfeito.",
-      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/ChatGPT_Image_31_de_jan._de_2026_21_43_41.png",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/img22.jpeg",
       "imageHint": "woman smiling"
     },
     {
       "id": "hero-background-mobile",
       "description": "Mulher com um sorriso perfeito.",
-      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/ChatGPT_Image_31_de_jan._de_2026_21_43_41.png",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/img22.jpeg",
       "imageHint": "woman smiling"
     },
     {
