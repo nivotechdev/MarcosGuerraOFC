@@ -8,15 +8,15 @@ export type ImagePlaceholder = {
 export const PlaceHolderImages: ImagePlaceholder[] = [
     {
       "id": "hero-background",
-      "description": "Consultório odontológico moderno e bem iluminado.",
-      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/logos/Whisk_4efe6767e8e9400b51e4a7542e4dc026dr.jpeg",
-      "imageHint": "dental office"
+      "description": "Mulher com um sorriso perfeito.",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/ChatGPT_Image_31_de_jan._de_2026_21_43_41.png",
+      "imageHint": "woman smiling"
     },
     {
       "id": "hero-background-mobile",
-      "description": "Mulher sorrindo em um ambiente de consultório odontológico para banner mobile.",
-      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/logos/Whisk_da7a105a3fbb44690bc4556994659954dr.jpeg",
-      "imageHint": "woman smile dentist"
+      "description": "Mulher com um sorriso perfeito.",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/ChatGPT_Image_31_de_jan._de_2026_21_43_41.png",
+      "imageHint": "woman smiling"
     },
     {
       "id": "clinic-environment",
