@@ -1,7 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Award, Gem, Moon, ShieldCheck, Sparkles } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
-import { cn } from "@/lib/utils";
 
 const benefits = [
     {
@@ -41,40 +39,27 @@ export default function Benefits() {
             Conheça algumas de nossas especialidades, projetadas para oferecer o melhor cuidado para o seu sorriso.
           </p>
         </div>
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 md:auto-rows-fr gap-8 max-w-5xl mx-auto">
-          {benefits.map((benefit) => {
-            const isMainService = benefit.title === "Clareamentos";
-            return (
-              <Card
-                key={benefit.title}
-                className={cn(
-                  "relative text-center shadow-sm transition-all duration-300 flex flex-col group h-full bg-card border border-primary/20 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary",
-                  isMainService && "md:col-span-2"
-                )}
-              >
-                {isMainService && (
-                  <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 border-primary bg-background text-primary font-bold">
-                    MAIS PROCURADO
-                  </Badge>
-                )}
-                <CardHeader className="items-center">
-                  <div className={cn(
-                      "bg-primary/10 p-3 rounded-full mb-4 transition-transform duration-300 group-hover:scale-110"
-                  )}>
-                    <benefit.icon className={cn("h-8 w-8 text-primary")} />
-                  </div>
-                  <CardTitle className="font-sans text-xl font-semibold">
-                    {benefit.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className={cn("text-muted-foreground")}>
-                    {benefit.description}
-                  </p>
-                </CardContent>
-              </Card>
-            );
-          })}
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto auto-rows-fr">
+          {benefits.map((benefit) => (
+            <Card
+              key={benefit.title}
+              className="text-center shadow-sm transition-all duration-300 flex flex-col group h-full bg-card border border-primary/20 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 hover:border-primary"
+            >
+              <CardHeader className="items-center">
+                <div className="bg-primary/10 p-3 rounded-full mb-4 transition-transform duration-300 group-hover:scale-110">
+                  <benefit.icon className="h-8 w-8 text-primary" />
+                </div>
+                <CardTitle className="font-sans text-xl font-semibold">
+                  {benefit.title}
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="flex-grow">
+                <p className="text-muted-foreground">
+                  {benefit.description}
+                </p>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
