@@ -2,7 +2,6 @@ import Header from "@/components/header";
 import Hero from "@/components/sections/hero";
 import Benefits from "@/components/sections/benefits";
 import Location from "@/components/sections/location";
-import Faq from "@/components/sections/faq";
 import Cta from "@/components/sections/cta";
 import Footer from "@/components/sections/footer";
 import Specialist from "@/components/sections/why-us";
@@ -19,7 +18,6 @@ export default function Home() {
         <Transformations />
         <Location />
         <Cta />
-        <Faq />
       </main>
       <Footer />
     </div>
