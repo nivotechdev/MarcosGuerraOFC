@@ -35,13 +35,13 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full border-b-2 z-50 bg-background/95 backdrop-blur-md shadow-lg shadow-primary/10 border-primary">
+    <header className="fixed top-0 left-0 right-0 w-full border-b z-50 bg-secondary shadow-lg shadow-primary/10 border-white/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Logo />
+          <Logo className="brightness-0 invert" />
           <nav className="hidden md:flex items-center justify-center gap-8">
             {navItems.map((item) => (
-              <Link key={item.label} href={item.href} className="text-sm font-medium hover:text-primary transition-colors text-foreground">
+              <Link key={item.label} href={item.href} className="text-sm font-medium hover:text-primary transition-colors text-secondary-foreground">
                 {item.label}
               </Link>
             ))}
@@ -54,20 +54,20 @@ export default function Header() {
               {isClient && (
                 <Sheet open={open} onOpenChange={setOpen}>
                     <SheetTrigger asChild>
-                        <Button variant="ghost" size="icon" className="text-foreground hover:bg-accent hover:text-accent-foreground">
+                        <Button variant="ghost" size="icon" className="text-secondary-foreground hover:bg-accent hover:text-accent-foreground">
                             <Menu className="h-6 w-6" />
                             <span className="sr-only">Abrir menu</span>
                         </Button>
                     </SheetTrigger>
-                    <SheetContent side="right" className="w-full h-full bg-background/95 backdrop-blur-xl p-0 flex flex-col">
-                        <SheetHeader className="flex-row justify-between items-center p-4 border-b">
+                    <SheetContent side="right" className="w-full h-full bg-secondary/95 backdrop-blur-xl p-0 flex flex-col">
+                        <SheetHeader className="flex-row justify-between items-center p-4 border-b border-white/10">
                              <SheetTitle className="sr-only">
                                Menu Principal
                              </SheetTitle>
                              <SheetDescription className="sr-only">Navegue pelas seções do site.</SheetDescription>
-                             <Logo />
+                             <Logo className="brightness-0 invert" />
                              <SheetClose asChild>
-                                <Button variant="ghost" size="icon">
+                                <Button variant="ghost" size="icon" className="text-secondary-foreground">
                                     <X className="h-6 w-6" />
                                     <span className="sr-only">Fechar menu</span>
                                 </Button>
@@ -79,7 +79,7 @@ export default function Header() {
                                     key={item.label}
                                     href={item.href}
                                     onClick={() => setOpen(false)}
-                                    className="text-2xl font-medium text-foreground hover:text-primary transition-colors py-3 px-4 rounded-md"
+                                    className="text-2xl font-medium text-secondary-foreground hover:text-primary transition-colors py-3 px-4 rounded-md"
                                 >
                                     {item.label}
                                 </Link>
@@ -90,16 +90,16 @@ export default function Header() {
                                 </Button>
                             </Link>
                         </nav>
-                        <div className="p-6 border-t border-border/20">
+                        <div className="p-6 border-t border-white/10">
                           <div className="flex justify-center gap-4">
                               <Link href={whatsappUrl} target="_blank" rel="noopener noreferrer" passHref>
                                 <Button size="icon" variant="ghost" className="text-green-600 hover:text-green-700 hover:bg-green-600/10">
                                     <WhatsappIcon className="h-5 w-5" />
                                 </Button>
                               </Link>
-                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-foreground hover:bg-primary/20 hover:text-primary"><Instagram /></Button></Link>
-                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-foreground hover:bg-primary/20 hover:text-primary"><Facebook /></Button></Link>
-                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-foreground hover:bg-primary/20 hover:text-primary"><Linkedin /></Button></Link>
+                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-secondary-foreground hover:bg-primary/20 hover:text-primary"><Instagram /></Button></Link>
+                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-secondary-foreground hover:bg-primary/20 hover:text-primary"><Facebook /></Button></Link>
+                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-secondary-foreground hover:bg-primary/20 hover:text-primary"><Linkedin /></Button></Link>
                           </div>
                         </div>
                     </SheetContent>

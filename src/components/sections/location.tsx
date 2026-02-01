@@ -31,7 +31,7 @@ const contactDetails = [
 
 export default function Location() {
   return (
-    <section id="location" className="py-20 sm:py-32 bg-secondary">
+    <section id="location" className="py-20 sm:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-semibold text-foreground">

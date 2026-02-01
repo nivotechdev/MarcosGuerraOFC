@@ -16,10 +16,10 @@
     --primary: 217 91% 60%; /* Azul Sereno */
     --primary-foreground: 0 0% 100%; /* White */
     
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222 22% 26%;
+    --secondary: 222 47% 11%; /* Azul Petróleo Profundo */
+    --secondary-foreground: 210 40% 98%; /* Branco Off-white */
     
-    --muted: 210 40% 96.1%;
+    --muted: 213 27% 94%; /* Cinza Azulado Suave */
     --muted-foreground: 215.4 16.3% 46.9%;
     
     --accent: 217 91% 60%;
