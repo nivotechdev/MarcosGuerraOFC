@@ -38,7 +38,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 w-full border-b z-50 bg-secondary shadow-lg shadow-accent/5">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Logo />
+          <Logo variant="inverted" />
           <nav className="hidden md:flex items-center justify-center gap-8">
             {navItems.map((item) => (
               <Link key={item.label} href={item.href} className="text-sm font-medium hover:text-primary transition-colors text-secondary-foreground">
@@ -65,7 +65,7 @@ export default function Header() {
                                Menu Principal
                              </SheetTitle>
                              <SheetDescription className="sr-only">Navegue pelas seções do site.</SheetDescription>
-                             <Logo />
+                             <Logo variant="inverted" />
                              <SheetClose asChild>
                                 <Button variant="ghost" size="icon" className="text-secondary-foreground">
                                     <X className="h-6 w-6" />
@@ -93,7 +93,7 @@ export default function Header() {
                         <div className="p-6 border-t">
                           <div className="flex justify-center gap-4">
                               <Link href={whatsappUrl} target="_blank" rel="noopener noreferrer" passHref>
-                                <Button size="icon" variant="ghost" className="text-green-600 hover:text-green-700 hover:bg-green-600/10">
+                                <Button size="icon" variant="ghost" className="text-primary hover:text-primary/80 hover:bg-primary/10">
                                     <WhatsappIcon className="h-5 w-5" />
                                 </Button>
                               </Link>

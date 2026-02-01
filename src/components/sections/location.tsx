@@ -34,7 +34,7 @@ export default function Location() {
     <section id="location" className="py-20 sm:py-32 bg-muted">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-semibold text-accent">
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-accent">
             Onde estamos e quando atender você
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
@@ -45,7 +45,7 @@ export default function Location() {
         <Card className="mt-16 overflow-hidden shadow-lg bg-card rounded-2xl">
             <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="p-8 sm:p-12 flex flex-col justify-center">
-                    <h3 className="text-2xl font-semibold font-sans mb-8 text-foreground">Nossa Clínica</h3>
+                    <h3 className="font-heading text-2xl font-semibold mb-8 text-foreground">Nossa Clínica</h3>
                     <ul className="space-y-6">
                         {contactDetails.map((detail) => (
                            <li key={detail.title} className="flex items-start gap-4">
@@ -53,7 +53,7 @@ export default function Location() {
                                     <detail.icon className="h-6 w-6 text-accent" />
                                 </div>
                                 <div>
-                                    <h4 className="font-semibold text-foreground">{detail.title}</h4>
+                                    <h4 className="font-heading font-semibold text-foreground">{detail.title}</h4>
                                     <p className="text-muted-foreground whitespace-pre-line">
                                         <a href={detail.href} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                                             {detail.value}

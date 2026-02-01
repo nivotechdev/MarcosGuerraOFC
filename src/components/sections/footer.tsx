@@ -12,13 +12,13 @@ export default function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
           <div className="md:col-span-2">
-            <Logo className="mx-auto md:mx-0" />
+            <Logo className="mx-auto md:mx-0" variant="inverted" />
             <p className="mt-4 text-sm text-secondary-foreground/70 max-w-sm mx-auto md:mx-0">
               Transformando sorrisos com tecnologia, arte e um cuidado genuinamente humano.
             </p>
              <div className="flex justify-center md:justify-start gap-2 mt-6">
                   <Link href={whatsappUrl} target="_blank" rel="noopener noreferrer" passHref>
-                    <Button size="icon" variant="ghost" className="text-green-600 hover:text-green-700 hover:bg-green-600/10">
+                    <Button size="icon" variant="ghost" className="text-primary hover:text-primary/80 hover:bg-primary/10">
                         <WhatsappIcon className="h-5 w-5" />
                     </Button>
                   </Link>
@@ -28,7 +28,7 @@ export default function Footer() {
               </div>
           </div>
           <div>
-              <h4 className="font-semibold font-sans text-lg text-secondary-foreground">Navegação</h4>
+              <h4 className="font-heading font-semibold text-lg text-secondary-foreground">Navegação</h4>
               <ul className="mt-4 space-y-3 text-secondary-foreground/70">
                   <li><Link href="#why-us" className="hover:text-primary transition-colors">A Clínica</Link></li>
                   <li><Link href="#treatments" className="hover:text-primary transition-colors">Tratamentos</Link></li>
@@ -37,11 +37,11 @@ export default function Footer() {
               </ul>
           </div>
            <div>
-              <h4 className="font-semibold font-sans text-lg text-secondary-foreground">Contato</h4>
+              <h4 className="font-heading font-semibold text-lg text-secondary-foreground">Contato</h4>
               <ul className="mt-4 space-y-3 text-secondary-foreground/70">
                 <li>
                   <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center md:justify-start gap-2 hover:text-primary transition-colors">
-                    <WhatsappIcon className="h-4 w-4 text-green-600"/>
+                    <WhatsappIcon className="h-4 w-4 text-primary"/>
                     <span>(54) 3223-4237</span>
                   </a>
                 </li>

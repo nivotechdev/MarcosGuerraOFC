@@ -18,7 +18,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['var(--font-poppins)', ...fontFamily.sans],
+        sans: ['var(--font-inter)', ...fontFamily.sans],
+        heading: ['var(--font-montserrat)', ...fontFamily.sans],
       },
       colors: {
         background: 'hsl(var(--background))',
