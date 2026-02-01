@@ -10,14 +10,14 @@ const benefits = [
         description: "Alinhe seu sorriso com aparelhos autoligados modernos, que oferecem um tratamento mais rápido, confortável e discreto."
     },
     {
-        icon: Sparkles,
-        title: "Clareamentos",
-        description: "Obtenha um sorriso mais branco e radiante com nossas técnicas de clareamento dental, seguras e com resultados surpreendentes."
-    },
-    {
         icon: ShieldCheck,
         title: "Profilaxia dentária",
         description: "A prevenção é o melhor cuidado. Mantenha seu sorriso saudável com nossa limpeza dental profissional, removendo placa e tártaro."
+    },
+    {
+        icon: Sparkles,
+        title: "Clareamentos",
+        description: "Obtenha um sorriso mais branco e radiante com nossas técnicas de clareamento dental, seguras e com resultados surpreendentes."
     },
     {
         icon: Moon,
@@ -41,7 +41,7 @@ export default function Benefits() {
             Conheça algumas de nossas especialidades, projetadas para oferecer o melhor cuidado para o seu sorriso.
           </p>
         </div>
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {benefits.map((benefit) => {
             const isMainService = benefit.title === "Clareamentos";
             return (
@@ -50,7 +50,7 @@ export default function Benefits() {
                 className={cn(
                   "relative text-center shadow-sm transition-all duration-300 flex flex-col",
                   isMainService
-                    ? "bg-primary text-primary-foreground shadow-2xl scale-105 z-10"
+                    ? "bg-primary text-primary-foreground shadow-2xl md:scale-105 z-10 md:col-span-2"
                     : "bg-card border border-primary/20 hover:shadow-lg hover:-translate-y-2"
                 )}
               >
