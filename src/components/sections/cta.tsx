@@ -9,7 +9,7 @@ export default function Cta() {
   return (
     <section id="contact" className="py-20 sm:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <Card className="relative overflow-hidden bg-card text-card-foreground rounded-[24px] shadow-[0_20px_50px_rgba(0,188,212,0.1)] max-w-3xl mx-auto text-center">
+        <Card className="relative overflow-hidden bg-card text-card-foreground rounded-[24px] shadow-2xl shadow-primary/10 max-w-3xl mx-auto text-center">
           <div className="absolute top-0 left-0 right-0 h-1 bg-primary" />
           <div className="p-10 md:p-16">
             <h2 className="text-3xl md:text-4xl font-semibold text-foreground">

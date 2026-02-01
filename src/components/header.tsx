@@ -35,7 +35,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 w-full border-b-2 z-50 bg-background/95 backdrop-blur-md shadow-[0_2px_10px_rgba(0,188,212,0.1)] border-primary">
+    <header className="fixed top-0 left-0 right-0 w-full border-b-2 z-50 bg-background/95 backdrop-blur-md shadow-lg shadow-primary/10 border-primary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Logo />
