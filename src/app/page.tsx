@@ -16,9 +16,9 @@ export default function Home() {
         <Hero />
         <Specialist />
         <div className="w-full border-t-2 border-primary" />
-        <Transformations />
-        <div className="w-full border-t-2 border-primary" />
         <Benefits />
+        <div className="w-full border-t-2 border-primary" />
+        <Transformations />
         <Location />
         <Cta />
         <Faq />
