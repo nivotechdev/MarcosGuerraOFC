@@ -18,34 +18,34 @@ export default function Footer() {
             </p>
              <div className="flex justify-center md:justify-start gap-2 mt-6">
                   <Link href={whatsappUrl} target="_blank" rel="noopener noreferrer" passHref>
-                    <Button size="icon" variant="ghost" className="text-primary hover:text-primary/80 hover:bg-primary/10">
+                    <Button size="icon" variant="ghost" className="text-primary hover:text-accent/80 hover:bg-primary/10">
                         <WhatsappIcon className="h-5 w-5" />
                     </Button>
                   </Link>
-                  <Link href="#" passHref><Button size="icon" variant="ghost" className="text-accent hover:bg-primary/20 hover:text-primary"><Instagram /></Button></Link>
-                  <Link href="#" passHref><Button size="icon" variant="ghost" className="text-accent hover:bg-primary/20 hover:text-primary"><Facebook /></Button></Link>
-                  <Link href="#" passHref><Button size="icon" variant="ghost" className="text-accent hover:bg-primary/20 hover:text-primary"><Linkedin /></Button></Link>
+                  <Link href="#" passHref><Button size="icon" variant="ghost" className="text-primary hover:bg-primary/20 hover:text-accent"><Instagram /></Button></Link>
+                  <Link href="#" passHref><Button size="icon" variant="ghost" className="text-primary hover:bg-primary/20 hover:text-accent"><Facebook /></Button></Link>
+                  <Link href="#" passHref><Button size="icon" variant="ghost" className="text-primary hover:bg-primary/20 hover:text-accent"><Linkedin /></Button></Link>
               </div>
           </div>
           <div>
-              <h4 className="font-heading font-semibold text-lg text-accent">Navegação</h4>
+              <h4 className="font-heading font-semibold text-lg text-primary">Navegação</h4>
               <ul className="mt-4 space-y-3">
-                  <li><Link href="#why-us" className="hover:text-primary transition-colors">A Clínica</Link></li>
-                  <li><Link href="#treatments" className="hover:text-primary transition-colors">Tratamentos</Link></li>
-                  <li><Link href="#location" className="hover:text-primary transition-colors">Localização</Link></li>
-                  <li><Link href="#faq" className="hover:text-primary transition-colors">FAQ</Link></li>
+                  <li><Link href="#why-us" className="hover:text-accent transition-colors">A Clínica</Link></li>
+                  <li><Link href="#treatments" className="hover:text-accent transition-colors">Tratamentos</Link></li>
+                  <li><Link href="#location" className="hover:text-accent transition-colors">Localização</Link></li>
+                  <li><Link href="#faq" className="hover:text-accent transition-colors">FAQ</Link></li>
               </ul>
           </div>
            <div>
-              <h4 className="font-heading font-semibold text-lg text-accent">Contato</h4>
+              <h4 className="font-heading font-semibold text-lg text-primary">Contato</h4>
               <ul className="mt-4 space-y-3">
                 <li>
-                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center md:justify-start gap-2 hover:text-primary transition-colors">
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center md:justify-start gap-2 hover:text-accent transition-colors">
                     <WhatsappIcon className="h-4 w-4 text-primary"/>
                     <span>(54) 3223-4237</span>
                   </a>
                 </li>
-                <li><a href="mailto:ortodontia.mguerra@gmail.com" className="hover:text-primary transition-colors">ortodontia.mguerra@gmail.com</a></li>
+                <li><a href="mailto:ortodontia.mguerra@gmail.com" className="hover:text-accent transition-colors">ortodontia.mguerra@gmail.com</a></li>
                 <li className="text-wrap">Avenida Júlio de Castilhos, 2773 – Sala 302-B<br />Bairro São Pelegrino – Caxias do Sul – RS</li>
               </ul>
           </div>
@@ -55,8 +55,8 @@ export default function Footer() {
             © {new Date().getFullYear()} Dr. Marcos Guerra Odontologia. Todos os direitos reservados.
           </p>
           <div className="flex items-center gap-6">
-             <Link href="#" className="hover:text-primary transition-colors">Política de Privacidade</Link>
-             <Link href="#" className="hover:text-primary transition-colors">Termos de Uso</Link>
+             <Link href="#" className="hover:text-accent transition-colors">Política de Privacidade</Link>
+             <Link href="#" className="hover:text-accent transition-colors">Termos de Uso</Link>
           </div>
         </div>
       </div>

@@ -41,7 +41,7 @@ export default function Header() {
           <Logo variant="default" />
           <nav className="hidden md:flex items-center justify-center gap-8">
             {navItems.map((item) => (
-              <Link key={item.label} href={item.href} className="text-sm font-medium hover:text-primary transition-colors text-accent">
+              <Link key={item.label} href={item.href} className="text-sm font-medium hover:text-accent transition-colors text-primary">
                 {item.label}
               </Link>
             ))}
@@ -54,7 +54,7 @@ export default function Header() {
               {isClient && (
                 <Sheet open={open} onOpenChange={setOpen}>
                     <SheetTrigger asChild>
-                        <Button variant="ghost" size="icon" className="text-accent hover:bg-accent/10">
+                        <Button variant="ghost" size="icon" className="text-primary hover:bg-primary/10">
                             <Menu className="h-6 w-6" />
                             <span className="sr-only">Abrir menu</span>
                         </Button>
@@ -67,7 +67,7 @@ export default function Header() {
                              <SheetDescription className="sr-only">Navegue pelas seções do site.</SheetDescription>
                              <Logo variant="default" />
                              <SheetClose asChild>
-                                <Button variant="ghost" size="icon" className="text-accent">
+                                <Button variant="ghost" size="icon" className="text-primary">
                                     <X className="h-6 w-6" />
                                     <span className="sr-only">Fechar menu</span>
                                 </Button>
@@ -93,13 +93,13 @@ export default function Header() {
                         <div className="p-6 border-t">
                           <div className="flex justify-center gap-4">
                               <Link href={whatsappUrl} target="_blank" rel="noopener noreferrer" passHref>
-                                <Button size="icon" variant="ghost" className="text-primary hover:text-primary/80 hover:bg-primary/10">
+                                <Button size="icon" variant="ghost" className="text-primary hover:text-accent/80 hover:bg-primary/10">
                                     <WhatsappIcon className="h-5 w-5" />
                                 </Button>
                               </Link>
-                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-accent hover:bg-primary/20 hover:text-primary"><Instagram /></Button></Link>
-                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-accent hover:bg-primary/20 hover:text-primary"><Facebook /></Button></Link>
-                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-accent hover:bg-primary/20 hover:text-primary"><Linkedin /></Button></Link>
+                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-primary hover:bg-primary/20 hover:text-accent"><Instagram /></Button></Link>
+                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-primary hover:bg-primary/20 hover:text-accent"><Facebook /></Button></Link>
+                              <Link href="#" passHref><Button size="icon" variant="ghost" className="text-primary hover:bg-primary/20 hover:text-accent"><Linkedin /></Button></Link>
                           </div>
                         </div>
                     </SheetContent>

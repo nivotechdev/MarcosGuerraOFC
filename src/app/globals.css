@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%; /* #FFFFFF - Branco Puro */
+    --background: 0 0% 100%; /* #FFFFFF - Branco Absoluto */
     --foreground: 215 14% 34%; /* #475569 - Slate Gray */
     
     --card: 0 0% 100%;
@@ -13,24 +13,24 @@
     --popover: 0 0% 100%;
     --popover-foreground: 215 14% 34%;
     
-    --primary: 211 100% 50%; /* #007BFF - Azul Real Vibrante */
+    --primary: 215 55% 23%; /* #1B365D - Azul Autoridade */
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 211 100% 50%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 210 40% 98%; /* Mapped to Muted/Branco Gelo */
+    --secondary-foreground: 215 55% 23%; /* Mapped to Primary */
     
     --muted: 210 40% 98%; /* #F8FAFC - Branco Gelo */
     --muted-foreground: 215 14% 54%;
     
-    --accent: 211 100% 50%; /* #007BFF */
-    --accent-foreground: 0 0% 100%;
+    --accent: 44 52% 56%; /* #C5A059 - Ouro Nobre */
+    --accent-foreground: 215 55% 23%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     
     --border: 214 32% 91%; /* #E2E8F0 */
     --input: 214 32% 91%;
-    --ring: 211 100% 50%;
+    --ring: 215 55% 23%; /* Azul Autoridade */
     
     --radius: 0.5rem;
   }
@@ -45,24 +45,24 @@
     --popover: 222 47% 11%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 211 100% 50%;
-    --primary-foreground: 222 47% 11%;
+    --primary: 215 55% 23%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 211 100% 50%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
 
     --muted: 217 33% 17%;
     --muted-foreground: 215 20% 65%;
     
-    --accent: 211 100% 50%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 44 52% 56%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     
     --border: 217 33% 27%;
     --input: 217 33% 27%;
-    --ring: 211 100% 50%;
+    --ring: 215 55% 23%;
 
     --radius: 0.5rem;
   }

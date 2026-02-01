@@ -42,7 +42,7 @@ export default function Specialist() {
           <div className="relative text-left">
              <div className="absolute top-0 bottom-0 -left-10 w-px bg-accent hidden md:block" />
 
-            <h2 className="font-heading text-2xl font-bold uppercase tracking-wider text-accent">
+            <h2 className="font-heading text-2xl font-bold uppercase tracking-wider text-primary">
               DR. MARCOS GUERRA
             </h2>
             <p className="mt-6 text-base text-muted-foreground leading-relaxed">
@@ -52,7 +52,7 @@ export default function Specialist() {
             <ul className="mt-8 space-y-3">
               {qualifications.map((item) => (
                 <li key={item.title} className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
+                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
                   <span className="text-muted-foreground">{item.title}</span>
                 </li>
               ))}

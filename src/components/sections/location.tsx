@@ -34,7 +34,7 @@ export default function Location() {
     <section id="location" className="py-20 sm:py-32 bg-muted">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-accent">
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-primary">
             Onde estamos e quando atender você
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
@@ -49,13 +49,13 @@ export default function Location() {
                     <ul className="space-y-6">
                         {contactDetails.map((detail) => (
                            <li key={detail.title} className="flex items-start gap-4">
-                                <div className="bg-accent/10 p-3 rounded-full mt-1">
-                                    <detail.icon className="h-6 w-6 text-accent" />
+                                <div className="bg-primary/10 p-3 rounded-full mt-1">
+                                    <detail.icon className="h-6 w-6 text-primary" />
                                 </div>
                                 <div>
                                     <h4 className="font-heading font-semibold text-foreground">{detail.title}</h4>
                                     <p className="text-muted-foreground whitespace-pre-line">
-                                        <a href={detail.href} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                                        <a href={detail.href} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
                                             {detail.value}
                                         </a>
                                     </p>
