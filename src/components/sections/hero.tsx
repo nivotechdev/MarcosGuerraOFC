@@ -52,7 +52,7 @@ export default function Hero() {
               <Link href={whatsappUrl} passHref target="_blank" rel="noopener noreferrer">
                 <Button 
                   size="lg" 
-                  className="h-14 px-8 text-base font-bold bg-white text-primary hover:bg-white/90 transition-transform hover:scale-105 shadow-[0_0_15px_rgba(0,188,212,0.5)] hover:shadow-[0_0_25px_rgba(0,188,212,0.7)]"
+                  className="h-14 px-8 text-base font-bold transition-transform hover:scale-105"
                 >
                   Agendar Avaliação Premium
                 </Button>
