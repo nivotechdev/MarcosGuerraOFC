@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/sheet"
 import React from "react";
 import { cn } from "@/lib/utils";
+import WhatsappIcon from "@/components/icons/whatsapp-icon";
 
 export default function Header() {
   const [open, setOpen] = React.useState(false);
@@ -108,6 +109,11 @@ export default function Header() {
                         </nav>
                         <div className="p-6 border-t border-border/20">
                           <div className="flex justify-center gap-4">
+                              <Link href={whatsappUrl} target="_blank" rel="noopener noreferrer" passHref>
+                                <Button size="icon" variant="ghost" className="text-green-600 hover:text-green-700 hover:bg-green-600/10">
+                                    <WhatsappIcon className="h-5 w-5" />
+                                </Button>
+                              </Link>
                               <Link href="#" passHref><Button size="icon" variant="ghost" className="text-foreground hover:bg-primary/20 hover:text-primary"><Instagram /></Button></Link>
                               <Link href="#" passHref><Button size="icon" variant="ghost" className="text-foreground hover:bg-primary/20 hover:text-primary"><Facebook /></Button></Link>
                               <Link href="#" passHref><Button size="icon" variant="ghost" className="text-foreground hover:bg-primary/20 hover:text-primary"><Linkedin /></Button></Link>
