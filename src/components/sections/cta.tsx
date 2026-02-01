@@ -6,7 +6,7 @@ export default function Cta() {
   const whatsappUrl = "https://wa.me/555432234237?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
 
   return (
-    <section id="contact" className="py-20 sm:py-32 bg-secondary">
+    <section id="contact" className="py-20 sm:py-32 bg-secondary border-y-2 border-primary">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl text-center">
         <h2 className="text-3xl md:text-4xl font-semibold text-foreground">
           Sua nova jornada estética começa com uma conversa.
