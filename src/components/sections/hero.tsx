@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="relative w-full h-screen flex items-center justify-center text-center text-white"
+      className="relative w-full h-screen flex items-center justify-center text-center text-white overflow-hidden"
     >
       {/* Mobile Image */}
       {heroImageMobile && (
@@ -22,7 +22,7 @@ export default function Hero() {
           src={heroImageMobile.imageUrl}
           alt={heroImageMobile.description}
           fill
-          className="object-cover object-center md:hidden"
+          className="object-cover object-center md:hidden scale-110"
           data-ai-hint={heroImageMobile.imageHint}
           priority
         />
@@ -33,7 +33,7 @@ export default function Hero() {
           src={heroImageDesktop.imageUrl}
           alt={heroImageDesktop.description}
           fill
-          className="object-cover object-center hidden md:block"
+          className="object-cover object-center hidden md:block scale-110"
           data-ai-hint={heroImageDesktop.imageHint}
           priority
         />
