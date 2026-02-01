@@ -69,7 +69,7 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
     {
       "id": "specialist-portrait",
       "description": "Retrato do Dr. Marcos Guerra",
-      "imageUrl": "https://images.unsplash.com/photo-1618088129969-bcb0c051985e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8aG9tZW18ZW58MHx8fHwxNzY5OTgzNzY5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1667133295308-9ef24f71952e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkZW50aXN0fGVufDB8fHx8MTc2OTk4Mzg4MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "dentist portrait"
     }
   ];
