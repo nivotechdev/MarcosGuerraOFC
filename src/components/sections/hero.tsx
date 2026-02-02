@@ -52,7 +52,7 @@ export default function Hero() {
             </h1>
             
             <p className="mt-6 md:mt-8 text-lg md:text-2xl text-white/90 max-w-2xl leading-relaxed font-light px-4">
-              Odontologia avançada para tratamentos precisos e confortáveis.
+              Ortodontia avançada para tratamentos precisos e confortáveis.
             </p>
 
             <div className="mt-10 md:mt-12 flex flex-col items-center gap-4 w-full">
