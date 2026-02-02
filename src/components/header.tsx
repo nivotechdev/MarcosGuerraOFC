@@ -48,10 +48,10 @@ export default function Header() {
           className="fixed left-0 right-0 z-50 top-6 flex justify-center pointer-events-none px-4"
         >
           <div className="w-full max-w-[95%] md:max-w-3xl bg-white/80 backdrop-blur-xl border border-white/20 rounded-full shadow-xl shadow-black/5 h-14 pointer-events-auto flex items-center overflow-hidden">
-            <div className="flex items-center justify-between w-full h-full px-3 md:px-8 py-3">
+            <div className="flex items-center justify-between w-full h-full px-3 md:px-8 py-1">
               {/* Logo Container - Protagonist on Mobile */}
-              <div className="flex-shrink-0 flex items-center max-w-[45%] md:max-w-none">
-                <Logo className="w-28 md:w-32 h-8 md:h-10" />
+              <div className="flex-shrink-0 flex items-center max-w-[60%] md:max-w-none">
+                <Logo className="w-32 md:w-48 h-12 md:h-12" />
               </div>
               
               {/* Desktop Navigation */}
@@ -90,7 +90,7 @@ export default function Header() {
                             <SheetHeader className="mb-12 flex flex-row justify-between items-center">
                                  <SheetTitle className="sr-only">Menu de Navegação</SheetTitle>
                                  <SheetDescription className="sr-only">Navegação principal da clínica</SheetDescription>
-                                 <Logo className="w-28 h-12" />
+                                 <Logo className="w-36 h-14" />
                                  <SheetClose asChild>
                                     <Button variant="ghost" size="icon" className="text-[#0F172A]">
                                         <X className="h-6 w-6" strokeWidth={1.5} />
