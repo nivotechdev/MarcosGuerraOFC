@@ -32,7 +32,7 @@ export default function Specialist() {
                 alt={specialistImage.description}
                 width={500}
                 height={600}
-                className="object-cover shadow-lg"
+                className="object-cover shadow-soft"
                 data-ai-hint={specialistImage.imageHint}
               />
             )}

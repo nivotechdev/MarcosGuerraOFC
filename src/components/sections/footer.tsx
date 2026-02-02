@@ -8,27 +8,27 @@ export default function Footer() {
   const whatsappUrl = "https://wa.me/555432234237?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
 
   return (
-    <footer className="bg-muted text-muted-foreground border-t">
+    <footer className="bg-primary text-primary-foreground border-t">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
           <div className="md:col-span-2">
-            <Logo className="mx-auto md:mx-0" variant="default" />
+            <Logo className="mx-auto md:mx-0" variant="inverted" />
             <p className="mt-4 text-sm max-w-sm mx-auto md:mx-0">
               Transformando sorrisos com tecnologia, arte e um cuidado genuinamente humano.
             </p>
              <div className="flex justify-center md:justify-start gap-2 mt-6">
                   <Link href={whatsappUrl} target="_blank" rel="noopener noreferrer" passHref>
-                    <Button size="icon" variant="ghost" className="text-primary hover:text-accent/80 hover:bg-primary/10">
+                    <Button size="icon" variant="ghost" className="hover:text-accent/80 hover:bg-white/10">
                         <WhatsappIcon className="h-5 w-5" />
                     </Button>
                   </Link>
-                  <Link href="#" passHref><Button size="icon" variant="ghost" className="text-primary hover:bg-primary/20 hover:text-accent"><Instagram /></Button></Link>
-                  <Link href="#" passHref><Button size="icon" variant="ghost" className="text-primary hover:bg-primary/20 hover:text-accent"><Facebook /></Button></Link>
-                  <Link href="#" passHref><Button size="icon" variant="ghost" className="text-primary hover:bg-primary/20 hover:text-accent"><Linkedin /></Button></Link>
+                  <Link href="#" passHref><Button size="icon" variant="ghost" className="hover:bg-white/10 hover:text-accent"><Instagram /></Button></Link>
+                  <Link href="#" passHref><Button size="icon" variant="ghost" className="hover:bg-white/10 hover:text-accent"><Facebook /></Button></Link>
+                  <Link href="#" passHref><Button size="icon" variant="ghost" className="hover:bg-white/10 hover:text-accent"><Linkedin /></Button></Link>
               </div>
           </div>
           <div>
-              <h4 className="font-heading font-semibold text-lg text-primary">Navegação</h4>
+              <h4 className="font-heading font-semibold text-lg text-primary-foreground">Navegação</h4>
               <ul className="mt-4 space-y-3">
                   <li><Link href="#why-us" className="hover:text-accent transition-colors">A Clínica</Link></li>
                   <li><Link href="#treatments" className="hover:text-accent transition-colors">Tratamentos</Link></li>
@@ -37,11 +37,11 @@ export default function Footer() {
               </ul>
           </div>
            <div>
-              <h4 className="font-heading font-semibold text-lg text-primary">Contato</h4>
+              <h4 className="font-heading font-semibold text-lg text-primary-foreground">Contato</h4>
               <ul className="mt-4 space-y-3">
                 <li>
                   <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center md:justify-start gap-2 hover:text-accent transition-colors">
-                    <WhatsappIcon className="h-4 w-4 text-primary"/>
+                    <WhatsappIcon className="h-4 w-4"/>
                     <span>(54) 3223-4237</span>
                   </a>
                 </li>

@@ -64,7 +64,7 @@ export default function Benefits() {
   }, [api]);
 
   return (
-    <section id="treatments" className="py-20 sm:py-32 bg-muted">
+    <section id="treatments" className="py-20 sm:py-32 bg-secondary border-t">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="font-heading text-3xl md:text-4xl font-semibold text-primary tracking-tight">Nossos Tratamentos</h2>
@@ -86,7 +86,7 @@ export default function Benefits() {
                 <CarouselItem key={index} className="pl-4 basis-11/12 sm:basis-1/2 lg:basis-1/3">
                   <div className="p-1 h-full">
                     <Card
-                      className="text-center shadow-sm transition-all duration-300 flex flex-col group h-full bg-card border border-primary/10 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-2 hover:border-primary/50"
+                      className="text-center shadow-soft transition-all duration-300 flex flex-col group h-full bg-card border border-primary/10 hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-2 hover:border-primary/50"
                     >
                       <CardHeader className="items-center">
                         <div className="bg-primary/10 p-3 rounded-full mb-4 transition-transform duration-300 group-hover:scale-110">

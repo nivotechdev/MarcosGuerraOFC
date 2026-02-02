@@ -31,7 +31,7 @@ const contactDetails = [
 
 export default function Location() {
   return (
-    <section id="location" className="py-20 sm:py-32 bg-muted">
+    <section id="location" className="py-20 sm:py-32 bg-muted border-t">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="font-heading text-3xl md:text-4xl font-semibold text-primary tracking-tight">
@@ -42,7 +42,7 @@ export default function Location() {
           </p>
         </div>
 
-        <Card className="mt-16 overflow-hidden shadow-lg bg-card rounded-2xl">
+        <Card className="mt-16 overflow-hidden shadow-soft bg-card rounded-2xl">
             <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="p-8 sm:p-12 flex flex-col justify-center">
                     <h3 className="font-heading text-2xl font-semibold mb-8 text-foreground">Nossa Clínica</h3>
