@@ -46,7 +46,7 @@ export default function Hero() {
               A Experiência que Você Exige, <span className="text-white">O Sorriso que Você Merece.</span>
             </h1>
             <p className="mt-6 text-xl md:text-2xl text-white max-w-2xl mx-auto leading-loose tracking-wider">
-              Odontologia digital avançada para tratamentos rápidos, precisos e com o máximo de conforto.
+              Odontologia avançada para tratamentos rápidos, precisos e com o máximo de conforto.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href={whatsappUrl} passHref target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
