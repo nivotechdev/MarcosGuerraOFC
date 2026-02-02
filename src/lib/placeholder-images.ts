@@ -33,9 +33,9 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
     },
     {
       "id": "after-smile",
-      "description": "Close-up de um sorriso perfeitamente alinhado, branco e de aparência natural após um tratamento odontológico cosmético.",
-      "imageUrl": "https://picsum.photos/seed/after-smile/1080/1080",
-      "imageHint": "perfect white smile"
+      "description": "Resultado transformador após o tratamento.",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/WhatsApp%20Image%202026-02-02%20at%2013.32.31.jpeg",
+      "imageHint": "perfect smile"
     },
     {
       "id": "testimonial-avatar-1",
