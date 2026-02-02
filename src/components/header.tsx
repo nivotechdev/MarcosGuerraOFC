@@ -15,7 +15,6 @@ import {
   SheetDescription,
 } from "@/components/ui/sheet"
 import React from "react";
-import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Header() {
@@ -42,22 +41,22 @@ export default function Header() {
     <AnimatePresence>
       {isScrolled && (
         <motion.header 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
+          initial={{ opacity: 0, y: -20, scale: 0.95 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: -20, scale: 0.95 }}
           transition={{ duration: 0.4, ease: "circOut" }}
-          className="fixed left-0 right-0 z-50 top-4 flex justify-center pointer-events-none"
+          className="fixed left-0 right-0 z-50 top-6 flex justify-center pointer-events-none px-4"
         >
-          <div className="container mx-auto px-4 flex items-center justify-center max-w-4xl bg-white/80 backdrop-blur-xl border border-white/20 rounded-full shadow-lg h-16 pointer-events-auto">
-            <div className="flex items-center justify-between w-full h-full px-6">
-              <Logo className="w-24 md:w-28" />
+          <div className="w-[90%] md:max-w-3xl bg-white/80 backdrop-blur-xl border border-white/20 rounded-full shadow-xl shadow-black/5 h-14 pointer-events-auto flex items-center">
+            <div className="flex items-center justify-between w-full h-full px-8 py-3">
+              <Logo className="w-24 md:w-28 h-10" />
               
-              <nav className="hidden md:flex items-center gap-8">
+              <nav className="hidden md:flex items-center gap-10">
                 {navItems.map((item) => (
                   <Link 
                     key={item.label} 
                     href={item.href} 
-                    className="text-sm font-semibold text-[#0F172A] hover:text-accent transition-colors"
+                    className="text-sm font-medium text-[#0F172A] hover:text-accent transition-colors tracking-wide"
                   >
                     {item.label}
                   </Link>
@@ -66,23 +65,23 @@ export default function Header() {
 
               <div className="flex items-center gap-4">
                 <Link href={whatsappUrl} passHref target="_blank" rel="noopener noreferrer">
-                  <Button size="sm" className="rounded-full bg-[#0F172A] text-white hover:bg-[#0F172A]/90">
-                    Agendar Agora
+                  <Button size="sm" className="rounded-full bg-[#0F172A] text-white hover:bg-[#0F172A]/90 px-6 h-9 text-xs font-bold uppercase tracking-wider">
+                    Agendar
                   </Button>
                 </Link>
                 
                 <div className="md:hidden">
                     <Sheet open={open} onOpenChange={setOpen}>
                         <SheetTrigger asChild>
-                            <Button variant="ghost" size="icon" className="text-[#0F172A]">
-                                <Menu className="h-6 w-6" />
+                            <Button variant="ghost" size="icon" className="text-[#0F172A] h-9 w-9">
+                                <Menu className="h-5 w-5" />
                             </Button>
                         </SheetTrigger>
                         <SheetContent side="right" className="w-full bg-white">
                             <SheetHeader className="mb-8 flex flex-row justify-between items-center">
                                  <SheetTitle className="sr-only">Menu</SheetTitle>
                                  <SheetDescription className="sr-only">Navegação principal</SheetDescription>
-                                 <Logo />
+                                 <Logo className="w-28 h-12" />
                                  <SheetClose asChild>
                                     <Button variant="ghost" size="icon">
                                         <X className="h-6 w-6" />
@@ -101,8 +100,8 @@ export default function Header() {
                                     </Link>
                                 ))}
                                  <Link href={whatsappUrl} passHref target="_blank" rel="noopener noreferrer">
-                                    <Button onClick={() => setOpen(false)} size="lg" className="mt-8 w-full rounded-full bg-[#0F172A] text-white">
-                                      Agendar Avaliação
+                                    <Button onClick={() => setOpen(false)} size="lg" className="mt-8 w-full rounded-full bg-[#0F172A] text-white font-bold">
+                                      Agendar Agora
                                     </Button>
                                 </Link>
                             </nav>
