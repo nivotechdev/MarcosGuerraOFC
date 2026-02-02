@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export default function Hero() {
-  const videoUrl = "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/Use_the_provided_202602021647_zk9b6.mp4";
+  const videoUrl = "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/Use_the_provided_202602021712_t16we.mp4";
   const whatsappUrl = "https://wa.me/555432234237?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
 
   return (
@@ -30,9 +30,9 @@ export default function Hero() {
 
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto flex flex-col items-center">
-            <h1 className="font-heading text-4xl leading-tight md:text-7xl font-bold tracking-tight text-white drop-shadow-2xl">
+            <h1 className="font-heading text-3xl leading-tight md:text-7xl font-bold tracking-tight text-white drop-shadow-2xl">
               A Experiência que Você Exige,<br className="hidden md:block" />
-              <span> O Sorriso que Você Merece.</span>
+              O Sorriso que Você Merece.
             </h1>
             
             <p className="mt-6 md:mt-8 text-lg md:text-2xl text-white/90 max-w-2xl leading-relaxed font-light px-4">
