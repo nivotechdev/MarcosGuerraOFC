@@ -1,3 +1,4 @@
+
 export type ImagePlaceholder = {
   id: string;
   description: string;
@@ -26,9 +27,9 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
     },
     {
       "id": "before-smile",
-      "description": "Close-up de um sorriso com dentes desalinhados e manchados antes de um tratamento odontológico estético.",
-      "imageUrl": "https://picsum.photos/seed/before-smile/1080/1080",
-      "imageHint": "uneven yellow teeth"
+      "description": "Dentes desalinhados antes do tratamento.",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/dentefeio.jpeg",
+      "imageHint": "crooked teeth"
     },
     {
       "id": "after-smile",
