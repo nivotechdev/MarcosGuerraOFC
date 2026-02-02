@@ -47,10 +47,14 @@ export default function Header() {
           transition={{ duration: 0.4, ease: "circOut" }}
           className="fixed left-0 right-0 z-50 top-6 flex justify-center pointer-events-none px-4"
         >
-          <div className="w-[90%] md:max-w-3xl bg-white/80 backdrop-blur-xl border border-white/20 rounded-full shadow-xl shadow-black/5 h-14 pointer-events-auto flex items-center">
-            <div className="flex items-center justify-between w-full h-full px-8 py-3">
-              <Logo className="w-24 md:w-28 h-10" />
+          <div className="w-full max-w-[90%] md:max-w-3xl bg-white/80 backdrop-blur-xl border border-white/20 rounded-full shadow-xl shadow-black/5 h-14 pointer-events-auto flex items-center overflow-hidden">
+            <div className="flex items-center justify-between w-full h-full px-4 md:px-8 py-3">
+              {/* Logo - Fixed Size on Mobile */}
+              <div className="flex-shrink-0">
+                <Logo className="w-20 md:w-28 h-8 md:h-10" />
+              </div>
               
+              {/* Desktop Navigation */}
               <nav className="hidden md:flex items-center gap-10">
                 {navItems.map((item) => (
                   <Link 
@@ -63,44 +67,49 @@ export default function Header() {
                 ))}
               </nav>
 
-              <div className="flex items-center gap-4">
+              {/* Action Group: Button + Menu */}
+              <div className="flex items-center gap-3 md:gap-4">
                 <Link href={whatsappUrl} passHref target="_blank" rel="noopener noreferrer">
-                  <Button size="sm" className="rounded-full bg-[#0F172A] text-white hover:bg-[#0F172A]/90 px-6 h-9 text-xs font-bold uppercase tracking-wider">
+                  <Button 
+                    size="sm" 
+                    className="rounded-full bg-[#0F172A] text-white hover:bg-[#0F172A]/90 px-3 md:px-6 h-8 md:h-9 text-[10px] md:text-xs font-bold uppercase tracking-widest transition-all"
+                  >
                     Agendar
                   </Button>
                 </Link>
                 
-                <div className="md:hidden">
+                {/* Mobile Menu Trigger */}
+                <div className="md:hidden flex items-center">
                     <Sheet open={open} onOpenChange={setOpen}>
                         <SheetTrigger asChild>
-                            <Button variant="ghost" size="icon" className="text-[#0F172A] h-9 w-9">
-                                <Menu className="h-5 w-5" />
+                            <Button variant="ghost" size="icon" className="text-[#0F172A] h-8 w-8 p-0 hover:bg-transparent active:bg-transparent">
+                                <Menu className="h-5 w-5" strokeWidth={1.5} />
                             </Button>
                         </SheetTrigger>
-                        <SheetContent side="right" className="w-full bg-white">
-                            <SheetHeader className="mb-8 flex flex-row justify-between items-center">
-                                 <SheetTitle className="sr-only">Menu</SheetTitle>
-                                 <SheetDescription className="sr-only">Navegação principal</SheetDescription>
+                        <SheetContent side="right" className="w-full bg-white border-none">
+                            <SheetHeader className="mb-12 flex flex-row justify-between items-center">
+                                 <SheetTitle className="sr-only">Menu de Navegação</SheetTitle>
+                                 <SheetDescription className="sr-only">Navegação principal da clínica</SheetDescription>
                                  <Logo className="w-28 h-12" />
                                  <SheetClose asChild>
-                                    <Button variant="ghost" size="icon">
-                                        <X className="h-6 w-6" />
+                                    <Button variant="ghost" size="icon" className="text-[#0F172A]">
+                                        <X className="h-6 w-6" strokeWidth={1.5} />
                                     </Button>
                                  </SheetClose>
                             </SheetHeader>
-                            <nav className="flex flex-col gap-4 text-center">
+                            <nav className="flex flex-col gap-6 text-left px-4">
                                 {navItems.map((item) => (
                                     <Link
                                         key={item.label}
                                         href={item.href}
                                         onClick={() => setOpen(false)}
-                                        className="text-2xl font-medium py-4 border-b text-[#0F172A]"
+                                        className="text-3xl font-serif font-bold py-2 text-[#0F172A] active:text-accent transition-colors"
                                     >
                                         {item.label}
                                     </Link>
                                 ))}
-                                 <Link href={whatsappUrl} passHref target="_blank" rel="noopener noreferrer">
-                                    <Button onClick={() => setOpen(false)} size="lg" className="mt-8 w-full rounded-full bg-[#0F172A] text-white font-bold">
+                                 <Link href={whatsappUrl} passHref target="_blank" rel="noopener noreferrer" className="mt-8">
+                                    <Button onClick={() => setOpen(false)} size="lg" className="w-full h-14 rounded-full bg-[#0F172A] text-white font-bold text-lg shadow-xl">
                                       Agendar Agora
                                     </Button>
                                 </Link>
