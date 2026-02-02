@@ -95,34 +95,33 @@ export default function Transformations() {
                 t.before && t.after && (
                   <CarouselItem key={index} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                     <div className="p-1 h-full">
-                      <Card className="relative rounded-2xl shadow-soft transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 h-[380px] flex flex-col bg-card border-2 hover:border-primary/30 hover:z-10">
-                        <CardContent className="p-2 md:p-3 space-y-2 flex-grow flex flex-col">
-                          <h3 className="font-heading text-center font-bold text-foreground text-base shrink-0">{t.title}</h3>
-                          <div className="flex flex-col gap-px flex-grow items-stretch">
+                      <Card className="relative rounded-2xl shadow-soft transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 h-[420px] flex flex-col bg-card border-2 hover:border-primary/30 hover:z-10 overflow-hidden">
+                        <CardContent className="p-0 flex-grow flex flex-col">
+                          <div className="flex flex-col gap-px flex-grow items-stretch h-full">
                             <div className="relative flex-1">
                               <Image
                                 src={t.before.imageUrl}
-                                alt={`Antes - ${t.title}`}
+                                alt={`Antes`}
                                 fill
-                                className="object-cover rounded-xl"
+                                className="object-cover"
                                 loading="lazy"
                                 data-ai-hint={t.before.imageHint}
                                 sizes="(max-width: 768px) 90vw, (max-width: 1280px) 45vw, 33vw"
                               />
-                              <Badge className="absolute top-2 left-2 bg-primary text-primary-foreground border-none text-xs px-2 py-0.5">Antes</Badge>
+                              <Badge className="absolute top-4 left-4 bg-primary/90 text-primary-foreground border-none text-xs px-3 py-1 backdrop-blur-sm">Antes</Badge>
                             </div>
-                            <div className="shrink-0 h-px w-full bg-accent" />
+                            <div className="shrink-0 h-1 w-full bg-accent" />
                             <div className="relative flex-1">
                               <Image
                                 src={t.after.imageUrl}
-                                alt={`Depois - ${t.title}`}
+                                alt={`Depois`}
                                 fill
-                                className="object-cover rounded-xl"
+                                className="object-cover"
                                 loading="lazy"
                                 data-ai-hint={t.after.imageHint}
                                 sizes="(max-width: 768px) 90vw, (max-width: 1280px) 45vw, 33vw"
                               />
-                              <Badge className="absolute top-2 left-2 bg-primary text-primary-foreground border-none text-xs px-2 py-0.5">Depois</Badge>
+                              <Badge className="absolute top-4 left-4 bg-primary/90 text-primary-foreground border-none text-xs px-3 py-1 backdrop-blur-sm">Depois</Badge>
                             </div>
                           </div>
                         </CardContent>
