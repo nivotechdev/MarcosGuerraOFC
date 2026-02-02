@@ -95,7 +95,7 @@ export default function Transformations() {
                 t.before && t.after && (
                   <CarouselItem key={index} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                     <div className="p-1 h-full">
-                      <Card className="rounded-2xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 h-[380px] flex flex-col bg-card">
+                      <Card className="rounded-2xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 h-[380px] flex flex-col bg-card border hover:border-primary/30">
                         <CardContent className="p-2 md:p-3 space-y-2 flex-grow flex flex-col">
                           <h3 className="font-heading text-center font-bold text-foreground text-base shrink-0">{t.title}</h3>
                           <div className="flex flex-col gap-px flex-grow items-stretch">
