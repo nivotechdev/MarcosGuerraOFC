@@ -12,9 +12,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
           <div className="md:col-span-2 flex flex-col items-center md:items-start">
-            <div className="bg-white/95 p-3 rounded-xl inline-block shadow-md">
-              <Logo />
-            </div>
+            <Logo variant="inverted" />
             <p className="mt-4 text-sm max-w-sm">
               Transformando sorrisos com tecnologia, arte e um cuidado genuinamente humano.
             </p>
