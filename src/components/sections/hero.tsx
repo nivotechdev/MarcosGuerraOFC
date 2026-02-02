@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from "next/link";
@@ -45,7 +44,7 @@ export default function Hero() {
                   size="lg" 
                   className="h-16 px-10 text-lg font-bold transition-all duration-300 hover:scale-105 w-full rounded-full shadow-glow"
                 >
-                  Agendar Avaliação Premium
+                  Agendar Consulta
                 </Button>
               </Link>
               
