@@ -47,11 +47,11 @@ export default function Header() {
           transition={{ duration: 0.4, ease: "circOut" }}
           className="fixed left-0 right-0 z-50 top-6 flex justify-center pointer-events-none px-4"
         >
-          <div className="w-full max-w-[90%] md:max-w-3xl bg-white/80 backdrop-blur-xl border border-white/20 rounded-full shadow-xl shadow-black/5 h-14 pointer-events-auto flex items-center overflow-hidden">
-            <div className="flex items-center justify-between w-full h-full px-4 md:px-8 py-3">
-              {/* Logo - Fixed Size on Mobile */}
-              <div className="flex-shrink-0">
-                <Logo className="w-20 md:w-28 h-8 md:h-10" />
+          <div className="w-full max-w-[95%] md:max-w-3xl bg-white/80 backdrop-blur-xl border border-white/20 rounded-full shadow-xl shadow-black/5 h-14 pointer-events-auto flex items-center overflow-hidden">
+            <div className="flex items-center justify-between w-full h-full px-3 md:px-8 py-3">
+              {/* Logo Container - Protagonist on Mobile */}
+              <div className="flex-shrink-0 flex items-center max-w-[45%] md:max-w-none">
+                <Logo className="w-28 md:w-32 h-8 md:h-10" />
               </div>
               
               {/* Desktop Navigation */}
@@ -67,8 +67,8 @@ export default function Header() {
                 ))}
               </nav>
 
-              {/* Action Group: Button + Menu */}
-              <div className="flex items-center gap-3 md:gap-4">
+              {/* Action Group: Button + Menu - Compact on Mobile */}
+              <div className="flex items-center gap-2 md:gap-4 flex-shrink-0">
                 <Link href={whatsappUrl} passHref target="_blank" rel="noopener noreferrer">
                   <Button 
                     size="sm" 
