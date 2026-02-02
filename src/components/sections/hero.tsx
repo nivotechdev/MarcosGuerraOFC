@@ -32,7 +32,7 @@ export default function Hero() {
           <div className="max-w-4xl mx-auto flex flex-col items-center">
             <h1 className="font-heading text-4xl leading-tight md:text-7xl font-bold tracking-tight text-white drop-shadow-2xl">
               A Experiência que Você Exige,<br className="hidden md:block" />
-              <span className="text-accent"> O Sorriso que Você Merece.</span>
+              <span> O Sorriso que Você Merece.</span>
             </h1>
             
             <p className="mt-6 md:mt-8 text-lg md:text-2xl text-white/90 max-w-2xl leading-relaxed font-light px-4">
