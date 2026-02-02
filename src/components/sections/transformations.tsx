@@ -90,12 +90,12 @@ export default function Transformations() {
             }}
             className="w-full max-w-7xl mx-auto"
           >
-            <CarouselContent className="-ml-4">
+            <CarouselContent className="-ml-4 py-4">
               {transformationCases.map((t, index) => (
                 t.before && t.after && (
                   <CarouselItem key={index} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
                     <div className="p-1 h-full">
-                      <Card className="rounded-2xl shadow-soft overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 h-[380px] flex flex-col bg-card border hover:border-primary/30">
+                      <Card className="relative rounded-2xl shadow-soft transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 h-[380px] flex flex-col bg-card border-2 hover:border-primary/30 hover:z-10">
                         <CardContent className="p-2 md:p-3 space-y-2 flex-grow flex flex-col">
                           <h3 className="font-heading text-center font-bold text-foreground text-base shrink-0">{t.title}</h3>
                           <div className="flex flex-col gap-px flex-grow items-stretch">

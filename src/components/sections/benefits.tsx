@@ -81,12 +81,12 @@ export default function Benefits() {
             }}
             className="w-full max-w-7xl mx-auto"
           >
-            <CarouselContent className="-ml-4">
+            <CarouselContent className="-ml-4 py-4">
               {benefits.map((benefit, index) => (
                 <CarouselItem key={index} className="pl-4 basis-11/12 sm:basis-1/2 lg:basis-1/3">
                   <div className="p-1 h-full">
                     <Card
-                      className="text-center shadow-soft transition-all duration-300 flex flex-col group h-full bg-card rounded-2xl border border-primary hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-2"
+                      className="relative text-center shadow-soft transition-all duration-300 flex flex-col group h-full bg-card rounded-2xl border-2 border-primary hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-2 hover:z-10"
                     >
                       <CardHeader className="items-center">
                         <div className="bg-primary/10 p-3 rounded-full mb-4 transition-transform duration-300 group-hover:scale-110">

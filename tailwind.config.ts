@@ -19,6 +19,7 @@ export default {
     extend: {
       boxShadow: {
         'soft': '0 4px 20px rgba(27, 54, 93, 0.08)',
+        'glow': '0 0 15px rgba(27, 54, 93, 0.4)',
       },
       fontFamily: {
         sans: ['var(--font-inter)', ...fontFamily.sans],
