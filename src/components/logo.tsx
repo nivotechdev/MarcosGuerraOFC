@@ -13,7 +13,7 @@ export default function Logo({ className, variant = 'default' }: { className?: s
         style={
           variant === 'inverted' 
             ? { filter: 'brightness(0) invert(1)' } 
-            : { filter: 'drop-shadow(0 0 6px hsl(var(--accent) / 0.8))' }
+            : undefined
         }
         sizes="(max-width: 768px) 112px, 160px"
         priority
