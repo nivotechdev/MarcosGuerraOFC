@@ -86,7 +86,7 @@ export default function Benefits() {
                 <CarouselItem key={index} className="pl-4 basis-11/12 sm:basis-1/2 lg:basis-1/3">
                   <div className="p-1 h-full">
                     <Card
-                      className="text-center shadow-soft transition-all duration-300 flex flex-col group h-full bg-card rounded-2xl border hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-2 hover:border-primary/30"
+                      className="text-center shadow-soft transition-all duration-300 flex flex-col group h-full bg-card rounded-2xl border border-primary hover:shadow-xl hover:shadow-primary/5 hover:-translate-y-2"
                     >
                       <CardHeader className="items-center">
                         <div className="bg-primary/10 p-3 rounded-full mb-4 transition-transform duration-300 group-hover:scale-110">
