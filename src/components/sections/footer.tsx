@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Logo from "@/components/logo";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
 import { Button } from "../ui/button";
 import WhatsappIcon from "../icons/whatsapp-icon";
@@ -12,8 +11,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-center md:text-left">
           <div className="md:col-span-2 flex flex-col items-center md:items-start">
-            <Logo variant="inverted" />
-            <p className="mt-4 text-sm max-w-sm">
+            <p className="text-sm max-w-sm">
               Transformando sorrisos com tecnologia, arte e um cuidado genuinamente humano.
             </p>
              <div className="flex justify-center md:justify-start gap-2 mt-6">
@@ -30,10 +28,9 @@ export default function Footer() {
           <div>
               <h4 className="font-heading font-semibold text-lg text-primary-foreground">Navegação</h4>
               <ul className="mt-4 space-y-3">
-                  <li><Link href="#why-us" className="hover:text-accent transition-colors">A Clínica</Link></li>
+                  <li><Link href="#specialist" className="hover:text-accent transition-colors">A Clínica</Link></li>
                   <li><Link href="#treatments" className="hover:text-accent transition-colors">Tratamentos</Link></li>
                   <li><Link href="#location" className="hover:text-accent transition-colors">Localização</Link></li>
-                  <li><Link href="#faq" className="hover:text-accent transition-colors">FAQ</Link></li>
               </ul>
           </div>
            <div>
