@@ -60,7 +60,7 @@ export default function Header() {
                   <Link 
                     key={item.label} 
                     href={item.href} 
-                    className="text-sm font-medium text-[#0F172A] hover:text-accent transition-colors tracking-wide"
+                    className="text-sm font-medium text-primary hover:text-accent transition-colors tracking-wide"
                   >
                     {item.label}
                   </Link>
@@ -72,7 +72,7 @@ export default function Header() {
                 <Link href={whatsappUrl} passHref target="_blank" rel="noopener noreferrer">
                   <Button 
                     size="sm" 
-                    className="rounded-full bg-[#0F172A] text-white hover:bg-[#0F172A]/90 px-3 md:px-6 h-8 md:h-9 text-[10px] md:text-xs font-bold uppercase tracking-widest transition-all"
+                    className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90 px-3 md:px-6 h-8 md:h-9 text-[10px] md:text-xs font-bold uppercase tracking-widest transition-all shadow-sm"
                   >
                     Agendar
                   </Button>
@@ -82,7 +82,7 @@ export default function Header() {
                 <div className="md:hidden flex items-center">
                     <Sheet open={open} onOpenChange={setOpen}>
                         <SheetTrigger asChild>
-                            <Button variant="ghost" size="icon" className="text-[#0F172A] h-8 w-8 p-0 hover:bg-transparent active:bg-transparent">
+                            <Button variant="ghost" size="icon" className="text-primary h-8 w-8 p-0 hover:bg-transparent active:bg-transparent">
                                 <Menu className="h-5 w-5" strokeWidth={1.5} />
                             </Button>
                         </SheetTrigger>
@@ -92,7 +92,7 @@ export default function Header() {
                                  <SheetDescription className="sr-only">Navegação principal da clínica</SheetDescription>
                                  <Logo className="w-36 h-14" />
                                  <SheetClose asChild>
-                                    <Button variant="ghost" size="icon" className="text-[#0F172A]">
+                                    <Button variant="ghost" size="icon" className="text-primary">
                                         <X className="h-6 w-6" strokeWidth={1.5} />
                                     </Button>
                                  </SheetClose>
@@ -103,13 +103,13 @@ export default function Header() {
                                         key={item.label}
                                         href={item.href}
                                         onClick={() => setOpen(false)}
-                                        className="text-3xl font-serif font-bold py-2 text-[#0F172A] active:text-accent transition-colors"
+                                        className="text-3xl font-serif font-bold py-2 text-primary active:text-accent transition-colors"
                                     >
                                         {item.label}
                                     </Link>
                                 ))}
                                  <Link href={whatsappUrl} passHref target="_blank" rel="noopener noreferrer" className="mt-8">
-                                    <Button onClick={() => setOpen(false)} size="lg" className="w-full h-14 rounded-full bg-[#0F172A] text-white font-bold text-lg shadow-xl">
+                                    <Button onClick={() => setOpen(false)} size="lg" className="w-full h-14 rounded-full bg-primary text-primary-foreground font-bold text-lg shadow-xl hover:bg-primary/90">
                                       Agendar Agora
                                     </Button>
                                 </Link>
