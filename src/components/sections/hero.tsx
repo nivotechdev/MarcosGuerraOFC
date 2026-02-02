@@ -26,6 +26,7 @@ export default function Hero() {
         loop
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
+        style={{ willChange: 'transform' }}
       >
         <source src={videoUrl} type="video/mp4" />
       </video>
