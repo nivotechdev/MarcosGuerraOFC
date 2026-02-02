@@ -1,11 +1,18 @@
+
 'use client';
 
+import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function Hero() {
   const videoUrl = "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/Use_the_provided_202602021712_t16we.mp4";
   const whatsappUrl = "https://wa.me/555432234237?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
+
+  const { scrollY } = useScroll();
+  const opacity = useTransform(scrollY, [0, 100], [1, 0]);
+  const y = useTransform(scrollY, [0, 100], [0, -20]);
 
   return (
     <section 
@@ -27,10 +34,20 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/40" />
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-background" />
 
-      <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container relative z-10 mx-auto px-4">
           <div className="max-w-4xl mx-auto flex flex-col items-center">
-            <h1 className="font-heading text-3xl leading-tight md:text-7xl font-bold tracking-tight text-white drop-shadow-2xl">
-              A Experiência que Você Exige,<br className="hidden md:block" />
+            {/* Elegant Main Name - Fades out on scroll */}
+            <motion.div 
+              style={{ opacity, y }}
+              className="mb-8"
+            >
+              <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl font-normal tracking-wide text-white mb-2 drop-shadow-lg">
+                Doutor Marcos Guerra
+              </h2>
+              <div className="h-px w-24 bg-white/40 mx-auto" />
+            </motion.div>
+
+            <h1 className="font-heading text-4xl leading-tight md:text-7xl font-bold tracking-tight text-white drop-shadow-2xl">
               O Sorriso que Você Merece.
             </h1>
             
