@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-export default function Logo({ className, variant = 'default' }: { className?: string, variant?: 'default' | 'inverted' }) {
+export default function Logo({ className }: { className?: string, variant?: 'default' | 'inverted' }) {
   return (
     <Link href="/" className={cn("relative block w-28 md:w-40 h-16", className)}>
       <Image
@@ -10,11 +10,6 @@ export default function Logo({ className, variant = 'default' }: { className?: s
         alt="Dr. Marcos Guerra Logo"
         fill
         className="object-contain"
-        style={
-          variant === 'inverted' 
-            ? { filter: 'brightness(0) invert(1)' } 
-            : undefined
-        }
         sizes="(max-width: 768px) 112px, 160px"
         priority
       />
