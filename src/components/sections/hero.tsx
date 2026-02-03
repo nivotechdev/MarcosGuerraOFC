@@ -43,7 +43,7 @@ export default function Hero() {
               className="mb-8"
             >
               <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl font-normal tracking-wide text-white mb-2 drop-shadow-lg">
-                Doutor Marcos Guerra
+                Dr. Marcos Guerra
               </h2>
               <div className="h-px w-24 bg-white/40 mx-auto" />
             </motion.div>
