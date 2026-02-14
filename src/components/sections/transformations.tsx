@@ -17,7 +17,7 @@ import { cn } from "@/lib/utils";
 
 const transformationCases = [
   {
-    title: "Implantes Estéticos",
+    title: "Correção Estética",
     before: PlaceHolderImages.find(img => img.id === "before-whitening"),
     after: PlaceHolderImages.find(img => img.id === "after-whitening"),
   },
@@ -28,16 +28,6 @@ const transformationCases = [
   },
   {
     title: "Clareamento Avançado",
-    before: PlaceHolderImages.find(img => img.id === "before-smile-3"),
-    after: PlaceHolderImages.find(img => img.id === "after-smile-3"),
-  },
-  {
-    title: "Lentes de Contato",
-    before: PlaceHolderImages.find(img => img.id === "before-whitening"),
-    after: PlaceHolderImages.find(img => img.id === "after-whitening"),
-  },
-  {
-    title: "Facetas em Resina",
     before: PlaceHolderImages.find(img => img.id === "before-smile-3"),
     after: PlaceHolderImages.find(img => img.id === "after-smile-3"),
   },

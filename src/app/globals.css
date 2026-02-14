@@ -71,7 +71,6 @@
 @layer base {
   html {
     scroll-padding-top: 80px;
-    overflow-x: hidden;
   }
   * {
     @apply border-border;
@@ -79,7 +78,8 @@
   body {
     @apply bg-background text-foreground leading-relaxed antialiased;
     overflow-x: hidden;
-    overscroll-behavior-y: none;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
   }
   button, [role="button"] {
     touch-action: manipulation;

@@ -28,13 +28,13 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
     {
       "id": "before-smile",
       "description": "Dentes desalinhados antes do tratamento.",
-      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/IMG-20240712-WA0000.jpg",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/IMG-20260212-WA0000%20(1).jpg",
       "imageHint": "crooked teeth"
     },
     {
       "id": "after-smile",
       "description": "Resultado transformador após o tratamento.",
-      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/IMG-20240712-WA0001.jpg",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/IMG-20260212-WA0001.jpg",
       "imageHint": "perfect smile"
     },
     {
@@ -58,7 +58,7 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
     {
       "id": "after-whitening",
       "description": "Sorriso branco e brilhante após tratamento de clareamento avançado.",
-      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/WhatsApp%20Image%202024-07-02%20at%2013.32.31.jpeg",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/WhatsApp%20Image%202026-02-02%20at%2013.32.31.jpeg",
       "imageHint": "whitened smile"
     },
     {
@@ -70,13 +70,13 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
     {
       "id": "before-smile-3",
       "description": "Dentes desalinhados antes do tratamento.",
-      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/WhatsApp%20Image%202024-07-02%20at%2013.45.51.jpeg",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/WhatsApp%20Image%202026-02-02%20at%2013.45.51.jpeg",
       "imageHint": "crooked teeth"
     },
     {
       "id": "after-smile-3",
       "description": "Resultado transformador após o tratamento.",
-      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/WhatsApp%20Image%202024-07-02%20at%2013.32.40.jpeg",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/WhatsApp%20Image%202026-02-02%20at%2013.32.40.jpeg",
       "imageHint": "perfect smile"
     },
     {

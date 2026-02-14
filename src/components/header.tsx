@@ -29,7 +29,7 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const whatsappUrl = "https://wa.me/555432234237?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
+  const whatsappUrl = "https://wa.me/5554991696666";
 
   const navItems = [
     { href: "#specialist", label: "A Clínica" },
