@@ -17,24 +17,19 @@ import { cn } from "@/lib/utils";
 
 const transformationCases = [
   {
+    title: "Implantes Estéticos",
+    before: PlaceHolderImages.find(img => img.id === "before-whitening"),
+    after: PlaceHolderImages.find(img => img.id === "after-whitening"),
+  },
+  {
     title: "Tratamento Ortodôntico",
     before: PlaceHolderImages.find(img => img.id === "before-smile"),
     after: PlaceHolderImages.find(img => img.id === "after-smile"),
   },
   {
-    title: "Implantes Estéticos",
-    before: PlaceHolderImages.find(img => img.id === "before-smile"),
-    after: PlaceHolderImages.find(img => img.id === "after-smile"),
-  },
-  {
     title: "Clareamento Avançado",
-    before: PlaceHolderImages.find(img => img.id === "before-whitening"),
-    after: PlaceHolderImages.find(img => img.id === "after-whitening"),
-  },
-   {
-    title: "Reabilitação Oral Completa",
-    before: PlaceHolderImages.find(img => img.id === "before-smile"),
-    after: PlaceHolderImages.find(img => img.id === "after-smile"),
+    before: PlaceHolderImages.find(img => img.id === "before-smile-3"),
+    after: PlaceHolderImages.find(img => img.id === "after-smile-3"),
   },
   {
     title: "Lentes de Contato",
@@ -43,8 +38,8 @@ const transformationCases = [
   },
   {
     title: "Facetas em Resina",
-    before: PlaceHolderImages.find(img => img.id === "before-smile"),
-    after: PlaceHolderImages.find(img => img.id === "after-smile"),
+    before: PlaceHolderImages.find(img => img.id === "before-smile-3"),
+    after: PlaceHolderImages.find(img => img.id === "after-smile-3"),
   },
 ];
 
@@ -103,7 +98,7 @@ export default function Transformations() {
                                 src={t.before.imageUrl}
                                 alt={`Antes`}
                                 fill
-                                className="object-cover"
+                                className={cn("object-cover", index === 1 && "object-[50%_95%]")}
                                 loading="lazy"
                                 data-ai-hint={t.before.imageHint}
                                 sizes="(max-width: 768px) 90vw, (max-width: 1280px) 45vw, 33vw"
@@ -116,7 +111,7 @@ export default function Transformations() {
                                 src={t.after.imageUrl}
                                 alt={`Depois`}
                                 fill
-                                className="object-cover"
+                                className={cn("object-cover", index === 1 && "object-[50%_95%]")}
                                 loading="lazy"
                                 data-ai-hint={t.after.imageHint}
                                 sizes="(max-width: 768px) 90vw, (max-width: 1280px) 45vw, 33vw"
