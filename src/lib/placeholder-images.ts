@@ -82,7 +82,7 @@ export const PlaceHolderImages: ImagePlaceholder[] = [
     {
       "id": "specialist-portrait",
       "description": "Retrato do Dr. Marcos Guerra",
-      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/IMG-20260212-WA0006.jpg",
+      "imageUrl": "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/4bb7a9f6-02c0-4f99-88e1-44b8715876b9%20(1).jpg",
       "imageHint": "dentist portrait"
     }
   ];

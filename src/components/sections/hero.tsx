@@ -17,7 +17,7 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="relative w-full h-screen flex items-center justify-center text-center text-white overflow-hidden"
+      className="relative w-full flex justify-center text-center text-white overflow-hidden py-32"
     >
       {/* Background Video */}
       <video
@@ -71,11 +71,6 @@ export default function Hero() {
               </div>
             </div>
           </div>
-      </div>
-      
-      {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce opacity-30">
-        <div className="w-px h-12 bg-gradient-to-b from-white to-transparent" />
       </div>
     </section>
   );
