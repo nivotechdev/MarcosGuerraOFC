@@ -17,7 +17,7 @@ export default function Hero() {
   return (
     <section 
       id="home" 
-      className="relative w-full flex justify-center text-center text-white overflow-hidden py-32"
+      className="relative w-full min-h-screen flex flex-col items-center justify-center text-center text-white overflow-hidden"
     >
       {/* Background Video */}
       <video
