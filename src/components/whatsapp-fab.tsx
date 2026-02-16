@@ -4,7 +4,7 @@ import Link from 'next/link';
 import WhatsappIcon from '@/components/icons/whatsapp-icon';
 
 export default function WhatsAppFab() {
-  const whatsappUrl = "https://wa.me/5554991696666";
+  const whatsappUrl = "https://wa.me/5554991696666?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta.";
 
   return (
     <Link 

@@ -8,7 +8,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function Hero() {
   const videoUrl = "https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/Use_the_provided_202602021712_t16we.mp4";
-  const whatsappUrl = "https://wa.me/5554991696666";
+  const whatsappUrl = "https://wa.me/5554991696666?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta.";
 
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 100], [1, 0]);

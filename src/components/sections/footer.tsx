@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 import WhatsappIcon from "../icons/whatsapp-icon";
 
 export default function Footer() {
-  const whatsappUrl = "https://wa.me/5554991696666";
+  const whatsappUrl = "https://wa.me/5554991696666?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta.";
 
   return (
     <footer className="bg-primary text-primary-foreground border-t">
@@ -39,7 +39,7 @@ export default function Footer() {
                 <li>
                   <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center md:justify-start gap-2 hover:text-accent transition-colors">
                     <WhatsappIcon className="h-4 w-4"/>
-                    <span>(54) 3223-4237</span>
+                    <span>(54) 99169-6666</span>
                   </a>
                 </li>
                 <li><a href="mailto:ortodontia.mguerra@gmail.com" className="hover:text-accent transition-colors">ortodontia.mguerra@gmail.com</a></li>
