@@ -26,9 +26,10 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: 'Dr. Marcos Guerra | Odontologia de Alta Performance',
   description: 'A Experiência que Você Exige, O Sorriso que Você Merece. Odontologia digital avançada para tratamentos rápidos, precisos e sem dor.',
+  manifest: 'https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/favicon/site.webmanifest',
   icons: {
-    icon: 'https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/Design%20sem%20nome%20(2).svg',
-    apple: 'https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/Design%20sem%20nome%20(2).svg',
+    icon: 'https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/favicon/favicon.svg',
+    apple: 'https://whfdrrdozhyavyflgaxo.supabase.co/storage/v1/object/public/marcosguerra/favicon/apple-touch-icon.png',
   },
 };
 
